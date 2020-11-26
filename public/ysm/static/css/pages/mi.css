@@ -1,0 +1,499 @@
+.ml-50 {
+  margin-left: 50px;
+}
+.hr {
+  height: 1px;
+  background: #c01f5e;
+  margin: 30px auto;
+}
+/*鼠标经过样式颜色*/
+.ivu-table-tbody tr:hover td {
+  background-color: #f6f6f6;
+}
+/* 后台首页 */
+.mi-home .i-conten {
+  height: 801px;
+  background-color: #ffffff;
+}
+.mi-home .i-conten .i-c-conten {
+  width: 1160px;
+  margin: 20px;
+}
+.mi-home .i-conten .i-c-conten .top-item {
+  margin-top: 20px;
+  width: 275px;
+  height: 140px;
+  border-radius: 4px;
+  background-color: #f2f3f5;
+}
+.mi-home .i-conten .i-c-conten .top-item .icon {
+  width: 93px;
+  height: 87px;
+  top: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-size: 100%;
+}
+.mi-home .i-conten .i-c-conten .top-item .bitem {
+  margin-bottom: 10px;
+  font-size: 36px;
+}
+.mi-home .i-conten .i-c-conten .top-item .bitem:hover {
+  color: #fff;
+}
+.mi-home .i-conten .i-c-conten .top-item .bitem .staff {
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+.mi-home .i-conten .i-c-conten .chart {
+  margin-top: 20px;
+  background-color: #f2f3f5;
+}
+.mi-home .i-conten .i-c-conten .count {
+  width: 1160px;
+  margin-top: 20px;
+}
+.mi-home .i-conten .i-c-conten .count .title {
+  background-color: #f2f3f5;
+}
+.mi-home .i-conten .i-c-conten .count .li {
+  height: 46px;
+  border-bottom: solid 1px #e8e8e8;
+}
+.mi-home .i-conten .i-c-conten .count .li .item {
+  width: 33.3%;
+  padding-left: 30px;
+}
+.mi-register {
+  background-color: #f2f3f5;
+}
+.mi-register .vertical-center-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mi-register .vertical-center-modal .ivu-modal {
+  top: 0;
+}
+.mi-register .w-240px {
+  width: 240px;
+}
+.mi-register .w-60px {
+  width: 60px;
+}
+.mi-register .w-80px {
+  width: 80px;
+}
+.mi-register .content {
+  width: 480px;
+}
+.mi-register .content .among {
+  min-height: 652px;
+}
+.mi-register .content .among .top {
+  min-height: 560px;
+  border: solid 4px #c01f5e;
+}
+.mi-register .content .among .top .codetext {
+  right: 0;
+  top: 0;
+  height: 32px;
+  line-height: 32px;
+  margin-right: 5px;
+}
+.mi-register .content .among .top .logo {
+  height: 80px;
+  border-bottom: 4px solid #f0f0f0;
+}
+.mi-register .content .among .button {
+  height: 77px;
+}
+.mi-register .content .among .button .help {
+  border-bottom: #f0f0f0 1px solid;
+}
+.mi-register .basic-updata-item {
+  width: 137px;
+  height: 30px;
+  border-radius: 2px;
+  line-height: 30px;
+  overflow: hidden;
+}
+.mi-register .basic-updata-item .close {
+  display: none;
+  width: 10px;
+  right: 10px;
+  margin-top: 2px;
+  top: 0;
+  z-index: 9;
+}
+.mi-register .basic-updata-item:hover {
+  background-color: #f0f0f0;
+}
+.mi-register .basic-updata-item:hover .close {
+  display: block !important;
+}
+.mi-password {
+  background-color: #f2f3f5;
+}
+.mi-password .vertical-center-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mi-password .vertical-center-modal .ivu-modal {
+  top: 0;
+}
+.mi-password .w-240px {
+  width: 240px;
+}
+.mi-password .w-60px {
+  width: 60px;
+}
+.mi-password .content {
+  width: 480px;
+}
+.mi-password .content .among {
+  height: 466px;
+  border: solid 4px #c01f5e;
+}
+.mi-password .content .among .top {
+  height: 100%;
+}
+.mi-password .content .among .top .codetext {
+  right: 0;
+  top: 0;
+  height: 32px;
+  line-height: 32px;
+  margin-right: 5px;
+}
+.mi-password .content .among .top .logo {
+  height: 80px;
+  border-bottom: 4px solid #F0f0f0;
+}
+.mi-password .content .among .button {
+  height: 77px;
+}
+.mi-password .content .among .button .help {
+  border-bottom: #f0f0f0 1px solid;
+}
+.mi-wp-index {
+  min-width: 1160px;
+}
+.mi-wp-index .list-title {
+  height: 64px;
+}
+.mi-ts-index .label-list {
+  min-height: 544px;
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+.mi-ts-index .label-list .list-title {
+  height: 64px;
+}
+.mi-ts-index .table-li-ol {
+  width: calc(100% - 20px);
+}
+.mi-ts-index .table-li {
+  height: 40px;
+  border-bottom: 1px solid #F0F0F0;
+}
+.mi-ts-edit .bl {
+  border-right: 1px solid #d9d9d9;
+}
+.mi-ts-edit .wpdetailstable th,
+.mi-ts-edit .wpdetailstable td {
+  height: 32px;
+}
+.mi-ts-edit .wp-edit-body {
+  min-width: 900px;
+  width: calc(100% - 300px);
+  margin: initial;
+}
+.mi-ts-edit .plusminus {
+  height: 24px;
+  border-radius: 2px;
+  border: solid 1px #d9d9d9;
+}
+.mi-ts-edit .ts-edit-modal .top {
+  height: 55px;
+  padding: 0 20px;
+  border-bottom: 1px solid #eee;
+}
+.mi-ts-edit .ts-edit-modal .foot {
+  height: 55px;
+  padding: 0 20px;
+  border-top: 1px solid #eee;
+}
+.mi-ts-edit .ts-edit-modal .items {
+  width: 400px;
+  margin: 40px auto;
+}
+.mi-ts-edit .ts-edit-modal .items .item-text {
+  height: 14px;
+  line-height: 14px;
+}
+.mi-ts-edit .ts_right {
+  width: 280px;
+}
+.mi-ts-edit .ts_right .top {
+  border-top: 4px solid #c01f5e;
+  height: 431px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+.mi-ts-edit .ts_right .title {
+  height: 44px;
+  line-height: 44px;
+}
+.mi-ts-edit .ts_right .items .item {
+  width: 240px;
+  height: 40px;
+  border-bottom: 1px #f0f0f0 solid;
+  line-height: 40px;
+}
+.mi-ts-edit .ts_right .cf-list {
+  border-top: 4px solid #c01f5e;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+.mi-order .w-90px {
+  width: 90px;
+}
+.mi-order .tab .tab-item {
+  margin-right: 5px;
+  line-height: 34px;
+  background: #f4f4f4;
+  border-radius: 2px;
+  border: solid 1px #d9d9d9;
+  border-bottom: none;
+  color: #575757;
+}
+.mi-order .tab .tab-item:hover {
+  color: #c01f5e;
+}
+.mi-order .tab .tab-item-active {
+  background: #fff;
+  border-bottom: none;
+  color: #c01f5e;
+  border-bottom: white 1px solid;
+  z-index: 99;
+  height: 35px !important;
+}
+.mi-order .t-table .t-tabl-top {
+  min-height: 190px;
+  margin: auto;
+  margin-top: 10px;
+  border: solid 1px #ecbbce;
+}
+.mi-order .t-table .t-tabl-top .t-tabl-top-title {
+  height: 46px;
+  line-height: 46px;
+  background-color: #f8e8ee;
+  border-bottom: solid 1px #ecbbce;
+}
+.mi-order .t-table .t-tabl-top .t-tabl-top-centen {
+  height: 104px;
+  border-bottom: solid 1px #ecbbce;
+}
+.mi-order .t-table .t-tabl-top .t-tabl-top-centen .bl {
+  border-left: solid 1px #ecbbce;
+}
+.mi-order .t-table .t-tabl-top-close {
+  min-height: 190px;
+  margin: auto;
+  margin-top: 10px;
+  border: solid 1px #d9d9d9;
+}
+.mi-order .t-table .t-tabl-top-close .t-tabl-top-title {
+  height: 46px;
+  line-height: 46px;
+  background-color: #f4f4f4;
+  border-bottom: solid 1px #d9d9d9;
+}
+.mi-order .t-table .t-tabl-top-close .t-tabl-top-centen {
+  height: 104px;
+  border-bottom: solid 1px #d9d9d9;
+}
+.mi-order .t-table .t-tabl-top-close .t-tabl-top-centen .bl {
+  border-left: solid 1px #d9d9d9;
+}
+.mi-order .t-table .t-table-td {
+  width: 188px;
+  height: 32px;
+  font-weight: normal;
+}
+.mi-order .label-modal .top {
+  height: 55px;
+  padding: 0 20px;
+  border-bottom: 1px solid #eee;
+}
+.mi-order .label-modal .foot {
+  height: 55px;
+  padding: 0 20px;
+  border-top: 1px solid #eee;
+}
+.mi-order .label-modal .items {
+  width: 400px;
+  margin: 40px auto;
+}
+.mi-order .label-modal .items .item-text {
+  height: 14px;
+  line-height: 14px;
+}
+.mi-order .item .remark {
+  width: 172px;
+  height: 26px;
+  border-radius: 2px;
+  border: solid 1px #d9d9d9;
+  background-color: #f4f4f4;
+  line-height: 26px;
+}
+.mi-order .refund {
+  height: 40px;
+}
+.mi-order .refund .layui-form-radio {
+  margin: 0px;
+}
+.mi-order-details .t-table-td {
+  height: 32px;
+  font-weight: normal;
+  width: 190px;
+}
+.mi-recipe .w-438 {
+  width: 438px;
+}
+.mi-recipe .w-180 {
+  width: 180px;
+}
+.mi-recipe .tab .tab-item {
+  margin-right: 5px;
+  line-height: 34px;
+  background: #f4f4f4;
+  border-radius: 2px;
+  border: solid 1px #d9d9d9;
+  border-bottom: none;
+  color: #575757;
+}
+.mi-recipe .tab .tab-item:hover {
+  color: #c01f5e;
+}
+.mi-recipe .tab .tab-item-active {
+  background: #fff;
+  border-bottom: none;
+  color: #c01f5e;
+  border-bottom: white 1px solid;
+  z-index: 99;
+  height: 35px !important;
+}
+.mi-recipe .t-table .t-tabl-top {
+  min-height: 130px;
+  margin: auto;
+  margin-top: 10px;
+  border: solid 1px #ecbbce;
+}
+.mi-recipe .t-table .t-tabl-top .t-tabl-top-title {
+  height: 46px;
+  line-height: 46px;
+  background-color: #f8e8ee;
+  border-bottom: solid 1px #ecbbce;
+}
+.mi-recipe .t-table .t-tabl-top .t-tabl-top-centen {
+  height: 42px;
+  border-bottom: solid 1px #ecbbce;
+}
+.mi-recipe .t-table .t-tabl-top .t-tabl-top-centen .bl {
+  border-left: solid 1px #ecbbce;
+}
+.mi-recipe .t-table .t-tabl-top-close {
+  min-height: 190px;
+  margin: auto;
+  margin-top: 10px;
+  border: solid 1px #d9d9d9;
+}
+.mi-recipe .t-table .t-tabl-top-close .t-tabl-top-title {
+  height: 46px;
+  line-height: 46px;
+  background-color: #f4f4f4;
+  border-bottom: solid 1px #d9d9d9;
+}
+.mi-recipe .t-table .t-tabl-top-close .t-tabl-top-centen {
+  height: 104px;
+  border-bottom: solid 1px #d9d9d9;
+}
+.mi-recipe .t-table .t-tabl-top-close .t-tabl-top-centen .bl {
+  border-left: solid 1px #d9d9d9;
+}
+.mi-recipe .t-table .t-table-td {
+  width: 188px;
+  height: 32px;
+  font-weight: normal;
+}
+.mi-recipe .label-modal .top {
+  height: 55px;
+  padding: 0 20px;
+  border-bottom: 1px solid #eee;
+}
+.mi-recipe .label-modal .foot {
+  height: 55px;
+  padding: 0 20px;
+  border-top: 1px solid #eee;
+}
+.mi-recipe .label-modal .items {
+  width: 400px;
+  margin: 40px auto;
+}
+.mi-recipe .label-modal .items .item-text {
+  height: 14px;
+  line-height: 14px;
+}
+.mi-recipe .item .remark {
+  width: 172px;
+  height: 26px;
+  border-radius: 2px;
+  border: solid 1px #d9d9d9;
+  background-color: #f4f4f4;
+  line-height: 26px;
+}
+.mi-doctor .w-60px {
+  width: 60px;
+}
+.mi-doctor .w-80px {
+  width: 80px;
+}
+.mi-doctor .w-160px {
+  width: 160px;
+}
+.mi-doctor .delinfo {
+  width: 346px !important;
+  height: 191px !important;
+}
+.mi-doctor .delinfo .top {
+  height: 55px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.mi-doctor .delinfo .foot {
+  height: 50px;
+  border-top: 1px solid #f0f0f0;
+}
+.mi-doctor .modal-root .ant-modal-wrap {
+  z-index: 100000;
+}
+.mi-doctor .info {
+  width: 480px;
+  border-radius: 2px;
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 4px 0 rgba(0, 0, 0, 0.05), 0 12px 48px 16px rgba(0, 0, 0, 0.03);
+  right: 0;
+  top: 0;
+  z-index: 9999009;
+}
+.mi-doctor .info .top {
+  height: 55px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.mi-doctor .info .center {
+  height: calc(100% - 105px);
+}
+.mi-doctor .info .foot {
+  height: 50px;
+  border-top: 1px solid #f0f0f0;
+}
+/*# sourceMappingURL=mi.css.map */

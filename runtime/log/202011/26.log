@@ -1,0 +1,558 @@
+[2020-11-26T10:15:21+08:00][info] [ VIEW ] F:\WWW\yeshai\app\platform\view\login\index.php [ array (
+) ]
+[2020-11-26T10:15:21+08:00][info] [ VIEW ] F:\WWW\yeshai\app\platform\view\login\index.php [ array (
+) ]
+[2020-11-26T10:22:20+08:00][info] [ VIEW ] F:\WWW\yeshai\app\platform_us\view\login\index.php [ array (
+) ]
+[2020-11-26T10:22:23+08:00][sql] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-11-26T10:22:23+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_platform` [ RunTime:0.016001s ]
+[2020-11-26T10:22:23+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:22:23+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_users` [ RunTime:0.014001s ]
+[2020-11-26T10:22:23+08:00][sql] SELECT * FROM `tp_crm_users` WHERE  `user_id` = 24 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:22:23+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:22:23+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:22:23+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.019001s ]
+[2020-11-26T10:22:23+08:00][sql] SELECT `id`,`rules` FROM `tp_system_role` WHERE  `id` = 4  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:22:23+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.018001s ]
+[2020-11-26T10:22:23+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  `id` IN (500,501,502,506,507,508,503,510,509,504,505,511,512,513,514,0)  AND ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-11-26T10:22:23+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.017001s ]
+[2020-11-26T10:22:23+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:22:23+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'platform'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001001s ]
+[2020-11-26T10:22:23+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-11-26T10:22:23+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:22:23+08:00][sql] SELECT `id`,`rules` FROM `tp_system_role` WHERE  `id` = 4  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:22:23+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  `id` IN (500,501,502,506,507,508,503,510,509,504,505,511,512,513,514,0)  AND ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.000000s ]
+[2020-11-26T10:22:23+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:22:23+08:00][sql] SELECT `menu_name`,`value` FROM `tp_system_config` [ RunTime:0.000000s ]
+[2020-11-26T10:22:23+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:22:23+08:00][sql] SHOW FULL COLUMNS FROM `tp_platform_system_config` [ RunTime:0.018001s ]
+[2020-11-26T10:22:23+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_platform_system_config` WHERE  `platform_id` = 13 [ RunTime:0.001000s ]
+[2020-11-26T10:22:23+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_order` [ RunTime:0.021001s ]
+[2020-11-26T10:22:23+08:00][sql] SELECT SUM(`pay_price`) AS think_sum FROM `tp_crm_order` WHERE  `paid` = 1  AND `platform_leader` = 13  AND `pay_time` > 1604160000 [ RunTime:0.001000s ]
+[2020-11-26T10:22:23+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_crm_order` WHERE  `add_time` > 1604160000 [ RunTime:0.001000s ]
+[2020-11-26T10:22:23+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_crm_users` WHERE  `platform_leader` = 13  AND `type` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:22:23+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_crm_users` WHERE  `platform_leader` = 13  AND `type` = 0 [ RunTime:0.001000s ]
+[2020-11-26T10:22:23+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_crm_users` WHERE  `type` IN (2,3)  AND `platform_leader` = 13 [ RunTime:0.000000s ]
+[2020-11-26T10:22:23+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_crm_users` WHERE  `type` IN (2,3)  AND `platform_leader` = 13  AND `createtime` > 1604160000 [ RunTime:0.001000s ]
+[2020-11-26T10:22:23+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_crm_users` WHERE  `platform_leader` = 13  AND `type` = 1  AND `createtime` > 1604160000 [ RunTime:0.000000s ]
+[2020-11-26T10:22:23+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_crm_users` WHERE  `platform_leader` = 13  AND `type` = 0  AND `createtime` > 1604160000 [ RunTime:0.001000s ]
+[2020-11-26T10:22:23+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'platform'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[2020-11-26T10:22:23+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:22:23+08:00][info] [ VIEW ] F:\WWW\yeshai\app\platform_us\view\index\index.php [ array (
+  0 => '_platform',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'list',
+  8 => 'info',
+) ]
+[2020-11-26T10:22:38+08:00][sql] CONNECT:[ UseTime:0.011000s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-11-26T10:22:38+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_platform` [ RunTime:0.014001s ]
+[2020-11-26T10:22:38+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:22:38+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_users` [ RunTime:0.014001s ]
+[2020-11-26T10:22:38+08:00][sql] SELECT * FROM `tp_crm_users` WHERE  `user_id` = 24 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:22:38+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:22:38+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:22:38+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.014001s ]
+[2020-11-26T10:22:38+08:00][sql] SELECT `id`,`rules` FROM `tp_system_role` WHERE  `id` = 4  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:22:38+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.014001s ]
+[2020-11-26T10:22:38+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  `id` IN (500,501,502,506,507,508,503,510,509,504,505,511,512,513,514,0)  AND ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-11-26T10:22:38+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.013001s ]
+[2020-11-26T10:22:38+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:22:38+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'platform'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.000000s ]
+[2020-11-26T10:22:38+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-11-26T10:22:38+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:22:38+08:00][sql] SELECT `id`,`rules` FROM `tp_system_role` WHERE  `id` = 4  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:22:38+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  `id` IN (500,501,502,506,507,508,503,510,509,504,505,511,512,513,514,0)  AND ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001001s ]
+[2020-11-26T10:22:38+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:22:38+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:22:38+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'index'  AND `controller` = 'ts.Ts'  AND `module` = 'platform_us'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:22:38+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_system_log` [ RunTime:0.027001s ]
+[2020-11-26T10:22:38+08:00][sql] INSERT INTO `tp_crm_system_log` SET `method` = 'platform_us' , `user_id` = 24 , `add_time` = 1606357358 , `p_name` = '18260842874' , `path` = 'platform_us/ts.ts/index/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'p_system' [ RunTime:0.000000s ]
+[2020-11-26T10:22:38+08:00][sql] SHOW FULL COLUMNS FROM `tp_label` [ RunTime:0.016001s ]
+[2020-11-26T10:22:38+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 2  AND `is_del` = 0  AND `pid` = 0  AND `status` = 1 ORDER BY `id` DESC [ RunTime:0.001000s ]
+[2020-11-26T10:22:38+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 94  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:22:38+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 85  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:22:38+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 78  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:22:38+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 72  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:22:38+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 65  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:22:38+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 60  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:22:38+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 54  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:22:38+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 47  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:22:38+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 44  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:22:38+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 33  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:22:38+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 27  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:22:38+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 12  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:22:38+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 9  AND `status` = 1 [ RunTime:0.001001s ]
+[2020-11-26T10:22:38+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 3  AND `is_del` = 0  AND `pid` = 0  AND `status` = 1 ORDER BY `id` DESC [ RunTime:0.001000s ]
+[2020-11-26T10:22:38+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 102  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:22:38+08:00][info] [ VIEW ] F:\WWW\yeshai\app\platform_us\view\ts\ts\index.php [ array (
+  0 => '_platform',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'cate2',
+  8 => 'cate3',
+  9 => 'type',
+) ]
+[2020-11-26T10:34:41+08:00][sql] CONNECT:[ UseTime:0.006001s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-11-26T10:34:41+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_platform` [ RunTime:0.012001s ]
+[2020-11-26T10:34:41+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:34:41+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_users` [ RunTime:0.011000s ]
+[2020-11-26T10:34:41+08:00][sql] SELECT * FROM `tp_crm_users` WHERE  `user_id` = 24 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:34:41+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:34:41+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:34:41+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.010000s ]
+[2020-11-26T10:34:41+08:00][sql] SELECT `id`,`rules` FROM `tp_system_role` WHERE  `id` = 4  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:34:41+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.011001s ]
+[2020-11-26T10:34:41+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  `id` IN (500,501,502,506,507,508,503,510,509,504,505,511,512,513,514,0)  AND ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.000000s ]
+[2020-11-26T10:34:41+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.011001s ]
+[2020-11-26T10:34:41+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:34:41+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'platform'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[2020-11-26T10:34:41+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-11-26T10:34:41+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:34:41+08:00][sql] SELECT `id`,`rules` FROM `tp_system_role` WHERE  `id` = 4  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:34:41+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  `id` IN (500,501,502,506,507,508,503,510,509,504,505,511,512,513,514,0)  AND ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.000000s ]
+[2020-11-26T10:34:41+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:34:41+08:00][sql] SELECT `menu_name`,`value` FROM `tp_system_config` [ RunTime:0.000000s ]
+[2020-11-26T10:34:41+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:34:41+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'index'  AND `controller` = 'ts.Ts'  AND `module` = 'platform_us'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:34:41+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_system_log` [ RunTime:0.011001s ]
+[2020-11-26T10:34:41+08:00][sql] INSERT INTO `tp_crm_system_log` SET `method` = 'platform_us' , `user_id` = 24 , `add_time` = 1606358080 , `p_name` = '18260842874' , `path` = 'platform_us/ts.ts/index/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'p_system' [ RunTime:0.001000s ]
+[2020-11-26T10:34:41+08:00][sql] SHOW FULL COLUMNS FROM `tp_label` [ RunTime:0.010001s ]
+[2020-11-26T10:34:41+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 2  AND `is_del` = 0  AND `pid` = 0  AND `status` = 1 ORDER BY `id` DESC [ RunTime:0.001000s ]
+[2020-11-26T10:34:41+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 94  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:34:41+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 85  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:34:41+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 78  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:34:41+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 72  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:34:41+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 65  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:34:41+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 60  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:34:41+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 54  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:34:41+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 47  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:34:41+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 44  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:34:41+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 33  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:34:41+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 27  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:34:41+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 12  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:34:41+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 9  AND `status` = 1 [ RunTime:0.001001s ]
+[2020-11-26T10:34:41+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 3  AND `is_del` = 0  AND `pid` = 0  AND `status` = 1 ORDER BY `id` DESC [ RunTime:0.000000s ]
+[2020-11-26T10:34:41+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 102  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:34:41+08:00][info] [ VIEW ] F:\WWW\yeshai\app\platform_us\view\ts\ts\index.php [ array (
+  0 => '_platform',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'cate2',
+  8 => 'cate3',
+  9 => 'type',
+) ]
+[2020-11-26T10:38:02+08:00][sql] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-11-26T10:38:02+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_platform` [ RunTime:0.016001s ]
+[2020-11-26T10:38:02+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:02+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_users` [ RunTime:0.011001s ]
+[2020-11-26T10:38:02+08:00][sql] SELECT * FROM `tp_crm_users` WHERE  `user_id` = 24 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:02+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:02+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:02+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.010001s ]
+[2020-11-26T10:38:02+08:00][sql] SELECT `id`,`rules` FROM `tp_system_role` WHERE  `id` = 4  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:02+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.010000s ]
+[2020-11-26T10:38:02+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  `id` IN (500,501,502,506,507,508,503,510,509,504,505,511,512,513,514,0)  AND ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.000000s ]
+[2020-11-26T10:38:02+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.010000s ]
+[2020-11-26T10:38:02+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:02+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'platform'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[2020-11-26T10:38:02+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-11-26T10:38:02+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:02+08:00][sql] SELECT `id`,`rules` FROM `tp_system_role` WHERE  `id` = 4  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:02+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  `id` IN (500,501,502,506,507,508,503,510,509,504,505,511,512,513,514,0)  AND ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.000000s ]
+[2020-11-26T10:38:02+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:02+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:02+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'index'  AND `controller` = 'ts.Ts'  AND `module` = 'platform_us'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:02+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_system_log` [ RunTime:0.011000s ]
+[2020-11-26T10:38:02+08:00][sql] INSERT INTO `tp_crm_system_log` SET `method` = 'platform_us' , `user_id` = 24 , `add_time` = 1606358282 , `p_name` = '18260842874' , `path` = 'platform_us/ts.ts/index/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'p_system' [ RunTime:0.000000s ]
+[2020-11-26T10:38:02+08:00][sql] SHOW FULL COLUMNS FROM `tp_label` [ RunTime:0.010000s ]
+[2020-11-26T10:38:02+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 2  AND `is_del` = 0  AND `pid` = 0  AND `status` = 1 ORDER BY `id` DESC [ RunTime:0.000000s ]
+[2020-11-26T10:38:02+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 94  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:02+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 85  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:02+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 78  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:02+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 72  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:02+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 65  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:02+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 60  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:02+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 54  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:02+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 47  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:02+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 44  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:02+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 33  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:02+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 27  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:02+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 12  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:02+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 9  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:02+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 3  AND `is_del` = 0  AND `pid` = 0  AND `status` = 1 ORDER BY `id` DESC [ RunTime:0.001000s ]
+[2020-11-26T10:38:02+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 102  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:02+08:00][info] [ VIEW ] F:\WWW\yeshai\app\platform_us\view\ts\ts\index.php [ array (
+  0 => '_platform',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'cate2',
+  8 => 'cate3',
+  9 => 'type',
+) ]
+[2020-11-26T10:38:05+08:00][sql] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-11-26T10:38:05+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_platform` [ RunTime:0.012001s ]
+[2020-11-26T10:38:05+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:05+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_users` [ RunTime:0.011000s ]
+[2020-11-26T10:38:05+08:00][sql] SELECT * FROM `tp_crm_users` WHERE  `user_id` = 24 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:05+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:05+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:05+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.011000s ]
+[2020-11-26T10:38:05+08:00][sql] SELECT `id`,`rules` FROM `tp_system_role` WHERE  `id` = 4  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:05+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.010001s ]
+[2020-11-26T10:38:05+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  `id` IN (500,501,502,506,507,508,503,510,509,504,505,511,512,513,514,0)  AND ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-11-26T10:38:05+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.010001s ]
+[2020-11-26T10:38:05+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:05+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'platform'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[2020-11-26T10:38:05+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-11-26T10:38:05+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:05+08:00][sql] SELECT `id`,`rules` FROM `tp_system_role` WHERE  `id` = 4  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:05+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  `id` IN (500,501,502,506,507,508,503,510,509,504,505,511,512,513,514,0)  AND ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.000000s ]
+[2020-11-26T10:38:05+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:05+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:05+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'index'  AND `controller` = 'microchip.MicrochipProduct'  AND `module` = 'platform_us'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:05+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_system_log` [ RunTime:0.011001s ]
+[2020-11-26T10:38:05+08:00][sql] INSERT INTO `tp_crm_system_log` SET `method` = 'platform_us' , `user_id` = 24 , `add_time` = 1606358284 , `p_name` = '18260842874' , `path` = 'platform_us/microchip.microchipproduct/index/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'p_system' [ RunTime:0.000000s ]
+[2020-11-26T10:38:05+08:00][sql] SHOW FULL COLUMNS FROM `tp_label` [ RunTime:0.010001s ]
+[2020-11-26T10:38:05+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 1  AND `is_del` = 0  AND `is_del` = 0  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:05+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 2  AND `is_del` = 0  AND `is_del` = 0  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:05+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 3  AND `is_del` = 0  AND `is_del` = 0  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:05+08:00][info] [ VIEW ] F:\WWW\yeshai\app\platform_us\view\microchip\microchip_product\index.php [ array (
+  0 => '_platform',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'cate1',
+  8 => 'cate2',
+  9 => 'cate3',
+) ]
+[2020-11-26T10:38:08+08:00][sql] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-11-26T10:38:08+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_platform` [ RunTime:0.011001s ]
+[2020-11-26T10:38:08+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:08+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_users` [ RunTime:0.010000s ]
+[2020-11-26T10:38:08+08:00][sql] SELECT * FROM `tp_crm_users` WHERE  `user_id` = 24 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:08+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:08+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:08+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.011001s ]
+[2020-11-26T10:38:08+08:00][sql] SELECT `id`,`rules` FROM `tp_system_role` WHERE  `id` = 4  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:08+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.012001s ]
+[2020-11-26T10:38:08+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  `id` IN (500,501,502,506,507,508,503,510,509,504,505,511,512,513,514,0)  AND ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-11-26T10:38:08+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.012001s ]
+[2020-11-26T10:38:08+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:08+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'platform'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[2020-11-26T10:38:08+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-11-26T10:38:08+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:08+08:00][sql] SELECT `id`,`rules` FROM `tp_system_role` WHERE  `id` = 4  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:08+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  `id` IN (500,501,502,506,507,508,503,510,509,504,505,511,512,513,514,0)  AND ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-11-26T10:38:08+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:08+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:08+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'index'  AND `controller` = 'ts.Ts'  AND `module` = 'platform_us'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:08+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_system_log` [ RunTime:0.012001s ]
+[2020-11-26T10:38:08+08:00][sql] INSERT INTO `tp_crm_system_log` SET `method` = 'platform_us' , `user_id` = 24 , `add_time` = 1606358288 , `p_name` = '18260842874' , `path` = 'platform_us/ts.ts/index/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'p_system' [ RunTime:0.001000s ]
+[2020-11-26T10:38:08+08:00][sql] SHOW FULL COLUMNS FROM `tp_label` [ RunTime:0.013001s ]
+[2020-11-26T10:38:08+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 2  AND `is_del` = 0  AND `pid` = 0  AND `status` = 1 ORDER BY `id` DESC [ RunTime:0.001000s ]
+[2020-11-26T10:38:08+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 94  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:08+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 85  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:08+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 78  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:08+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 72  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:08+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 65  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:08+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 60  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:08+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 54  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:08+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 47  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:08+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 44  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:08+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 33  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:08+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 27  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:08+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 12  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:08+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 9  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:08+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 3  AND `is_del` = 0  AND `pid` = 0  AND `status` = 1 ORDER BY `id` DESC [ RunTime:0.001000s ]
+[2020-11-26T10:38:08+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 102  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:08+08:00][info] [ VIEW ] F:\WWW\yeshai\app\platform_us\view\ts\ts\index.php [ array (
+  0 => '_platform',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'cate2',
+  8 => 'cate3',
+  9 => 'type',
+) ]
+[2020-11-26T10:38:15+08:00][sql] CONNECT:[ UseTime:0.006001s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-11-26T10:38:15+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_platform` [ RunTime:0.011000s ]
+[2020-11-26T10:38:15+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.001001s ]
+[2020-11-26T10:38:15+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_users` [ RunTime:0.011000s ]
+[2020-11-26T10:38:15+08:00][sql] SELECT * FROM `tp_crm_users` WHERE  `user_id` = 24 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:15+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:15+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:15+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.010001s ]
+[2020-11-26T10:38:15+08:00][sql] SELECT `id`,`rules` FROM `tp_system_role` WHERE  `id` = 4  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:15+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.010001s ]
+[2020-11-26T10:38:15+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  `id` IN (500,501,502,506,507,508,503,510,509,504,505,511,512,513,514,0)  AND ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-11-26T10:38:15+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.010000s ]
+[2020-11-26T10:38:15+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:15+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'platform'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[2020-11-26T10:38:15+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-11-26T10:38:15+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:15+08:00][sql] SELECT `id`,`rules` FROM `tp_system_role` WHERE  `id` = 4  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:15+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  `id` IN (500,501,502,506,507,508,503,510,509,504,505,511,512,513,514,0)  AND ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.000000s ]
+[2020-11-26T10:38:15+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:15+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:15+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'index'  AND `controller` = 'ts.Ts'  AND `module` = 'platform_us'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:15+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_system_log` [ RunTime:0.011001s ]
+[2020-11-26T10:38:15+08:00][sql] INSERT INTO `tp_crm_system_log` SET `method` = 'platform_us' , `user_id` = 24 , `add_time` = 1606358295 , `p_name` = '18260842874' , `path` = 'platform_us/ts.ts/index/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'p_system' [ RunTime:0.001000s ]
+[2020-11-26T10:38:15+08:00][sql] SHOW FULL COLUMNS FROM `tp_label` [ RunTime:0.010001s ]
+[2020-11-26T10:38:15+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 2  AND `is_del` = 0  AND `pid` = 0  AND `status` = 1 ORDER BY `id` DESC [ RunTime:0.000000s ]
+[2020-11-26T10:38:15+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 94  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:15+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 85  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:15+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 78  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:15+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 72  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:15+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 65  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:15+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 60  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:15+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 54  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:15+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 47  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:15+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 44  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:15+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 33  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:15+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 27  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:15+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 12  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:15+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 9  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:15+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 3  AND `is_del` = 0  AND `pid` = 0  AND `status` = 1 ORDER BY `id` DESC [ RunTime:0.001000s ]
+[2020-11-26T10:38:15+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 102  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:15+08:00][info] [ VIEW ] F:\WWW\yeshai\app\platform_us\view\ts\ts\index.php [ array (
+  0 => '_platform',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'cate2',
+  8 => 'cate3',
+  9 => 'type',
+) ]
+[2020-11-26T10:38:19+08:00][sql] CONNECT:[ UseTime:0.011000s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-11-26T10:38:19+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_platform` [ RunTime:0.017001s ]
+[2020-11-26T10:38:19+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:19+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_users` [ RunTime:0.020002s ]
+[2020-11-26T10:38:19+08:00][sql] SELECT * FROM `tp_crm_users` WHERE  `user_id` = 24 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:19+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:19+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:19+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.020001s ]
+[2020-11-26T10:38:19+08:00][sql] SELECT `id`,`rules` FROM `tp_system_role` WHERE  `id` = 4  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:19+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.017001s ]
+[2020-11-26T10:38:19+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  `id` IN (500,501,502,506,507,508,503,510,509,504,505,511,512,513,514,0)  AND ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-11-26T10:38:19+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.016001s ]
+[2020-11-26T10:38:19+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:19+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'platform'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[2020-11-26T10:38:19+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-11-26T10:38:19+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:19+08:00][sql] SELECT `id`,`rules` FROM `tp_system_role` WHERE  `id` = 4  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:19+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  `id` IN (500,501,502,506,507,508,503,510,509,504,505,511,512,513,514,0)  AND ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.000000s ]
+[2020-11-26T10:38:19+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:19+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.001001s ]
+[2020-11-26T10:38:19+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'index'  AND `controller` = 'ts.Ts'  AND `module` = 'platform_us'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:19+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_system_log` [ RunTime:0.011000s ]
+[2020-11-26T10:38:19+08:00][sql] INSERT INTO `tp_crm_system_log` SET `method` = 'platform_us' , `user_id` = 24 , `add_time` = 1606358299 , `p_name` = '18260842874' , `path` = 'platform_us/ts.ts/index/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'p_system' [ RunTime:0.000000s ]
+[2020-11-26T10:38:19+08:00][sql] SHOW FULL COLUMNS FROM `tp_label` [ RunTime:0.011000s ]
+[2020-11-26T10:38:19+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 2  AND `is_del` = 0  AND `pid` = 0  AND `status` = 1 ORDER BY `id` DESC [ RunTime:0.001000s ]
+[2020-11-26T10:38:19+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 94  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:19+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 85  AND `status` = 1 [ RunTime:0.001001s ]
+[2020-11-26T10:38:19+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 78  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:19+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 72  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:19+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 65  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:19+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 60  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:19+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 54  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:19+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 47  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:19+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 44  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:19+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 33  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:19+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 27  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:19+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 12  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:19+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 9  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:19+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 3  AND `is_del` = 0  AND `pid` = 0  AND `status` = 1 ORDER BY `id` DESC [ RunTime:0.001000s ]
+[2020-11-26T10:38:19+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 102  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:19+08:00][info] [ VIEW ] F:\WWW\yeshai\app\platform_us\view\ts\ts\index.php [ array (
+  0 => '_platform',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'cate2',
+  8 => 'cate3',
+  9 => 'type',
+) ]
+[2020-11-26T10:38:26+08:00][sql] CONNECT:[ UseTime:0.011000s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-11-26T10:38:26+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_platform` [ RunTime:0.013001s ]
+[2020-11-26T10:38:26+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:26+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_users` [ RunTime:0.011001s ]
+[2020-11-26T10:38:26+08:00][sql] SELECT * FROM `tp_crm_users` WHERE  `user_id` = 24 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:26+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:26+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:26+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.010001s ]
+[2020-11-26T10:38:26+08:00][sql] SELECT `id`,`rules` FROM `tp_system_role` WHERE  `id` = 4  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:26+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.010000s ]
+[2020-11-26T10:38:26+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  `id` IN (500,501,502,506,507,508,503,510,509,504,505,511,512,513,514,0)  AND ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-11-26T10:38:26+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.010000s ]
+[2020-11-26T10:38:26+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:26+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'platform'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[2020-11-26T10:38:26+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-11-26T10:38:26+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:26+08:00][sql] SELECT `id`,`rules` FROM `tp_system_role` WHERE  `id` = 4  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:26+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  `id` IN (500,501,502,506,507,508,503,510,509,504,505,511,512,513,514,0)  AND ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.000000s ]
+[2020-11-26T10:38:26+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:26+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:26+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'index'  AND `controller` = 'microchip.MicrochipProduct'  AND `module` = 'platform_us'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001001s ]
+[2020-11-26T10:38:26+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_system_log` [ RunTime:0.010000s ]
+[2020-11-26T10:38:26+08:00][sql] INSERT INTO `tp_crm_system_log` SET `method` = 'platform_us' , `user_id` = 24 , `add_time` = 1606358306 , `p_name` = '18260842874' , `path` = 'platform_us/microchip.microchipproduct/index/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'p_system' [ RunTime:0.000000s ]
+[2020-11-26T10:38:26+08:00][sql] SHOW FULL COLUMNS FROM `tp_label` [ RunTime:0.010000s ]
+[2020-11-26T10:38:26+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 1  AND `is_del` = 0  AND `is_del` = 0  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:26+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 2  AND `is_del` = 0  AND `is_del` = 0  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:26+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 3  AND `is_del` = 0  AND `is_del` = 0  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:26+08:00][info] [ VIEW ] F:\WWW\yeshai\app\platform_us\view\microchip\microchip_product\index.php [ array (
+  0 => '_platform',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'cate1',
+  8 => 'cate2',
+  9 => 'cate3',
+) ]
+[2020-11-26T10:38:31+08:00][sql] CONNECT:[ UseTime:0.011000s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-11-26T10:38:31+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_platform` [ RunTime:0.011001s ]
+[2020-11-26T10:38:31+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:31+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_users` [ RunTime:0.011001s ]
+[2020-11-26T10:38:31+08:00][sql] SELECT * FROM `tp_crm_users` WHERE  `user_id` = 24 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:31+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:31+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:31+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.011001s ]
+[2020-11-26T10:38:31+08:00][sql] SELECT `id`,`rules` FROM `tp_system_role` WHERE  `id` = 4  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:31+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.013000s ]
+[2020-11-26T10:38:31+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  `id` IN (500,501,502,506,507,508,503,510,509,504,505,511,512,513,514,0)  AND ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001001s ]
+[2020-11-26T10:38:31+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.011000s ]
+[2020-11-26T10:38:31+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:31+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'platform'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001001s ]
+[2020-11-26T10:38:31+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-11-26T10:38:31+08:00][sql] SELECT * FROM `tp_crm_platform` WHERE  `user_id` = 24  AND `category` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:31+08:00][sql] SELECT `id`,`rules` FROM `tp_system_role` WHERE  `id` = 4  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:31+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  `id` IN (500,501,502,506,507,508,503,510,509,504,505,511,512,513,514,0)  AND ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.000000s ]
+[2020-11-26T10:38:31+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:31+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:31+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'index'  AND `controller` = 'microchip.MicrochipProduct'  AND `module` = 'platform_us'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:38:31+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_system_log` [ RunTime:0.011001s ]
+[2020-11-26T10:38:31+08:00][sql] INSERT INTO `tp_crm_system_log` SET `method` = 'platform_us' , `user_id` = 24 , `add_time` = 1606358311 , `p_name` = '18260842874' , `path` = 'platform_us/microchip.microchipproduct/index/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'p_system' [ RunTime:0.001000s ]
+[2020-11-26T10:38:31+08:00][sql] SHOW FULL COLUMNS FROM `tp_label` [ RunTime:0.011000s ]
+[2020-11-26T10:38:31+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 1  AND `is_del` = 0  AND `is_del` = 0  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:31+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 2  AND `is_del` = 0  AND `is_del` = 0  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:31+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 3  AND `is_del` = 0  AND `is_del` = 0  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:38:31+08:00][info] [ VIEW ] F:\WWW\yeshai\app\platform_us\view\microchip\microchip_product\index.php [ array (
+  0 => '_platform',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'cate1',
+  8 => 'cate2',
+  9 => 'cate3',
+) ]
+[2020-11-26T10:44:03+08:00][info] [ VIEW ] F:\WWW\yeshai\app\admin\view/ysm\login\index.php [ array (
+) ]
+[2020-11-26T10:44:06+08:00][sql] CONNECT:[ UseTime:0.002001s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-11-26T10:44:06+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_admin` [ RunTime:0.010000s ]
+[2020-11-26T10:44:06+08:00][sql] SELECT * FROM `tp_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:44:06+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.012001s ]
+[2020-11-26T10:44:06+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-11-26T10:44:06+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.010000s ]
+[2020-11-26T10:44:06+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:44:06+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'admin'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[2020-11-26T10:44:06+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:44:06+08:00][sql] SELECT `menu_name`,`value` FROM `tp_system_config` [ RunTime:0.000000s ]
+[2020-11-26T10:44:06+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.011001s ]
+[2020-11-26T10:44:06+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:44:06+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:44:06+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_order` [ RunTime:0.012001s ]
+[2020-11-26T10:44:06+08:00][sql] SELECT SUM(`pay_price`) AS think_sum FROM `tp_crm_order` WHERE  `paid` = 1  AND `order_type` IN (0,2)  AND `pay_time` BETWEEN 1604160000 AND 1606751999 [ RunTime:0.001000s ]
+[2020-11-26T10:44:06+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_crm_order` WHERE  `order_type` IN (0,2)  AND `add_time` > 1604160000 [ RunTime:0.000000s ]
+[2020-11-26T10:44:06+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_users` [ RunTime:0.011000s ]
+[2020-11-26T10:44:06+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_crm_users` WHERE  `type` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:44:06+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_crm_users` WHERE  `type` = 1  AND `createtime` > 1604160000 [ RunTime:0.001000s ]
+[2020-11-26T10:44:06+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_crm_users` WHERE  `type` = 0 [ RunTime:0.000000s ]
+[2020-11-26T10:44:06+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_crm_users` WHERE  `type` = 0  AND `createtime` > 1604160000 [ RunTime:0.001001s ]
+[2020-11-26T10:44:06+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_crm_users` WHERE  `type` IN (2,3) [ RunTime:0.000000s ]
+[2020-11-26T10:44:06+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_crm_users` WHERE  `type` IN (2,3)  AND `createtime` > 1604160000 [ RunTime:0.001000s ]
+[2020-11-26T10:44:06+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'admin'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[2020-11-26T10:44:06+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:44:06+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:44:06+08:00][info] [ VIEW ] F:\WWW\yeshai\app\admin\view/ysm\index\index.php [ array (
+  0 => '_admin',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'topData',
+) ]
+[2020-11-26T10:49:53+08:00][sql] CONNECT:[ UseTime:0.006000s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-11-26T10:49:53+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_admin` [ RunTime:0.014000s ]
+[2020-11-26T10:49:53+08:00][sql] SELECT * FROM `tp_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:49:53+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.014001s ]
+[2020-11-26T10:49:53+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-11-26T10:49:53+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.014001s ]
+[2020-11-26T10:49:53+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:49:53+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'admin'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[2020-11-26T10:49:53+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:49:53+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.014000s ]
+[2020-11-26T10:49:53+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-26T10:49:53+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'index'  AND `controller` = 'ts.Ts'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-26T10:49:53+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_log` [ RunTime:0.027001s ]
+[2020-11-26T10:49:53+08:00][sql] INSERT INTO `tp_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1606358993 , `admin_name` = 'admin' , `path` = 'admin/ts.ts/index/' , `page` = 'TS配方' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.000000s ]
+[2020-11-26T10:49:53+08:00][sql] SHOW FULL COLUMNS FROM `tp_label` [ RunTime:0.014001s ]
+[2020-11-26T10:49:53+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 2  AND `is_del` = 0  AND `pid` = 0  AND `status` = 1 ORDER BY `id` DESC [ RunTime:0.001000s ]
+[2020-11-26T10:49:53+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 94  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:49:53+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 85  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:49:53+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 78  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:49:53+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 72  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:49:53+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 65  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:49:53+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 60  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:49:53+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 54  AND `status` = 1 [ RunTime:0.001001s ]
+[2020-11-26T10:49:53+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 47  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:49:53+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 44  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:49:53+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 33  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:49:53+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 27  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:49:53+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 12  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-26T10:49:53+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 9  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-26T10:49:53+08:00][info] [ VIEW ] F:\WWW\yeshai\app\admin\view/ysm\ts\ts\index.php [ array (
+  0 => '_admin',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'cate2',
+) ]

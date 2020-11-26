@@ -1,0 +1,105 @@
+/* 顶部-菜单 */
+
+.topmenu {
+  height           : 60px;
+  box-shadow       : 0 0 4px 0 rgba(0, 0, 0, 0.2);
+  background-color : #ffffff;
+  border-bottom    : 4px solid #c01f5e;
+  top              : 0;
+  z-index          : 99999;
+  
+  
+  .topmenu_conten {
+	width  : 1200px;
+	
+	margin : auto;
+	
+	.top-logo {
+	  width        : 190px;
+	  border-right : 1px solid #eee;
+	  
+	  img {
+		height : 36px;
+	  }
+	}
+	
+	.top-nav {
+	  .top-nav-item {
+		.top-nav-item_list {
+		  display    : none;
+		  background : #f2f3f5;
+		}
+		
+		&:hover a {
+		  background-color : #c01f5e;
+		  color            : white;
+		}
+		
+		&:hover .top-nav-item_list {
+		  display    : block !important;
+		  background : #f2f3f5 !important;
+		}
+		
+		.activa {
+		  background-color : #c01f5e;
+		  color            : white;
+		}
+	  }
+	}
+	
+	
+	.headimg {
+	  margin           : 0 20px;
+	  width            : 32px;
+	  height           : 32px;
+	  background-color : #dedfe2;
+	  border-radius    : 50%;
+	}
+  }
+  
+  //ivu-menu-item
+  .ivu-menu-horizontal {
+	.ivu-menu-item,.ivu-menu-submenu {
+	  padding : 0 16px;
+	}
+  }
+  
+  .ivu-select-dropdown {
+	transform-origin : center top;
+	border-radius    : 0;
+	left             : 0px !important;
+	display          : none;
+	padding          : 0 !important;
+	
+	.ivu-menu-item:hover {
+	  background  : #a91851 !important;
+	  font-weight : 600
+	}
+	
+	.ivu-menu-item {
+	  padding : 8px !important;
+	}
+  }
+  
+}
+
+
+.ivu-menu-item a, .ivu-menu-submenu-title a {
+  color   : #272727;
+  width   : 100%;
+  height  : 100%;
+  display : block;
+  
+  &:hover {
+	color : white;
+  }
+}
+
+.ivu-menu-item-active a {
+  color : white;
+}
+
+.tip {
+  width  : 1200px;
+  margin : 20px auto 5px auto;
+}

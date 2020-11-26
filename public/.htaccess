@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+  Options +FollowSymlinks -Multiviews
+  RewriteEngine On
+
+  #防盗链开启
+  #RewriteCond %{HTTP_REFERER}%	!^$ [NC]
+  #RewriteCond %{HTTP_REFERER}%	!yesai.com [NC]
+  #RewriteRule .{jpg|gif|png|bmp|swf|jpeg}	/system/images/bg-logo.jpg [R,NC,L]
+
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^(.*)$ index.php?/$1 [QSA,PT,L]
+  #RewriteRule ^(.*)$ admin.php?/$1 [QSA,PT,L]
+</IfModule>

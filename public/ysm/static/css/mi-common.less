@@ -1,0 +1,869 @@
+/* 引入图标库*/
+//@import "/css/font/iconfont.css";
+//@import "/plugins/layui/css/layui.css";
+////@import "/plugins/layui/css/modules/layer/default/layer.css";
+//@import "/css/iview.css";
+//@import "/css/bootstrap.css";
+/* 页面样式*/
+//@import "/css/pages/menu.less";
+//@import "/css/pages/search.less";
+//@import "/css/pages/view.less";
+//@import "/css/index.less";
+
+//@import "/css/pages/menu.css";
+//@import "/css/pages/search.css";
+//@import "/css/pages/view.css";
+//
+////合作平台
+//@import "/css/pages/p-menu.css";
+
+
+/* 页面样式*/
+
+
+*,
+*::before,
+*::after {
+  box-sizing : border-box;
+}
+
+a {
+  text-decoration : none;
+  color           : #333;
+}
+
+html {
+  font-family                 : sans-serif;
+  -webkit-text-size-adjust    : 100%;
+  -ms-text-size-adjust        : 100%;
+  line-height                 : 1.15;
+  -webkit-tap-highlight-color : rgba(0, 0, 0, 0);
+}
+
+li {
+  list-style-type : none;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display : block;
+}
+
+body {
+  margin           : 0;
+  font-family      : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  //font-size        : 14px;
+  font-weight      : 400;
+  line-height      : 1.5;
+  color            : #272727;
+  text-align       : left;
+  background-color : #fff;
+}
+
+[tabindex="-1"]:focus:not(:focus-visible) {
+  outline : 0 !important;
+}
+
+
+.border {
+  border : 1px solid red;
+}
+
+.cursor {
+  cursor : pointer;
+}
+
+/* 背景色*/
+.bg-fff{
+  background: #fff;
+}
+.bg-f2f3f5 {
+  background : #f2f3f5
+}
+
+.bg-f4 {
+  background : #f4f4f4;
+}
+
+.bg-f6 {
+  background : #f6f6f6
+}
+
+.bg-fa {
+  background : #fafafa
+}
+
+.bg-c01f5e {
+  background : #c01f5e;
+}
+
+
+/*字体相关 颜色 、大小*/
+
+.text-000 {
+  color : #000;
+}
+
+.text-fff {
+  color : #ffffff !important;
+}
+
+.text-c01f5e {
+  color : #c01f5e;
+}
+
+.text-ff4d4f {
+  color : #ff4d4f;
+}
+
+.text-f5222d {
+  color : #f5222d;
+}
+
+.text-27 {
+  color : #272727;
+}
+
+.text-57 {
+  color : #575757;
+}
+
+.text-999 {
+  color : #999999;
+}
+
+.text-bf {
+  color : #bfbfbf;
+}
+
+.text-333 {
+  color : #333333;
+}
+
+.text-ff4d4f {
+  color : #ff4d4f;
+}
+
+.text-7ed321 {
+  color : #7ed321;
+}
+.text-0081a7{
+  color: #0081a7;
+}
+
+.text-666 {
+  color : #666666;
+}
+
+.size-8 {
+  font-size : 8px !important;
+}
+
+.size-10 {
+  font-size : 10px !important;
+}
+
+.size-12 {
+  font-size : 12px !important;
+}
+
+.size-14 {
+  font-size : 14px;
+}
+
+.size-16 {
+  font-size : 16px;
+}
+
+.size-18 {
+  font-size : 18px;
+}
+
+.size-20 {
+  font-size : 20px;
+}
+
+.size-22 {
+  font-size : 22px;
+}
+
+.size-24 {
+  font-size : 24px;
+}
+
+.fw {
+  font-weight : bold;
+}
+
+
+/* 定位 */
+
+.fixed {
+  position : fixed;
+}
+
+.absolute {
+  position : absolute;
+}
+
+.relative {
+  position : relative;
+}
+
+.position-t-0 {
+  top : 0;
+}
+
+.position-r-0 {
+  right : 0;
+}
+
+.position-b-0 {
+  bottom : 0;
+}
+.position-l-0{
+  left : 0;
+}
+
+/* 布局 */
+
+
+.d-none {
+  display : none !important;
+}
+
+.d-inline {
+  display : inline !important;
+}
+
+.d-inline-block {
+  display : inline-block !important;
+}
+
+.d-block {
+  display : block !important;
+}
+
+.d-table {
+  display : table !important;
+}
+
+.d-table-row {
+  display : table-row !important;
+}
+
+.d-table-cell {
+  display : table-cell !important;
+}
+
+.d-flex {
+  display : -ms-flexbox !important;
+  display : flex !important;
+}
+
+.d-inline-flex {
+  display : -ms-inline-flexbox !important;
+  display : inline-flex !important;
+}
+
+
+.flex-row {
+  -ms-flex-direction : row !important;
+  flex-direction     : row !important;
+}
+
+.flex-column {
+  -ms-flex-direction : column !important;
+  flex-direction     : column !important;
+}
+
+.flex-row-reverse {
+  -ms-flex-direction : row-reverse !important;
+  flex-direction     : row-reverse !important;
+}
+
+.flex-column-reverse {
+  -ms-flex-direction : column-reverse !important;
+  flex-direction     : column-reverse !important;
+}
+
+.flex-wrap {
+  -ms-flex-wrap : wrap !important;
+  flex-wrap     : wrap !important;
+}
+
+.flex-nowrap {
+  -ms-flex-wrap : nowrap !important;
+  flex-wrap     : nowrap !important;
+}
+
+.justify-content-start {
+  -ms-flex-pack   : start !important;
+  justify-content : flex-start !important;
+}
+
+.justify-content-end {
+  -ms-flex-pack   : end !important;
+  justify-content : flex-end !important;
+}
+
+.justify-content-center {
+  -ms-flex-pack   : center !important;
+  justify-content : center !important;
+}
+
+.justify-content-between {
+  -ms-flex-pack   : justify !important;
+  justify-content : space-between !important;
+}
+
+.justify-content-around {
+  -ms-flex-pack   : distribute !important;
+  justify-content : space-around !important;
+}
+
+.align-items-start {
+  -ms-flex-align : start !important;
+  align-items    : flex-start !important;
+}
+
+.align-items-end {
+  -ms-flex-align : end !important;
+  align-items    : flex-end !important;
+}
+
+.align-items-center {
+  -ms-flex-align : center !important;
+  align-items    : center !important;
+}
+
+.align-items-baseline {
+  -ms-flex-align : baseline !important;
+  align-items    : baseline !important;
+}
+
+.align-items-stretch {
+  -ms-flex-align : stretch !important;
+  align-items    : stretch !important;
+}
+
+.align-content-start {
+  -ms-flex-line-pack : start !important;
+  align-content      : flex-start !important;
+}
+
+.align-content-end {
+  -ms-flex-line-pack : end !important;
+  align-content      : flex-end !important;
+}
+
+.align-content-center {
+  -ms-flex-line-pack : center !important;
+  align-content      : center !important;
+}
+
+.align-content-between {
+  -ms-flex-line-pack : justify !important;
+  align-content      : space-between !important;
+}
+
+.align-content-around {
+  -ms-flex-line-pack : distribute !important;
+  align-content      : space-around !important;
+}
+
+.align-content-stretch {
+  -ms-flex-line-pack : stretch !important;
+  align-content      : stretch !important;
+}
+
+.align-self-auto {
+  -ms-flex-item-align : auto !important;
+  align-self          : auto !important;
+}
+
+.align-self-start {
+  -ms-flex-item-align : start !important;
+  align-self          : flex-start !important;
+}
+
+.align-self-end {
+  -ms-flex-item-align : end !important;
+  align-self          : flex-end !important;
+}
+
+.align-self-center {
+  -ms-flex-item-align : center !important;
+  align-self          : center !important;
+}
+
+.align-self-baseline {
+  -ms-flex-item-align : baseline !important;
+  align-self          : baseline !important;
+}
+
+.align-self-stretch {
+  -ms-flex-item-align : stretch !important;
+  align-self          : stretch !important;
+}
+
+
+.text-left {
+  text-align : left !important;
+}
+
+.text-right {
+  text-align : right !important;
+}
+
+.text-center {
+  text-align : center !important;
+}
+
+.hide {
+  display : none !important;
+}
+
+
+.ellipsis-1 {
+  overflow      : hidden;
+  white-space   : nowrap;
+  text-overflow : ellipsis;
+}
+
+.ellipsis {
+  display            : -webkit-box;
+  overflow           : hidden;
+  text-overflow      : ellipsis;
+  word-wrap          : break-word;
+  word-break         : break-all;
+  white-space        : normal !important;
+  -webkit-line-clamp : 1;
+  -webkit-box-orient : vertical;
+}
+
+.ellipsis-2 {
+  display            : -webkit-box;
+  overflow           : hidden;
+  text-overflow      : ellipsis;
+  word-wrap          : break-word;
+  word-break         : break-all;
+  white-space        : normal !important;
+  -webkit-line-clamp : 2;
+  -webkit-box-orient : vertical;
+}
+
+.ellipsis-3 {
+  display            : -webkit-box;
+  overflow           : hidden;
+  text-overflow      : ellipsis;
+  word-wrap          : break-word;
+  word-break         : break-all;
+  white-space        : normal !important;
+  -webkit-line-clamp : 3;
+  -webkit-box-orient : vertical;
+}
+
+/* 宽度、高度*/
+
+
+.w-20 {
+  width : 20% !important;
+}
+
+.w-25 {
+  width : 25% !important;
+}
+
+.w-33 {
+  width : 33% !important;
+}
+
+.w-50 {
+  width : 50% !important;
+}
+
+.w-75 {
+  width : 75% !important;
+}
+
+.w-100 {
+  width : 100% !important;
+}
+
+.w-auto {
+  width : auto !important;
+}
+
+.h-25 {
+  height : 25% !important;
+}
+
+.h-50 {
+  height : 50% !important;
+}
+
+.h-75 {
+  height : 75% !important;
+}
+
+.h-100 {
+  height : 100% !important;
+}
+
+.h-auto {
+  height : auto !important;
+}
+
+.mw-100 {
+  max-width : 100% !important;
+}
+
+.mh-100 {
+  max-height : 100% !important;
+}
+
+.min-vw-100 {
+  min-width : 100vw !important;
+}
+
+.min-vh-100 {
+  min-height : 100vh !important;
+}
+
+.vw-100 {
+  width : 100vw !important;
+}
+
+.vh-100 {
+  height : 100vh !important;
+}
+
+.w-1200 {
+  width  : 1200px;
+  margin : auto;
+}
+
+.w1200 {
+  width  : 1200px;
+  margin : auto;
+}
+
+.w-20px {
+  width : 20px;
+}
+
+.w-40px {
+  width : 40px;
+}
+
+.w-60px {
+  width : 60px;
+}
+
+
+.w-50px {
+  width : 50px;
+}
+
+.w-100px {
+  width : 100px;
+}
+
+.w-150px {
+  width : 150px;
+}
+
+.w-190px {
+  width : 190px;
+}
+
+.w-200px {
+  width : 200px;
+}
+
+.w-250px {
+  width : 250px;
+}
+
+.w-300px {
+  width : 300px;
+}
+
+.w-350px {
+  width : 350px;
+}
+
+.w-400px {
+  width : 400px;
+}
+
+
+/*  间距 */
+
+
+
+.ml-0 {
+  margin-left : 0px;
+}
+
+.mr-0 {
+  margin-right : 0px;
+}
+
+.mt-0 {
+  margin-top : 0px;
+}
+
+.mb-0 {
+  margin-bottom : 8px;
+}
+
+.ml-8 {
+  margin-left : 8px;
+}
+
+.mr-8 {
+  margin-right : 8px;
+}
+
+.mt-8 {
+  margin-top : 8px;
+}
+
+.mb-8 {
+  margin-bottom : 8px;
+}
+
+.ml-10 {
+  margin-left : 10px;
+}
+
+.mr-10 {
+  margin-right : 10px;
+}
+
+.mt-10 {
+  margin-top : 10px;
+}
+
+.mb-10 {
+  margin-bottom : 10px;
+}
+
+.ml-14 {
+  margin-left : 14px;
+}
+
+.mr-14 {
+  margin-right : 14px;
+}
+
+.mt-14 {
+  margin-top : 14px;
+}
+
+.mb-14 {
+  margin-bottom : 14px;
+}
+
+
+.ml-20 {
+  margin-left : 20px;
+}
+
+.mr-20 {
+  margin-right : 20px;
+}
+
+.mt-20 {
+  margin-top : 20px;
+}
+
+.mb-20 {
+  margin-bottom : 20px;
+}
+
+
+.ml-25 {
+  margin-left : 25px;
+}
+
+.mr-25 {
+  margin-right : 25px;
+}
+
+.mt-25 {
+  margin-top : 25px;
+}
+
+.mb-25 {
+  margin-bottom : 25px;
+}
+
+
+.mt-30 {
+  margin-top : 30px;
+}
+
+.mr-30 {
+  margin-right : 30px;
+}
+
+.mb-30 {
+  margin-bottom : 30px;
+}
+
+.ml-30 {
+  margin-left : 30px;
+}
+
+.mt-80 {
+  margin-top : 80px;
+}
+
+.mb-80 {
+  margin-bottom : 80px;
+}
+
+.pl-0 {
+  padding-left : 0px;
+}
+
+.pr-0 {
+  padding-right : 0px;
+}
+
+.pt-0 {
+  padding-top : 0px;
+}
+
+.pb-0 {
+  padding-bottom : 0px;
+}
+
+
+.pl-10 {
+  padding-left : 10px;
+}
+
+.pr-10 {
+  padding-right : 10px;
+}
+
+.pt-10 {
+  padding-top : 10px;
+}
+
+.pb-10 {
+  padding-bottom : 10px;
+}
+
+
+.pl-14 {
+  padding-left : 14px;
+}
+
+.pr-14 {
+  padding-right : 14px;
+}
+
+.pt-14 {
+  padding-top : 14px;
+}
+
+.pb-14 {
+  padding-bottom : 14px;
+}
+
+
+.pl-20 {
+  padding-left : 20px;
+}
+
+.pl-40 {
+  padding-left : 40px;
+}
+
+.pl-60 {
+  padding-left : 60px;
+}
+
+.pr-20 {
+  padding-right : 20px;
+}
+
+.pt-20 {
+  padding-top : 20px;
+}
+
+.pb-20 {
+  padding-bottom : 20px;
+}
+
+.pl-30 {
+  padding-left : 30px;
+}
+
+.pr-30 {
+  padding-right : 30px;
+}
+
+.pt-30 {
+  padding-top : 30px;
+}
+
+.pb-30 {
+  padding-bottom : 30px;
+}
+
+
+/* 模态框 、弹窗*/
+
+.modal-root {
+  //position : fixed;
+  //z-index  : 9999;
+  
+  
+  .ant-modal-wrap {
+    position         : fixed;
+    width            : 100%;
+    height           : 100%;
+    top              : 0;
+    right            : 0;
+    bottom           : 0;
+    left             : 0;
+    z-index          : 99;
+    overflow         : auto;
+    outline          : 0;
+    background-color : rgba(0, 0, 0, .45);
+  }
+  
+  .ant-modal {
+    top              : 0;
+    right            : 0;
+    bottom           : 0;
+    left             : 0;
+    z-index          : 100;
+    margin           : auto;
+    width            : 480px;
+    height           : 414px;
+    border-radius    : 2px;
+    box-shadow       : 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 4px 0 rgba(0, 0, 0, 0.05), 0 12px 48px 16px rgba(0, 0, 0, 0.03);
+    background-color : #ffffff;
+  }
+}
+
+/* 下拉框 */
+.ivu-se {
+  position         : absolute;
+  will-change      : top, left;
+  transform-origin : center top;
+  top              : 28px;
+  left             : 0px;
+  display          : none;
+}
+
+//表格横线
+.ivu-table:before {
+  background-color : transparent !important;
+}

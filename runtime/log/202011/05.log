@@ -1,0 +1,372 @@
+[2020-11-05T09:59:36+08:00][info] [ VIEW ] F:\WWW\yeshai\app\admin\view/ysm\login\index.php [ array (
+) ]
+[2020-11-05T18:21:30+08:00][info] [ VIEW ] F:\WWW\yeshai\app\admin\view/ysm\login\index.php [ array (
+) ]
+[2020-11-05T18:21:46+08:00][sql] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-11-05T18:21:46+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_admin` [ RunTime:0.012001s ]
+[2020-11-05T18:21:46+08:00][sql] SELECT * FROM `tp_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-05T18:21:46+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.014001s ]
+[2020-11-05T18:21:46+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-11-05T18:21:46+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.014000s ]
+[2020-11-05T18:21:46+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-05T18:21:46+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'admin'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.002001s ]
+[2020-11-05T18:21:46+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-05T18:21:46+08:00][sql] SELECT `menu_name`,`value` FROM `tp_system_config` [ RunTime:0.001000s ]
+[2020-11-05T18:21:46+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.013000s ]
+[2020-11-05T18:21:46+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-05T18:21:46+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-05T18:21:46+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_order` [ RunTime:0.018001s ]
+[2020-11-05T18:21:46+08:00][sql] SELECT SUM(`pay_price`) AS think_sum FROM `tp_crm_order` WHERE  `paid` = 1  AND `order_type` IN (0,2)  AND `pay_time` BETWEEN 1604160000 AND 1606751999 [ RunTime:0.001000s ]
+[2020-11-05T18:21:46+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_crm_order` WHERE  `order_type` IN (0,2)  AND `add_time` > 1604160000 [ RunTime:0.000000s ]
+[2020-11-05T18:21:46+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_users` [ RunTime:0.016001s ]
+[2020-11-05T18:21:46+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_crm_users` WHERE  `type` = 1 [ RunTime:0.001000s ]
+[2020-11-05T18:21:46+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_crm_users` WHERE  `type` = 1  AND `createtime` > 1604160000 [ RunTime:0.001000s ]
+[2020-11-05T18:21:46+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_crm_users` WHERE  `type` = 0 [ RunTime:0.000000s ]
+[2020-11-05T18:21:46+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_crm_users` WHERE  `type` = 0  AND `createtime` > 1604160000 [ RunTime:0.000000s ]
+[2020-11-05T18:21:46+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_crm_users` WHERE  `type` IN (2,3) [ RunTime:0.000000s ]
+[2020-11-05T18:21:46+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_crm_users` WHERE  `type` IN (2,3)  AND `createtime` > 1604160000 [ RunTime:0.000000s ]
+[2020-11-05T18:21:46+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'admin'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[2020-11-05T18:21:46+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-05T18:21:46+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-05T18:21:46+08:00][info] [ VIEW ] F:\WWW\yeshai\app\admin\view/ysm\index\index.php [ array (
+  0 => '_admin',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'topData',
+) ]
+[2020-11-05T18:21:50+08:00][sql] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-11-05T18:21:50+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_admin` [ RunTime:0.012001s ]
+[2020-11-05T18:21:50+08:00][sql] SELECT * FROM `tp_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-05T18:21:50+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.011001s ]
+[2020-11-05T18:21:50+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-11-05T18:21:50+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.011001s ]
+[2020-11-05T18:21:50+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-05T18:21:50+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'admin'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[2020-11-05T18:21:50+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-05T18:21:50+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.011000s ]
+[2020-11-05T18:21:50+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-05T18:21:50+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'index'  AND `controller` = 'microchip.MicrochipProduct'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-05T18:21:50+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_log` [ RunTime:0.023002s ]
+[2020-11-05T18:21:50+08:00][sql] INSERT INTO `tp_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1604571709 , `admin_name` = 'admin' , `path` = 'admin/microchip.microchipproduct/index/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.001000s ]
+[2020-11-05T18:21:50+08:00][sql] SHOW FULL COLUMNS FROM `tp_label` [ RunTime:0.013001s ]
+[2020-11-05T18:21:50+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 1  AND `is_del` = 0  AND `pid` = 0 ORDER BY `sort` DESC,`id` DESC [ RunTime:0.001000s ]
+[2020-11-05T18:21:50+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 2  AND `is_del` = 0  AND `is_del` = 0  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-05T18:21:50+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 3  AND `is_del` = 0  AND `is_del` = 0  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-05T18:21:50+08:00][sql] SHOW FULL COLUMNS FROM `tp_microchip_product` [ RunTime:0.017001s ]
+[2020-11-05T18:21:50+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_microchip_product` WHERE  `is_del` = 1 [ RunTime:0.000000s ]
+[2020-11-05T18:21:50+08:00][info] [ VIEW ] F:\WWW\yeshai\app\admin\view/ysm\microchip\microchip_product\index.php [ array (
+  0 => '_admin',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'cate1',
+  8 => 'cate2',
+  9 => 'cate3',
+  10 => 'type',
+  11 => 'recycle',
+) ]
+[2020-11-05T18:21:51+08:00][sql] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-11-05T18:21:51+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_admin` [ RunTime:0.012001s ]
+[2020-11-05T18:21:51+08:00][sql] SELECT * FROM `tp_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-05T18:21:51+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.012000s ]
+[2020-11-05T18:21:51+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-11-05T18:21:51+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.012001s ]
+[2020-11-05T18:21:51+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-05T18:21:51+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'admin'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[2020-11-05T18:21:51+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-05T18:21:51+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.012001s ]
+[2020-11-05T18:21:51+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-05T18:21:51+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'edit'  AND `controller` = 'microchip.MicrochipProduct'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-05T18:21:51+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_log` [ RunTime:0.012001s ]
+[2020-11-05T18:21:51+08:00][sql] INSERT INTO `tp_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1604571711 , `admin_name` = 'admin' , `path` = 'admin/microchip.microchipproduct/edit/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.001000s ]
+[2020-11-05T18:21:51+08:00][sql] SHOW FULL COLUMNS FROM `tp_microchip_product` [ RunTime:0.012001s ]
+[2020-11-05T18:21:51+08:00][sql] SELECT * FROM `tp_microchip_product` WHERE  `id` = 48 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-05T18:21:51+08:00][sql] SHOW FULL COLUMNS FROM `tp_microchip_product_ingredient` [ RunTime:0.016001s ]
+[2020-11-05T18:21:51+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_microchip_product_ingredient` WHERE  `microchip_id` = 48 [ RunTime:0.000000s ]
+[2020-11-05T18:21:51+08:00][sql] SELECT * FROM `tp_microchip_product_ingredient` WHERE  `microchip_id` = 48  AND `cate_id` = 0 [ RunTime:0.000000s ]
+[2020-11-05T18:21:51+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_microchip_product_ingredient` WHERE  `microchip_id` = 48 [ RunTime:0.001000s ]
+[2020-11-05T18:21:51+08:00][sql] SELECT * FROM `tp_microchip_product_ingredient` WHERE  `microchip_id` = 48  AND `cate_id` = 1 [ RunTime:0.000000s ]
+[2020-11-05T18:21:51+08:00][sql] SHOW FULL COLUMNS FROM `tp_label` [ RunTime:0.012001s ]
+[2020-11-05T18:21:51+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 1  AND `is_del` = 0  AND `pid` = 0 ORDER BY `sort` DESC,`id` DESC [ RunTime:0.000000s ]
+[2020-11-05T18:21:51+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 2  AND `is_del` = 0  AND `is_del` = 0  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-05T18:21:51+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 3  AND `is_del` = 0  AND `is_del` = 0  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-05T18:21:51+08:00][sql] SHOW FULL COLUMNS FROM `tp_microchip_ingredient` [ RunTime:0.015001s ]
+[2020-11-05T18:21:51+08:00][sql] SELECT * FROM `tp_microchip_ingredient` WHERE  `is_del` = 0  AND `cate_id` = 0 [ RunTime:0.001000s ]
+[2020-11-05T18:21:51+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_microchip_ingredient` WHERE  `is_del` = 0  AND `cate_id` = 0 [ RunTime:0.001000s ]
+[2020-11-05T18:21:51+08:00][sql] SELECT * FROM `tp_microchip_ingredient` WHERE  `is_del` = 0  AND `cate_id` = 1 [ RunTime:0.001001s ]
+[2020-11-05T18:21:51+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_microchip_ingredient` WHERE  `is_del` = 0  AND `cate_id` = 1 [ RunTime:0.001000s ]
+[2020-11-05T18:21:51+08:00][sql] SELECT `menu_name`,`value` FROM `tp_system_config` WHERE  `menu_name` IN ('microchip_processing_rmb','microchip_processing_usd','tariff') [ RunTime:0.000000s ]
+[2020-11-05T18:21:51+08:00][info] [ VIEW ] F:\WWW\yeshai\app\admin\view/ysm\microchip\microchip_product\edit.php [ array (
+  0 => '_admin',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'cate1',
+  8 => 'cate2',
+  9 => 'cate3',
+  10 => 'info',
+  11 => 'id',
+  12 => 'huo_micro',
+  13 => 'fu_micro',
+  14 => 'filename',
+  15 => 'config',
+) ]
+[2020-11-05T18:21:55+08:00][sql] CONNECT:[ UseTime:0.002001s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-11-05T18:21:55+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_admin` [ RunTime:0.012000s ]
+[2020-11-05T18:21:55+08:00][sql] SELECT * FROM `tp_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-05T18:21:55+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.011001s ]
+[2020-11-05T18:21:55+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-11-05T18:21:55+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.012000s ]
+[2020-11-05T18:21:55+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-05T18:21:55+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'admin'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[2020-11-05T18:21:55+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-05T18:21:55+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.011001s ]
+[2020-11-05T18:21:55+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-05T18:21:55+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'index'  AND `controller` = 'microchip.MicrochipProduct'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-05T18:21:55+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_log` [ RunTime:0.013001s ]
+[2020-11-05T18:21:55+08:00][sql] INSERT INTO `tp_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1604571715 , `admin_name` = 'admin' , `path` = 'admin/microchip.microchipproduct/index/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.001000s ]
+[2020-11-05T18:21:55+08:00][sql] SHOW FULL COLUMNS FROM `tp_label` [ RunTime:0.013001s ]
+[2020-11-05T18:21:55+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 1  AND `is_del` = 0  AND `pid` = 0 ORDER BY `sort` DESC,`id` DESC [ RunTime:0.001000s ]
+[2020-11-05T18:21:55+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 2  AND `is_del` = 0  AND `is_del` = 0  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-05T18:21:55+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 3  AND `is_del` = 0  AND `is_del` = 0  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-05T18:21:55+08:00][sql] SHOW FULL COLUMNS FROM `tp_microchip_product` [ RunTime:0.014001s ]
+[2020-11-05T18:21:55+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_microchip_product` WHERE  `is_del` = 1 [ RunTime:0.000000s ]
+[2020-11-05T18:21:55+08:00][info] [ VIEW ] F:\WWW\yeshai\app\admin\view/ysm\microchip\microchip_product\index.php [ array (
+  0 => '_admin',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'cate1',
+  8 => 'cate2',
+  9 => 'cate3',
+  10 => 'type',
+  11 => 'recycle',
+) ]
+[2020-11-05T18:21:57+08:00][sql] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-11-05T18:21:57+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_admin` [ RunTime:0.012001s ]
+[2020-11-05T18:21:57+08:00][sql] SELECT * FROM `tp_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-05T18:21:57+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.013001s ]
+[2020-11-05T18:21:57+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-11-05T18:21:57+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.012001s ]
+[2020-11-05T18:21:57+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-05T18:21:57+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'admin'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[2020-11-05T18:21:57+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-05T18:21:57+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.012000s ]
+[2020-11-05T18:21:57+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-05T18:21:57+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'edit'  AND `controller` = 'microchip.MicrochipProduct'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-05T18:21:57+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_log` [ RunTime:0.012000s ]
+[2020-11-05T18:21:57+08:00][sql] INSERT INTO `tp_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1604571717 , `admin_name` = 'admin' , `path` = 'admin/microchip.microchipproduct/edit/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.001000s ]
+[2020-11-05T18:21:57+08:00][sql] SHOW FULL COLUMNS FROM `tp_microchip_product` [ RunTime:0.012000s ]
+[2020-11-05T18:21:57+08:00][sql] SELECT * FROM `tp_microchip_product` WHERE  `id` = 48 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-05T18:21:57+08:00][sql] SHOW FULL COLUMNS FROM `tp_microchip_product_ingredient` [ RunTime:0.012001s ]
+[2020-11-05T18:21:57+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_microchip_product_ingredient` WHERE  `microchip_id` = 48 [ RunTime:0.001000s ]
+[2020-11-05T18:21:57+08:00][sql] SELECT * FROM `tp_microchip_product_ingredient` WHERE  `microchip_id` = 48  AND `cate_id` = 0 [ RunTime:0.001000s ]
+[2020-11-05T18:21:57+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_microchip_product_ingredient` WHERE  `microchip_id` = 48 [ RunTime:0.000000s ]
+[2020-11-05T18:21:57+08:00][sql] SELECT * FROM `tp_microchip_product_ingredient` WHERE  `microchip_id` = 48  AND `cate_id` = 1 [ RunTime:0.001000s ]
+[2020-11-05T18:21:57+08:00][sql] SHOW FULL COLUMNS FROM `tp_label` [ RunTime:0.012001s ]
+[2020-11-05T18:21:57+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 1  AND `is_del` = 0  AND `pid` = 0 ORDER BY `sort` DESC,`id` DESC [ RunTime:0.000000s ]
+[2020-11-05T18:21:57+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 2  AND `is_del` = 0  AND `is_del` = 0  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-05T18:21:57+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 3  AND `is_del` = 0  AND `is_del` = 0  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-05T18:21:57+08:00][sql] SHOW FULL COLUMNS FROM `tp_microchip_ingredient` [ RunTime:0.011001s ]
+[2020-11-05T18:21:57+08:00][sql] SELECT * FROM `tp_microchip_ingredient` WHERE  `is_del` = 0  AND `cate_id` = 0 [ RunTime:0.000000s ]
+[2020-11-05T18:21:57+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_microchip_ingredient` WHERE  `is_del` = 0  AND `cate_id` = 0 [ RunTime:0.001000s ]
+[2020-11-05T18:21:57+08:00][sql] SELECT * FROM `tp_microchip_ingredient` WHERE  `is_del` = 0  AND `cate_id` = 1 [ RunTime:0.001000s ]
+[2020-11-05T18:21:57+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_microchip_ingredient` WHERE  `is_del` = 0  AND `cate_id` = 1 [ RunTime:0.001000s ]
+[2020-11-05T18:21:57+08:00][sql] SELECT `menu_name`,`value` FROM `tp_system_config` WHERE  `menu_name` IN ('microchip_processing_rmb','microchip_processing_usd','tariff') [ RunTime:0.001000s ]
+[2020-11-05T18:21:57+08:00][info] [ VIEW ] F:\WWW\yeshai\app\admin\view/ysm\microchip\microchip_product\edit.php [ array (
+  0 => '_admin',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'cate1',
+  8 => 'cate2',
+  9 => 'cate3',
+  10 => 'info',
+  11 => 'id',
+  12 => 'huo_micro',
+  13 => 'fu_micro',
+  14 => 'filename',
+  15 => 'config',
+) ]
+[2020-11-05T18:22:08+08:00][sql] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-11-05T18:22:08+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_admin` [ RunTime:0.012001s ]
+[2020-11-05T18:22:08+08:00][sql] SELECT * FROM `tp_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-05T18:22:08+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.012001s ]
+[2020-11-05T18:22:08+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-11-05T18:22:08+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.012000s ]
+[2020-11-05T18:22:08+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-05T18:22:08+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'admin'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[2020-11-05T18:22:08+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-05T18:22:08+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.013001s ]
+[2020-11-05T18:22:08+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-05T18:22:08+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'index'  AND `controller` = 'microchip.MicrochipProduct'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-05T18:22:08+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_log` [ RunTime:0.012001s ]
+[2020-11-05T18:22:08+08:00][sql] INSERT INTO `tp_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1604571728 , `admin_name` = 'admin' , `path` = 'admin/microchip.microchipproduct/index/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.000000s ]
+[2020-11-05T18:22:08+08:00][sql] SHOW FULL COLUMNS FROM `tp_label` [ RunTime:0.011000s ]
+[2020-11-05T18:22:08+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 1  AND `is_del` = 0  AND `pid` = 0 ORDER BY `sort` DESC,`id` DESC [ RunTime:0.000000s ]
+[2020-11-05T18:22:08+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 2  AND `is_del` = 0  AND `is_del` = 0  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-05T18:22:08+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 3  AND `is_del` = 0  AND `is_del` = 0  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-05T18:22:08+08:00][sql] SHOW FULL COLUMNS FROM `tp_microchip_product` [ RunTime:0.013000s ]
+[2020-11-05T18:22:08+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_microchip_product` WHERE  `is_del` = 1 [ RunTime:0.001001s ]
+[2020-11-05T18:22:08+08:00][info] [ VIEW ] F:\WWW\yeshai\app\admin\view/ysm\microchip\microchip_product\index.php [ array (
+  0 => '_admin',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'cate1',
+  8 => 'cate2',
+  9 => 'cate3',
+  10 => 'type',
+  11 => 'recycle',
+) ]
+[2020-11-05T18:22:10+08:00][sql] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-11-05T18:22:10+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_admin` [ RunTime:0.012001s ]
+[2020-11-05T18:22:10+08:00][sql] SELECT * FROM `tp_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-05T18:22:10+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.011001s ]
+[2020-11-05T18:22:10+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-11-05T18:22:10+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.015001s ]
+[2020-11-05T18:22:10+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-05T18:22:10+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'admin'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.002001s ]
+[2020-11-05T18:22:10+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-05T18:22:10+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.012001s ]
+[2020-11-05T18:22:10+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-05T18:22:10+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'edit'  AND `controller` = 'microchip.MicrochipProduct'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-05T18:22:10+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_log` [ RunTime:0.012001s ]
+[2020-11-05T18:22:10+08:00][sql] INSERT INTO `tp_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1604571730 , `admin_name` = 'admin' , `path` = 'admin/microchip.microchipproduct/edit/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.000000s ]
+[2020-11-05T18:22:10+08:00][sql] SHOW FULL COLUMNS FROM `tp_microchip_product` [ RunTime:0.011001s ]
+[2020-11-05T18:22:10+08:00][sql] SELECT * FROM `tp_microchip_product` WHERE  `id` = 48 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-05T18:22:10+08:00][sql] SHOW FULL COLUMNS FROM `tp_microchip_product_ingredient` [ RunTime:0.011000s ]
+[2020-11-05T18:22:10+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_microchip_product_ingredient` WHERE  `microchip_id` = 48 [ RunTime:0.000000s ]
+[2020-11-05T18:22:10+08:00][sql] SELECT * FROM `tp_microchip_product_ingredient` WHERE  `microchip_id` = 48  AND `cate_id` = 0 [ RunTime:0.000000s ]
+[2020-11-05T18:22:10+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_microchip_product_ingredient` WHERE  `microchip_id` = 48 [ RunTime:0.001000s ]
+[2020-11-05T18:22:10+08:00][sql] SELECT * FROM `tp_microchip_product_ingredient` WHERE  `microchip_id` = 48  AND `cate_id` = 1 [ RunTime:0.000000s ]
+[2020-11-05T18:22:10+08:00][sql] SHOW FULL COLUMNS FROM `tp_label` [ RunTime:0.011000s ]
+[2020-11-05T18:22:10+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 1  AND `is_del` = 0  AND `pid` = 0 ORDER BY `sort` DESC,`id` DESC [ RunTime:0.000000s ]
+[2020-11-05T18:22:10+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 2  AND `is_del` = 0  AND `is_del` = 0  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-05T18:22:10+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 3  AND `is_del` = 0  AND `is_del` = 0  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-05T18:22:10+08:00][sql] SHOW FULL COLUMNS FROM `tp_microchip_ingredient` [ RunTime:0.011000s ]
+[2020-11-05T18:22:10+08:00][sql] SELECT * FROM `tp_microchip_ingredient` WHERE  `is_del` = 0  AND `cate_id` = 0 [ RunTime:0.000000s ]
+[2020-11-05T18:22:10+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_microchip_ingredient` WHERE  `is_del` = 0  AND `cate_id` = 0 [ RunTime:0.000000s ]
+[2020-11-05T18:22:10+08:00][sql] SELECT * FROM `tp_microchip_ingredient` WHERE  `is_del` = 0  AND `cate_id` = 1 [ RunTime:0.001000s ]
+[2020-11-05T18:22:10+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_microchip_ingredient` WHERE  `is_del` = 0  AND `cate_id` = 1 [ RunTime:0.001000s ]
+[2020-11-05T18:22:10+08:00][sql] SELECT `menu_name`,`value` FROM `tp_system_config` WHERE  `menu_name` IN ('microchip_processing_rmb','microchip_processing_usd','tariff') [ RunTime:0.000000s ]
+[2020-11-05T18:22:10+08:00][info] [ VIEW ] F:\WWW\yeshai\app\admin\view/ysm\microchip\microchip_product\edit.php [ array (
+  0 => '_admin',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'cate1',
+  8 => 'cate2',
+  9 => 'cate3',
+  10 => 'info',
+  11 => 'id',
+  12 => 'huo_micro',
+  13 => 'fu_micro',
+  14 => 'filename',
+  15 => 'config',
+) ]
+[2020-11-05T18:22:20+08:00][sql] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-11-05T18:22:20+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_admin` [ RunTime:0.012001s ]
+[2020-11-05T18:22:20+08:00][sql] SELECT * FROM `tp_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-05T18:22:20+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.011001s ]
+[2020-11-05T18:22:20+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-11-05T18:22:20+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.012001s ]
+[2020-11-05T18:22:20+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-05T18:22:20+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'admin'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[2020-11-05T18:22:20+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-05T18:22:20+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.011000s ]
+[2020-11-05T18:22:20+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-05T18:22:20+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'index'  AND `controller` = 'microchip.MicrochipProduct'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-05T18:22:20+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_log` [ RunTime:0.011000s ]
+[2020-11-05T18:22:20+08:00][sql] INSERT INTO `tp_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1604571740 , `admin_name` = 'admin' , `path` = 'admin/microchip.microchipproduct/index/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.000000s ]
+[2020-11-05T18:22:20+08:00][sql] SHOW FULL COLUMNS FROM `tp_label` [ RunTime:0.014000s ]
+[2020-11-05T18:22:20+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 1  AND `is_del` = 0  AND `pid` = 0 ORDER BY `sort` DESC,`id` DESC [ RunTime:0.000000s ]
+[2020-11-05T18:22:20+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 2  AND `is_del` = 0  AND `is_del` = 0  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-05T18:22:20+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 3  AND `is_del` = 0  AND `is_del` = 0  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-11-05T18:22:20+08:00][sql] SHOW FULL COLUMNS FROM `tp_microchip_product` [ RunTime:0.012000s ]
+[2020-11-05T18:22:20+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_microchip_product` WHERE  `is_del` = 1 [ RunTime:0.000000s ]
+[2020-11-05T18:22:20+08:00][info] [ VIEW ] F:\WWW\yeshai\app\admin\view/ysm\microchip\microchip_product\index.php [ array (
+  0 => '_admin',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'cate1',
+  8 => 'cate2',
+  9 => 'cate3',
+  10 => 'type',
+  11 => 'recycle',
+) ]
+[2020-11-05T18:22:40+08:00][sql] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-11-05T18:22:40+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_admin` [ RunTime:0.011001s ]
+[2020-11-05T18:22:40+08:00][sql] SELECT * FROM `tp_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-05T18:22:40+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.012001s ]
+[2020-11-05T18:22:40+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-11-05T18:22:40+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.012001s ]
+[2020-11-05T18:22:40+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.001000s ]
+[2020-11-05T18:22:40+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'admin'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[2020-11-05T18:22:40+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-05T18:22:40+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.012001s ]
+[2020-11-05T18:22:40+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-05T18:22:40+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'edit'  AND `controller` = 'microchip.MicrochipProduct'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-05T18:22:40+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_log` [ RunTime:0.011000s ]
+[2020-11-05T18:22:40+08:00][sql] INSERT INTO `tp_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1604571760 , `admin_name` = 'admin' , `path` = 'admin/microchip.microchipproduct/edit/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.000000s ]
+[2020-11-05T18:22:40+08:00][sql] SHOW FULL COLUMNS FROM `tp_microchip_product` [ RunTime:0.011000s ]
+[2020-11-05T18:22:40+08:00][sql] SELECT * FROM `tp_microchip_product` WHERE  `id` = 48 LIMIT 1 [ RunTime:0.000000s ]
+[2020-11-05T18:22:40+08:00][sql] SHOW FULL COLUMNS FROM `tp_microchip_product_ingredient` [ RunTime:0.011000s ]
+[2020-11-05T18:22:40+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_microchip_product_ingredient` WHERE  `microchip_id` = 48 [ RunTime:0.000000s ]
+[2020-11-05T18:22:40+08:00][sql] SELECT * FROM `tp_microchip_product_ingredient` WHERE  `microchip_id` = 48  AND `cate_id` = 0 [ RunTime:0.001000s ]
+[2020-11-05T18:22:40+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_microchip_product_ingredient` WHERE  `microchip_id` = 48 [ RunTime:0.001000s ]
+[2020-11-05T18:22:40+08:00][sql] SELECT * FROM `tp_microchip_product_ingredient` WHERE  `microchip_id` = 48  AND `cate_id` = 1 [ RunTime:0.000000s ]
+[2020-11-05T18:22:40+08:00][sql] SHOW FULL COLUMNS FROM `tp_label` [ RunTime:0.011001s ]
+[2020-11-05T18:22:40+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 1  AND `is_del` = 0  AND `pid` = 0 ORDER BY `sort` DESC,`id` DESC [ RunTime:0.001000s ]
+[2020-11-05T18:22:40+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 2  AND `is_del` = 0  AND `is_del` = 0  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-05T18:22:40+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 3  AND `is_del` = 0  AND `is_del` = 0  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-11-05T18:22:40+08:00][sql] SHOW FULL COLUMNS FROM `tp_microchip_ingredient` [ RunTime:0.010001s ]
+[2020-11-05T18:22:40+08:00][sql] SELECT * FROM `tp_microchip_ingredient` WHERE  `is_del` = 0  AND `cate_id` = 0 [ RunTime:0.000000s ]
+[2020-11-05T18:22:40+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_microchip_ingredient` WHERE  `is_del` = 0  AND `cate_id` = 0 [ RunTime:0.000000s ]
+[2020-11-05T18:22:40+08:00][sql] SELECT * FROM `tp_microchip_ingredient` WHERE  `is_del` = 0  AND `cate_id` = 1 [ RunTime:0.001000s ]
+[2020-11-05T18:22:40+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_microchip_ingredient` WHERE  `is_del` = 0  AND `cate_id` = 1 [ RunTime:0.001000s ]
+[2020-11-05T18:22:40+08:00][sql] SELECT `menu_name`,`value` FROM `tp_system_config` WHERE  `menu_name` IN ('microchip_processing_rmb','microchip_processing_usd','tariff') [ RunTime:0.000000s ]
+[2020-11-05T18:22:40+08:00][info] [ VIEW ] F:\WWW\yeshai\app\admin\view/ysm\microchip\microchip_product\edit.php [ array (
+  0 => '_admin',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'cate1',
+  8 => 'cate2',
+  9 => 'cate3',
+  10 => 'info',
+  11 => 'id',
+  12 => 'huo_micro',
+  13 => 'fu_micro',
+  14 => 'filename',
+  15 => 'config',
+) ]

@@ -1,0 +1,1126 @@
+.h-38 {
+  height : 38px;
+}
+
+.lh-1 {
+  line-height : 1;
+}
+
+.mw-1160 {
+  min-width : 1160px;
+}
+
+.mw-1140 {
+  min-width : 1140px;
+}
+
+.bg-f8e8ee {
+  background : #f8e8ee;
+}
+
+.ml-50 {
+  margin-left : 50px;
+}
+
+.hr {
+  height     : 1px;
+  background : #0081a7;
+  margin     : 30px auto;
+}
+
+//layui 下拉框颜色改变
+.layui-select-title {
+  .layui-input:hover, .layui-textarea:hover {
+	border : 1px solid #0081a7 !important;
+  }
+  
+  .layui-input:focus, .layui-textarea:focus {
+	border-color : #0081a7;
+	box-shadow   : 0 0 0 2px rgba(0, 129, 167, .2) !important;
+  }
+}
+
+//layui 日期颜色改变
+.layui-laydate-main {
+  .layui-laydate-content {
+	.layui-this {
+	  background-color : #0081a7 !important;
+	}
+  }
+}
+//layui 日期确定按钮
+.layui-laydate-footer{
+  .laydate-footer-btns {
+	.laydate-btns-clear:hover, .laydate-btns-confirm:hover {
+	  color : #0081a7;;
+	}
+  }
+}
+
+
+/*公共-头部*/
+.public-top-left {
+  .fixedtop {
+	position : fixed;
+	top      : 0;
+	left     : 0;
+  }
+  
+  .public-top-nav {
+	height           : 64px;
+	background-color : #0081a7;
+	
+	.logo {
+	  height : 40px;
+	}
+	
+	.picture {
+	  height        : 32px;
+	  width         : 32px;
+	  border-radius : 50%;
+	}
+	
+	.usertext {
+	  .userlist {
+		display : none;
+		width   : 150px;
+		height  : 150px;
+		right   : 0;
+	  }
+	  
+	  &:hover {
+		.userlist {
+		  display : block;
+		}
+	  }
+	}
+  }
+  
+  .public-button {
+	height : calc(~"100% - 64px");
+	
+	.public-button-left {
+	  width            : 206px;
+	  background-color : #ffffff;
+	  
+	  .ivu-menu-submenu-title {
+		border-right : 2px transparent solid;
+		
+		&:hover {
+		  background-color : #d7ebf1;
+		  color            : #0081a7;
+		  border-right     : 2px #0081a7 solid;
+		  
+		  .icon {
+			color : #0081a7;
+		  }
+		}
+	  }
+	  
+	  .ivu-menu-submenu {
+		.ivu-menu {
+		  display : none;
+		}
+	  }
+	  
+	  
+	  .ivu-menu-item {
+		border-right : 2px white solid;
+		
+		&:hover {
+		  background-color : #d7ebf1;
+		  color            : #0081a7;
+		  border-right     : 2px #0081a7 solid;
+		}
+	  }
+	  
+	  .ivu-menu-item-active {
+		background-color : #d7ebf1;
+		color            : #0081a7;
+		border-right     : 2px #0081a7 solid;
+		
+		.icon {
+		  color : #0081a7;
+		}
+	  }
+	  
+	  .ivu-menu-light:after {
+		width      : 0px !important;
+		background : #dcdee2;
+	  }
+	  
+	  
+	}
+	
+	.public-button-right {
+	  width : calc(~"100% - 64px");
+	  
+	  .iframe {
+		border : none !important;
+	  }
+	}
+  }
+}
+
+
+/*鼠标经过样式颜色*/
+.ivu-table-tbody {
+  tr:hover {
+	td {
+	  background-color : #f6f6f6;
+	}
+  }
+}
+
+
+/*登录*/
+.login {
+  .right {
+	background-image  : url("/images/doctor/img@3x.png");
+	background-size   : 100% 100%;
+	background-repeat : no-repeat;
+  }
+  
+  .item {
+	width        : 200px;
+	margin-left  : 90px;
+	margin-right : 90px;
+  }
+  
+  .codetext {
+	color  : #0081a7;
+	right  : 7px;
+	cursor : pointer;
+  }
+  
+  .left {
+	width            : 384px;
+	height           : 768px;
+	background-color : #ffffff;
+	flex-direction   : column;
+	
+	.l-top {
+	  height : 110px;
+	  width  : 100%;
+	  
+	  .logo {
+		width  : 142px;
+		height : 50px;
+		margin : 30px;
+	  }
+	}
+	
+	.l-button {
+	  height         : calc(~"100% - 110px");
+	  width          : 100%;
+	  flex-direction : column;
+	  
+	  
+	  .title {
+		margin-top    : 138px;
+		height        : 32px;
+		font-family   : PingFangSC;
+		font-size     : 24px;
+		font-weight   : 600;
+		line-height   : 1.33;
+		text-align    : center;
+		color         : #272727;
+		margin-bottom : 40px;
+	  }
+	}
+	
+  }
+  
+  .right {
+	width : calc(~"100% - 384px");
+  }
+}
+
+/* 注册*/
+.register {
+  background-image  : url('/images/doctor/img@3x.png');
+  background-repeat : no-repeat;
+  background-size   : 100% 100%;
+  
+  .vertical-center-modal {
+	display         : flex;
+	align-items     : center;
+	justify-content : center;
+	
+	.ivu-modal {
+	  top : 0;
+	}
+  }
+  
+  .w-240px {
+	width : 240px;
+  }
+  
+  .w-60px {
+	width : 60px;
+  }
+  
+  .content {
+	width : 480px;
+	
+	.among {
+	  height : 652px;
+	  
+	  .top {
+		height        : 560px;
+		border-bottom : 4px solid #0081a7;
+		
+		.codetext {
+		  right        : 0;
+		  top          : 0;
+		  height       : 32px;
+		  line-height  : 32px;
+		  margin-right : 5px;
+		}
+		
+		.logo {
+		  height        : 80px;
+		  border-bottom : 4px solid #0081a7;
+		}
+	  }
+	  
+	  .button {
+		height : 77px;
+		
+		.help {
+		  border-bottom : #f0f0f0 1px solid;
+		}
+	  }
+	}
+  }
+}
+
+/*忘记密码*/
+
+.password {
+  background-image  : url('/images/doctor/img@3x.png');
+  background-repeat : no-repeat;
+  background-size   : 100% 100%;
+  
+  .vertical-center-modal {
+	display         : flex;
+	align-items     : center;
+	justify-content : center;
+	
+	.ivu-modal {
+	  top : 0;
+	}
+  }
+  
+  .w-240px {
+	width : 240px;
+  }
+  
+  .w-60px {
+	width : 60px;
+  }
+  
+  .content {
+	width : 480px;
+	
+	.among {
+	  height : 552px;
+	  
+	  .top {
+		height        : 460px;
+		border-bottom : 4px solid #0081a7;
+		
+		.codetext {
+		  right        : 0;
+		  top          : 0;
+		  height       : 32px;
+		  line-height  : 32px;
+		  margin-right : 5px;
+		}
+		
+		.logo {
+		  height        : 80px;
+		  border-bottom : 4px solid #0081a7;
+		}
+	  }
+	  
+	  .button {
+		height : 77px;
+		
+		.help {
+		  border-bottom : #f0f0f0 1px solid;
+		}
+	  }
+	}
+  }
+}
+
+/* 首页*/
+.index {
+
+
+}
+
+/* 首页*/
+.home {
+  min-width : 1160px;
+  
+  .pl-63 {
+	padding-left : 63px;
+  }
+  
+  .top-name {
+	height           : 110px;
+	background-size  : 100%;
+	background-image : url("/images/doctor/home-bg.png");
+	
+	.doctor-name {
+	  padding-top : 24px;
+	}
+  }
+  
+  .together {
+	height : 112px;
+	
+	.date {
+	  width : 330px;
+	}
+	
+	.w-33 {
+	  width : 33%;
+	}
+	
+	.long {
+	  width            : 2px;
+	  height           : 64px;
+	  background-color : #f0f0f0;
+	}
+	
+	.right {
+	  width : calc(~"100% - 345px");
+	}
+	
+	.together_img {
+	  height : 40px;
+	  width  : 40px;
+	}
+  }
+  
+  .items {
+	.item {
+	  width            : 49%;
+	  height           : 207px;
+	  border-radius    : 2px;
+	  background-color : #ffffff;
+	  
+	  .content {
+		height : 121px;
+		
+		.li {
+		  height      : 30px;
+		  line-height : 30px;
+		  
+		  .w-40 {
+			width : 40%;
+		  }
+		  
+		  .w-10 {
+			width : 10%;
+		  }
+		  
+		  .w-20 {
+			width : 20%;
+		  }
+		}
+	  }
+	  
+	  .button {
+		border-top : solid 1px #f0f0f0;;
+	  }
+	  
+	  .button, .top {
+		height      : 38px;
+		line-height : 38px;
+	  }
+	}
+  }
+}
+
+/*微片查看*/
+.wp-index {
+  min-width : 1160px;
+  
+  .list-title {
+	height : 64px;
+  }
+}
+
+/*微片查看详情*/
+.wp-details {
+  min-width : 1160px;
+  
+  .t-table-td {
+	height : 38px;
+  }
+}
+
+/*患者处方*/
+.cmr-recipe {
+  min-width : 1160px;
+  
+  .w-438 {
+	width : 438px;
+  }
+  
+  .w-180 {
+	width : 180px;
+  }
+  
+  .t-table {
+	.t-tabl-top {
+	  min-height : 130px;
+	  margin     : auto;
+	  margin-top : 10px;
+	  border     : solid 1px #4ca6c1;
+	  
+	  .t-tabl-top-title {
+		height           : 46px;
+		line-height      : 46px;
+		background-color : #d7ebf1;
+		border-bottom    : solid 1px #4ca6c1;
+	  }
+	  
+	  .t-tabl-top-centen {
+		height        : 42px;
+		border-bottom : solid 1px #4ca6c1;
+		
+		.bl {
+		  border-left : solid 1px #4ca6c1;
+		}
+	  }
+	}
+	
+	.t-tabl-top-close {
+	  min-height : 190px;
+	  margin     : auto;
+	  margin-top : 10px;
+	  border     : solid 1px #d9d9d9;
+	  
+	  .t-tabl-top-title {
+		height           : 46px;
+		line-height      : 46px;
+		background-color : #f4f4f4;
+		border-bottom    : solid 1px #d9d9d9;
+	  }
+	  
+	  .t-tabl-top-centen {
+		height        : 104px;
+		border-bottom : solid 1px #d9d9d9;
+		
+		.bl {
+		  border-left : solid 1px #d9d9d9;
+		}
+	  }
+	}
+	
+	.t-table-td {
+	  width       : 188px;
+	  height      : 32px;
+	  font-weight : normal;
+	}
+  }
+  
+  .label-modal {
+	.top {
+	  height        : 55px;
+	  padding       : 0 20px;
+	  border-bottom : 1px solid #eee;
+	}
+	
+	.foot {
+	  height     : 55px;
+	  padding    : 0 20px;
+	  border-top : 1px solid #eee;
+	}
+	
+	.items {
+	  width  : 400px;
+	  margin : 40px auto;
+	  
+	  .item-text {
+		height      : 14px;
+		line-height : 14px;
+	  }
+	}
+  }
+  
+  .item {
+	.remark {
+	  width            : 172px;
+	  height           : 26px;
+	  border-radius    : 2px;
+	  border           : solid 1px #d9d9d9;
+	  background-color : #f4f4f4;
+	  line-height      : 26px;
+	}
+  }
+  
+}
+
+/*采购订单*/
+/* 合作平台 订单列表*/
+.crm-order {
+  
+  .w-90px {
+	width : 90px;
+  }
+  
+  .tab {
+	.tab-item {
+	  margin-right  : 5px;
+	  line-height   : 34px;
+	  background    : #f4f4f4;
+	  border-radius : 2px;
+	  border        : solid 1px #d9d9d9;
+	  border-bottom : none;
+	  color         : #575757;
+	  
+	  &:hover {
+		color : #0081a7;
+	  }
+	}
+	
+	.tab-item-active {
+	  background    : #fff;
+	  border-bottom : none;
+	  color         : #0081a7;
+	  border-bottom : white 1px solid;
+	  z-index       : 99;
+	  height        : 35px !important;
+	}
+  }
+  
+  .t-table {
+	.t-tabl-top {
+	  min-height : 190px;
+	  margin     : auto;
+	  margin-top : 10px;
+	  border     : solid 1px #4ca6c1;
+	  
+	  .t-tabl-top-title {
+		height           : 46px;
+		line-height      : 46px;
+		background-color : #d7ebf1;
+		border-bottom    : solid 1px #4ca6c1;
+	  }
+	  
+	  .t-tabl-top-centen {
+		height        : 104px;
+		border-bottom : solid 1px #4ca6c1;
+		
+		.bl {
+		  border-left : solid 1px #4ca6c1;
+		}
+	  }
+	}
+	
+	.t-tabl-top-close {
+	  min-height : 190px;
+	  margin     : auto;
+	  margin-top : 10px;
+	  border     : solid 1px #d9d9d9;
+	  
+	  .t-tabl-top-title {
+		height           : 46px;
+		line-height      : 46px;
+		background-color : #f4f4f4;
+		border-bottom    : solid 1px #d9d9d9;
+	  }
+	  
+	  .t-tabl-top-centen {
+		height        : 104px;
+		border-bottom : solid 1px #d9d9d9;
+		
+		.bl {
+		  border-left : solid 1px #d9d9d9;
+		}
+	  }
+	}
+	
+	.t-table-td {
+	  width       : 188px;
+	  height      : 32px;
+	  font-weight : normal;
+	}
+  }
+  
+  .label-modal {
+	.top {
+	  height        : 55px;
+	  padding       : 0 20px;
+	  border-bottom : 1px solid #eee;
+	}
+	
+	.foot {
+	  height     : 55px;
+	  padding    : 0 20px;
+	  border-top : 1px solid #eee;
+	}
+	
+	.items {
+	  width  : 400px;
+	  margin : 40px auto;
+	  
+	  .item-text {
+		height      : 14px;
+		line-height : 14px;
+	  }
+	}
+  }
+  
+  .item {
+	.remark {
+	  width            : 172px;
+	  height           : 26px;
+	  border-radius    : 2px;
+	  border           : solid 1px #d9d9d9;
+	  background-color : #f4f4f4;
+	  line-height      : 26px;
+	}
+  }
+  
+  .refund {
+	height : 40px;
+	
+	.layui-form-radio {
+	  margin : 0px;
+	}
+  }
+}
+
+/*订单支付 */
+.pay {
+  .left {
+	width : 730px;
+	
+	.frame {
+	  width  : 730px;
+	  border : solid 1px #d9d9d9;
+	  
+	  .table {
+		th, td {
+		  height : 32px;
+		}
+		
+		border : solid 1px #d9d9d9;
+		
+		.fborder {
+		  border-left  : solid 1px #d9d9d9;
+		  border-right : solid 1px #d9d9d9;
+		}
+	  }
+	  
+	  .fhr {
+		height           : 2px;
+		background-color : #f0f0f0;
+	  }
+	  
+	  .price {
+		height : 100px;
+		
+		.price-item {
+		  min-width : 170px;
+		}
+	  }
+	}
+  }
+  
+  .right {
+	width : 280px;
+	
+	.code {
+	  width            : 280px;
+	  height           : 308px;
+	  box-shadow       : 0 0 4px 0 rgba(0, 0, 0, 0.2);
+	  background-color : #ffffff;
+	  
+	  .codehr {
+		width            : 100%;
+		height           : 4px;
+		background-color : #09bb07;
+	  }
+	  
+	  .qrhr {
+		background : #f0f0f0;
+		height     : 2px;
+	  }
+	  
+	  .qrcode {
+		height        : 100px;
+		width         : 100px;
+		margin-top    : 40px;
+		margin-bottom : 40px;
+	  }
+	}
+  }
+}
+
+/*订单详情*/
+.crm-details {
+  min-width : 1160px;
+  
+  .items {
+	.ivu-table {
+	  .ivu-table-tbody {
+		td, th {
+		  height : 32px !important;
+		}
+	  }
+	}
+  }
+  
+}
+
+/*全部配方*/
+.ts-index {
+  min-width : 1160px;
+  
+  .ckedit {
+	color : #bfbfbf !important;
+  }
+  
+  .footconten {
+	width : calc(~"100% - 250px");
+	
+	.wrap {
+	  min-width        : 134px;
+	  padding-left     : 8px;
+	  height           : 26px;
+	  border-radius    : 2px;
+	  border           : solid 1px #d9d9d9;
+	  background-color : #f4f4f4;
+	  
+	  .iconguanbi {
+		padding-right : 8px;
+	  }
+	}
+  }
+  
+  .ts-edit-modal {
+	.top {
+	  height        : 55px;
+	  padding       : 0 20px;
+	  border-bottom : 1px solid #eee;
+	}
+	
+	.foot {
+	  height     : 50px;
+	  border-top : 1px solid #eee;
+	}
+	
+	.items {
+	  height  : 85px;
+	  padding : 0 40px;
+	  
+	  .item-text {
+		height      : 14px;
+		line-height : 14px;
+	  }
+	}
+  }
+  
+  
+  .message {
+	height           : 42px;
+	border-radius    : 2px;
+	border           : solid 1px #4ca6c1;
+	background-color : #d7ebf1;
+  }
+  
+  .button-recipe {
+	bottom           : 0;
+	height           : 72px;
+	box-shadow       : 0 0 4px 3px rgba(0, 0, 0, 0.1);
+	background-color : #ffffff;
+  }
+}
+
+/* 添加我的配方*/
+.ts-edit {
+  .bl {
+	border-right : 1px solid #d9d9d9;
+  }
+  
+  .wpdetailstable {
+	th, td {
+	  height : 32px;
+	}
+  }
+  
+  .wp-edit-body {
+	min-width : 900px;
+	width     : calc(~"100% - 300px");
+	margin    : initial
+  }
+  
+  .plusminus {
+	height        : 24px;
+	border-radius : 2px;
+	border        : solid 1px #d9d9d9;
+  }
+  
+  .ts-edit-modal {
+	.top {
+	  height        : 55px;
+	  padding       : 0 20px;
+	  border-bottom : 1px solid #eee;
+	}
+	
+	.foot {
+	  height     : 55px;
+	  padding    : 0 20px;
+	  border-top : 1px solid #eee;
+	}
+	
+	.items {
+	  width  : 400px;
+	  margin : 40px auto;
+	  
+	  .item-text {
+		height      : 14px;
+		line-height : 14px;
+	  }
+	}
+  }
+  
+  .ts_right {
+	width : 280px;
+	
+	
+	.top {
+	  border-top : 4px solid #0081a7;
+	  height     : 431px;
+	  box-shadow : 0 0 4px 0 rgba(0, 0, 0, 0.2);
+	}
+	
+	.title {
+	  height      : 44px;
+	  line-height : 44px;
+	}
+	
+	.items {
+	  .item {
+		width         : 240px;
+		//margin        : auto;
+		height        : 40px;
+		border-bottom : 1px #f0f0f0 solid;
+		line-height   : 40px;
+	  }
+	}
+	
+	.cf-list {
+	  border-top : 4px solid #0081a7;
+	  box-shadow : 0 0 4px 0 rgba(0, 0, 0, 0.2);
+	}
+  }
+}
+
+/* ts-配方编辑-添加微片*/
+.ts-edit-add {
+  .layui-input {
+	height        : 24px;
+	line-height   : 1;
+	padding       : 0px 7px;
+	border-radius : 2px;
+  }
+  
+  .center {
+	width      : 822px;
+	margin     : auto;
+	min-height : 568px;
+	
+	.item-input {
+	  min-width        : 67px;
+	  height           : 26px;
+	  border-radius    : 2px;
+	  border           : solid 1px #d9d9d9;
+	  background-color : #f4f4f4;
+	  cursor           : pointer;
+	  color            : #575757;
+	  margin-left      : 10px;
+	  margin-bottom    : 10px;
+	}
+	
+	.items {
+	  width  : 782px;
+	  margin : auto;
+	  
+	  .left-title {
+		width : 105px;
+	  }
+	  
+	  .right-title {
+		width : ~"calc(100% - 105px)";
+	  }
+	  
+	  .tab {
+		height : 35px;
+		
+		.activate {
+		  border        : 1px solid #d9d9d9;
+		  border-bottom : 1px solid white;
+		  top           : 0px;
+		  background    : white;
+		  z-index       : 3;
+		  color         : #0081a7;
+		}
+		
+		div {
+		  border        : 1px solid #d9d9d9;
+		  border-bottom : none;
+		  cursor        : pointer;
+		  background    : #f4f4f4;
+		  top           : -1px;
+		}
+	  }
+	  
+	  .wp-list {
+		.wp-list-top {
+		  height : 100px;
+		}
+	  }
+	  
+	  .pf-list {
+		.pf-list-top {
+		  height : 100px;
+		}
+	  }
+	}
+  }
+}
+
+/* 添加我的配方*/
+.ts-edithzcf {
+  .bl {
+	border-right : 1px solid #d9d9d9;
+  }
+  
+  .wpdetailstable {
+	th, td {
+	  height : 32px;
+	}
+  }
+  
+  .wp-edit-body {
+	min-width : 900px;
+	width     : calc(~"100% - 300px");
+	margin    : initial
+  }
+  
+  .plusminus {
+	height        : 24px;
+	border-radius : 2px;
+	border        : solid 1px #d9d9d9;
+  }
+  
+  .ts-edit-modal {
+	.top {
+	  height : 50px;
+	}
+	
+	.foot {
+	  height     : 55px;
+	  padding    : 0 20px;
+	  border-top : 1px solid #eee;
+	}
+	
+	.items {
+	  .item-text {
+		height      : 14px;
+		line-height : 14px;
+	  }
+	  
+	  .textcode {
+		width            : 280px;
+		height           : 94px;
+		border-radius    : 1px;
+		background-color : #f5f5f5;
+	  }
+	}
+  }
+  
+  
+}
+
+/*采购订单*/
+.ts-procure {
+  .bl {
+	border-right : 1px solid #d9d9d9;
+  }
+  
+  .wpdetailstable {
+	th, td {
+	  height : 32px;
+	}
+  }
+  
+  .wp-edit-body {
+	min-width : 900px;
+	width     : calc(~"100% - 300px");
+	margin    : initial
+  }
+  
+  .plusminus {
+	height        : 24px;
+	border-radius : 2px;
+	border        : solid 1px #d9d9d9;
+  }
+  
+  .hint {
+	height : 26px;
+	width  : 800px;
+  }
+  
+  .ts-edit-modal {
+	.top {
+	  height : 50px;
+	}
+	
+	.foot {
+	  height     : 55px;
+	  padding    : 0 20px;
+	  border-top : 1px solid #eee;
+	}
+	
+	.items {
+	  .item-text {
+		height      : 14px;
+		line-height : 14px;
+	  }
+	  
+	  .textcode {
+		width            : 280px;
+		height           : 94px;
+		border-radius    : 1px;
+		background-color : #f5f5f5;
+	  }
+	}
+  }
+  
+  .pay {
+	border-radius : 2px;
+	border        : solid 1px #d9d9d9;
+	width         : 160px;
+	height        : 68px;
+	
+	img {
+	  height : 32px;
+	}
+  }
+  
+  .payactiva {
+	border : solid 2px #b2d9e4;
+  }
+  
+  
+}

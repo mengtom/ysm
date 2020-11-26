@@ -1,0 +1,836 @@
+.h-38 {
+  height: 38px;
+}
+.lh-1 {
+  line-height: 1;
+}
+.mw-1160 {
+  min-width: 1160px;
+}
+.mw-1140 {
+  min-width: 1140px;
+}
+.bg-f8e8ee {
+  background: #f8e8ee;
+}
+.ml-50 {
+  margin-left: 50px;
+}
+.hr {
+  height: 1px;
+  background: #0081a7;
+  margin: 30px auto;
+}
+.layui-select-title .layui-input:hover,
+.layui-select-title .layui-textarea:hover {
+  border: 1px solid #0081a7 !important;
+}
+.layui-select-title .layui-input:focus,
+.layui-select-title .layui-textarea:focus {
+  border-color: #0081a7;
+  box-shadow: 0 0 0 2px rgba(0, 129, 167, 0.2) !important;
+}
+.layui-laydate-main .layui-laydate-content .layui-this {
+  background-color: #0081a7 !important;
+}
+.layui-laydate-footer .laydate-footer-btns .laydate-btns-clear:hover,
+.layui-laydate-footer .laydate-footer-btns .laydate-btns-confirm:hover {
+  color: #0081a7;
+}
+/*公共-头部*/
+.public-top-left .fixedtop {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.public-top-left .public-top-nav {
+  height: 64px;
+  background-color: #0081a7;
+}
+.public-top-left .public-top-nav .logo {
+  height: 40px;
+}
+.public-top-left .public-top-nav .picture {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+.public-top-left .public-top-nav .usertext .userlist {
+  display: none;
+  width: 150px;
+  height: 150px;
+  right: 0;
+}
+.public-top-left .public-top-nav .usertext:hover .userlist {
+  display: block;
+}
+.public-top-left .public-button {
+  height: calc(100% - 64px);
+}
+.public-top-left .public-button .public-button-left {
+  width: 206px;
+  background-color: #ffffff;
+}
+.public-top-left .public-button .public-button-left .ivu-menu-submenu-title {
+  border-right: 2px transparent solid;
+}
+.public-top-left .public-button .public-button-left .ivu-menu-submenu-title:hover {
+  background-color: #d7ebf1;
+  color: #0081a7;
+  border-right: 2px #0081a7 solid;
+}
+.public-top-left .public-button .public-button-left .ivu-menu-submenu-title:hover .icon {
+  color: #0081a7;
+}
+.public-top-left .public-button .public-button-left .ivu-menu-submenu .ivu-menu {
+  display: none;
+}
+.public-top-left .public-button .public-button-left .ivu-menu-item {
+  border-right: 2px white solid;
+}
+.public-top-left .public-button .public-button-left .ivu-menu-item:hover {
+  background-color: #d7ebf1;
+  color: #0081a7;
+  border-right: 2px #0081a7 solid;
+}
+.public-top-left .public-button .public-button-left .ivu-menu-item-active {
+  background-color: #d7ebf1;
+  color: #0081a7;
+  border-right: 2px #0081a7 solid;
+}
+.public-top-left .public-button .public-button-left .ivu-menu-item-active .icon {
+  color: #0081a7;
+}
+.public-top-left .public-button .public-button-left .ivu-menu-light:after {
+  width: 0px !important;
+  background: #dcdee2;
+}
+.public-top-left .public-button .public-button-right {
+  width: calc(100% - 64px);
+}
+.public-top-left .public-button .public-button-right .iframe {
+  border: none !important;
+}
+/*鼠标经过样式颜色*/
+.ivu-table-tbody tr:hover td {
+  background-color: #f6f6f6;
+}
+/*登录*/
+.login .right {
+  background-image: url("/images/doctor/img@3x.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.login .item {
+  width: 200px;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+.login .codetext {
+  color: #0081a7;
+  right: 7px;
+  cursor: pointer;
+}
+.login .left {
+  width: 384px;
+  height: 768px;
+  background-color: #ffffff;
+  flex-direction: column;
+}
+.login .left .l-top {
+  height: 110px;
+  width: 100%;
+}
+.login .left .l-top .logo {
+  width: 142px;
+  height: 50px;
+  margin: 30px;
+}
+.login .left .l-button {
+  height: calc(100% - 110px);
+  width: 100%;
+  flex-direction: column;
+}
+.login .left .l-button .title {
+  margin-top: 138px;
+  height: 32px;
+  font-family: PingFangSC;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33;
+  text-align: center;
+  color: #272727;
+  margin-bottom: 40px;
+}
+.login .right {
+  width: calc(100% - 384px);
+}
+/* 注册*/
+.register {
+  background-image: url('/images/doctor/img@3x.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.register .vertical-center-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.register .vertical-center-modal .ivu-modal {
+  top: 0;
+}
+.register .w-240px {
+  width: 240px;
+}
+.register .w-60px {
+  width: 60px;
+}
+.register .content {
+  width: 480px;
+}
+.register .content .among {
+  height: 652px;
+}
+.register .content .among .top {
+  height: 560px;
+  border-bottom: 4px solid #0081a7;
+}
+.register .content .among .top .codetext {
+  right: 0;
+  top: 0;
+  height: 32px;
+  line-height: 32px;
+  margin-right: 5px;
+}
+.register .content .among .top .logo {
+  height: 80px;
+  border-bottom: 4px solid #0081a7;
+}
+.register .content .among .button {
+  height: 77px;
+}
+.register .content .among .button .help {
+  border-bottom: #f0f0f0 1px solid;
+}
+/*忘记密码*/
+.password {
+  background-image: url('/images/doctor/img@3x.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.password .vertical-center-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.password .vertical-center-modal .ivu-modal {
+  top: 0;
+}
+.password .w-240px {
+  width: 240px;
+}
+.password .w-60px {
+  width: 60px;
+}
+.password .content {
+  width: 480px;
+}
+.password .content .among {
+  height: 552px;
+}
+.password .content .among .top {
+  height: 460px;
+  border-bottom: 4px solid #0081a7;
+}
+.password .content .among .top .codetext {
+  right: 0;
+  top: 0;
+  height: 32px;
+  line-height: 32px;
+  margin-right: 5px;
+}
+.password .content .among .top .logo {
+  height: 80px;
+  border-bottom: 4px solid #0081a7;
+}
+.password .content .among .button {
+  height: 77px;
+}
+.password .content .among .button .help {
+  border-bottom: #f0f0f0 1px solid;
+}
+/* 首页*/
+/* 首页*/
+.home {
+  min-width: 1160px;
+}
+.home .pl-63 {
+  padding-left: 63px;
+}
+.home .top-name {
+  height: 110px;
+  background-size: 100%;
+  background-image: url("/images/doctor/home-bg.png");
+}
+.home .top-name .doctor-name {
+  padding-top: 24px;
+}
+.home .together {
+  height: 112px;
+}
+.home .together .date {
+  width: 330px;
+}
+.home .together .w-33 {
+  width: 33%;
+}
+.home .together .long {
+  width: 2px;
+  height: 64px;
+  background-color: #f0f0f0;
+}
+.home .together .right {
+  width: calc(100% - 345px);
+}
+.home .together .together_img {
+  height: 40px;
+  width: 40px;
+}
+.home .items .item {
+  width: 49%;
+  height: 207px;
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+.home .items .item .content {
+  height: 121px;
+}
+.home .items .item .content .li {
+  height: 30px;
+  line-height: 30px;
+}
+.home .items .item .content .li .w-40 {
+  width: 40%;
+}
+.home .items .item .content .li .w-10 {
+  width: 10%;
+}
+.home .items .item .content .li .w-20 {
+  width: 20%;
+}
+.home .items .item .button {
+  border-top: solid 1px #f0f0f0;
+}
+.home .items .item .button,
+.home .items .item .top {
+  height: 38px;
+  line-height: 38px;
+}
+/*微片查看*/
+.wp-index {
+  min-width: 1160px;
+}
+.wp-index .list-title {
+  height: 64px;
+}
+/*微片查看详情*/
+.wp-details {
+  min-width: 1160px;
+}
+.wp-details .t-table-td {
+  height: 38px;
+}
+/*患者处方*/
+.cmr-recipe {
+  min-width: 1160px;
+}
+.cmr-recipe .w-438 {
+  width: 438px;
+}
+.cmr-recipe .w-180 {
+  width: 180px;
+}
+.cmr-recipe .t-table .t-tabl-top {
+  min-height: 130px;
+  margin: auto;
+  margin-top: 10px;
+  border: solid 1px #4ca6c1;
+}
+.cmr-recipe .t-table .t-tabl-top .t-tabl-top-title {
+  height: 46px;
+  line-height: 46px;
+  background-color: #d7ebf1;
+  border-bottom: solid 1px #4ca6c1;
+}
+.cmr-recipe .t-table .t-tabl-top .t-tabl-top-centen {
+  height: 42px;
+  border-bottom: solid 1px #4ca6c1;
+}
+.cmr-recipe .t-table .t-tabl-top .t-tabl-top-centen .bl {
+  border-left: solid 1px #4ca6c1;
+}
+.cmr-recipe .t-table .t-tabl-top-close {
+  min-height: 190px;
+  margin: auto;
+  margin-top: 10px;
+  border: solid 1px #d9d9d9;
+}
+.cmr-recipe .t-table .t-tabl-top-close .t-tabl-top-title {
+  height: 46px;
+  line-height: 46px;
+  background-color: #f4f4f4;
+  border-bottom: solid 1px #d9d9d9;
+}
+.cmr-recipe .t-table .t-tabl-top-close .t-tabl-top-centen {
+  height: 104px;
+  border-bottom: solid 1px #d9d9d9;
+}
+.cmr-recipe .t-table .t-tabl-top-close .t-tabl-top-centen .bl {
+  border-left: solid 1px #d9d9d9;
+}
+.cmr-recipe .t-table .t-table-td {
+  width: 188px;
+  height: 32px;
+  font-weight: normal;
+}
+.cmr-recipe .label-modal .top {
+  height: 55px;
+  padding: 0 20px;
+  border-bottom: 1px solid #eee;
+}
+.cmr-recipe .label-modal .foot {
+  height: 55px;
+  padding: 0 20px;
+  border-top: 1px solid #eee;
+}
+.cmr-recipe .label-modal .items {
+  width: 400px;
+  margin: 40px auto;
+}
+.cmr-recipe .label-modal .items .item-text {
+  height: 14px;
+  line-height: 14px;
+}
+.cmr-recipe .item .remark {
+  width: 172px;
+  height: 26px;
+  border-radius: 2px;
+  border: solid 1px #d9d9d9;
+  background-color: #f4f4f4;
+  line-height: 26px;
+}
+/*采购订单*/
+/* 合作平台 订单列表*/
+.crm-order .w-90px {
+  width: 90px;
+}
+.crm-order .tab .tab-item {
+  margin-right: 5px;
+  line-height: 34px;
+  background: #f4f4f4;
+  border-radius: 2px;
+  border: solid 1px #d9d9d9;
+  border-bottom: none;
+  color: #575757;
+}
+.crm-order .tab .tab-item:hover {
+  color: #0081a7;
+}
+.crm-order .tab .tab-item-active {
+  background: #fff;
+  border-bottom: none;
+  color: #0081a7;
+  border-bottom: white 1px solid;
+  z-index: 99;
+  height: 35px !important;
+}
+.crm-order .t-table .t-tabl-top {
+  min-height: 190px;
+  margin: auto;
+  margin-top: 10px;
+  border: solid 1px #4ca6c1;
+}
+.crm-order .t-table .t-tabl-top .t-tabl-top-title {
+  height: 46px;
+  line-height: 46px;
+  background-color: #d7ebf1;
+  border-bottom: solid 1px #4ca6c1;
+}
+.crm-order .t-table .t-tabl-top .t-tabl-top-centen {
+  height: 104px;
+  border-bottom: solid 1px #4ca6c1;
+}
+.crm-order .t-table .t-tabl-top .t-tabl-top-centen .bl {
+  border-left: solid 1px #4ca6c1;
+}
+.crm-order .t-table .t-tabl-top-close {
+  min-height: 190px;
+  margin: auto;
+  margin-top: 10px;
+  border: solid 1px #d9d9d9;
+}
+.crm-order .t-table .t-tabl-top-close .t-tabl-top-title {
+  height: 46px;
+  line-height: 46px;
+  background-color: #f4f4f4;
+  border-bottom: solid 1px #d9d9d9;
+}
+.crm-order .t-table .t-tabl-top-close .t-tabl-top-centen {
+  height: 104px;
+  border-bottom: solid 1px #d9d9d9;
+}
+.crm-order .t-table .t-tabl-top-close .t-tabl-top-centen .bl {
+  border-left: solid 1px #d9d9d9;
+}
+.crm-order .t-table .t-table-td {
+  width: 188px;
+  height: 32px;
+  font-weight: normal;
+}
+.crm-order .label-modal .top {
+  height: 55px;
+  padding: 0 20px;
+  border-bottom: 1px solid #eee;
+}
+.crm-order .label-modal .foot {
+  height: 55px;
+  padding: 0 20px;
+  border-top: 1px solid #eee;
+}
+.crm-order .label-modal .items {
+  width: 400px;
+  margin: 40px auto;
+}
+.crm-order .label-modal .items .item-text {
+  height: 14px;
+  line-height: 14px;
+}
+.crm-order .item .remark {
+  width: 172px;
+  height: 26px;
+  border-radius: 2px;
+  border: solid 1px #d9d9d9;
+  background-color: #f4f4f4;
+  line-height: 26px;
+}
+.crm-order .refund {
+  height: 40px;
+}
+.crm-order .refund .layui-form-radio {
+  margin: 0px;
+}
+/*订单支付 */
+.pay .left {
+  width: 730px;
+}
+.pay .left .frame {
+  width: 730px;
+  border: solid 1px #d9d9d9;
+}
+.pay .left .frame .table {
+  border: solid 1px #d9d9d9;
+}
+.pay .left .frame .table th,
+.pay .left .frame .table td {
+  height: 32px;
+}
+.pay .left .frame .table .fborder {
+  border-left: solid 1px #d9d9d9;
+  border-right: solid 1px #d9d9d9;
+}
+.pay .left .frame .fhr {
+  height: 2px;
+  background-color: #f0f0f0;
+}
+.pay .left .frame .price {
+  height: 100px;
+}
+.pay .left .frame .price .price-item {
+  min-width: 170px;
+}
+.pay .right {
+  width: 280px;
+}
+.pay .right .code {
+  width: 280px;
+  height: 308px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+.pay .right .code .codehr {
+  width: 100%;
+  height: 4px;
+  background-color: #09bb07;
+}
+.pay .right .code .qrhr {
+  background: #f0f0f0;
+  height: 2px;
+}
+.pay .right .code .qrcode {
+  height: 100px;
+  width: 100px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+/*订单详情*/
+.crm-details {
+  min-width: 1160px;
+}
+.crm-details .items .ivu-table .ivu-table-tbody td,
+.crm-details .items .ivu-table .ivu-table-tbody th {
+  height: 32px !important;
+}
+/*全部配方*/
+.ts-index {
+  min-width: 1160px;
+}
+.ts-index .ckedit {
+  color: #bfbfbf !important;
+}
+.ts-index .footconten {
+  width: calc(100% - 250px);
+}
+.ts-index .footconten .wrap {
+  min-width: 134px;
+  padding-left: 8px;
+  height: 26px;
+  border-radius: 2px;
+  border: solid 1px #d9d9d9;
+  background-color: #f4f4f4;
+}
+.ts-index .footconten .wrap .iconguanbi {
+  padding-right: 8px;
+}
+.ts-index .ts-edit-modal .top {
+  height: 55px;
+  padding: 0 20px;
+  border-bottom: 1px solid #eee;
+}
+.ts-index .ts-edit-modal .foot {
+  height: 50px;
+  border-top: 1px solid #eee;
+}
+.ts-index .ts-edit-modal .items {
+  height: 85px;
+  padding: 0 40px;
+}
+.ts-index .ts-edit-modal .items .item-text {
+  height: 14px;
+  line-height: 14px;
+}
+.ts-index .message {
+  height: 42px;
+  border-radius: 2px;
+  border: solid 1px #4ca6c1;
+  background-color: #d7ebf1;
+}
+.ts-index .button-recipe {
+  bottom: 0;
+  height: 72px;
+  box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+/* 添加我的配方*/
+.ts-edit .bl {
+  border-right: 1px solid #d9d9d9;
+}
+.ts-edit .wpdetailstable th,
+.ts-edit .wpdetailstable td {
+  height: 32px;
+}
+.ts-edit .wp-edit-body {
+  min-width: 900px;
+  width: calc(100% - 300px);
+  margin: initial;
+}
+.ts-edit .plusminus {
+  height: 24px;
+  border-radius: 2px;
+  border: solid 1px #d9d9d9;
+}
+.ts-edit .ts-edit-modal .top {
+  height: 55px;
+  padding: 0 20px;
+  border-bottom: 1px solid #eee;
+}
+.ts-edit .ts-edit-modal .foot {
+  height: 55px;
+  padding: 0 20px;
+  border-top: 1px solid #eee;
+}
+.ts-edit .ts-edit-modal .items {
+  width: 400px;
+  margin: 40px auto;
+}
+.ts-edit .ts-edit-modal .items .item-text {
+  height: 14px;
+  line-height: 14px;
+}
+.ts-edit .ts_right {
+  width: 280px;
+}
+.ts-edit .ts_right .top {
+  border-top: 4px solid #0081a7;
+  height: 431px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+.ts-edit .ts_right .title {
+  height: 44px;
+  line-height: 44px;
+}
+.ts-edit .ts_right .items .item {
+  width: 240px;
+  height: 40px;
+  border-bottom: 1px #f0f0f0 solid;
+  line-height: 40px;
+}
+.ts-edit .ts_right .cf-list {
+  border-top: 4px solid #0081a7;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+/* ts-配方编辑-添加微片*/
+.ts-edit-add .layui-input {
+  height: 24px;
+  line-height: 1;
+  padding: 0px 7px;
+  border-radius: 2px;
+}
+.ts-edit-add .center {
+  width: 822px;
+  margin: auto;
+  min-height: 568px;
+}
+.ts-edit-add .center .item-input {
+  min-width: 67px;
+  height: 26px;
+  border-radius: 2px;
+  border: solid 1px #d9d9d9;
+  background-color: #f4f4f4;
+  cursor: pointer;
+  color: #575757;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.ts-edit-add .center .items {
+  width: 782px;
+  margin: auto;
+}
+.ts-edit-add .center .items .left-title {
+  width: 105px;
+}
+.ts-edit-add .center .items .right-title {
+  width: calc(100% - 105px);
+}
+.ts-edit-add .center .items .tab {
+  height: 35px;
+}
+.ts-edit-add .center .items .tab .activate {
+  border: 1px solid #d9d9d9;
+  border-bottom: 1px solid white;
+  top: 0px;
+  background: white;
+  z-index: 3;
+  color: #0081a7;
+}
+.ts-edit-add .center .items .tab div {
+  border: 1px solid #d9d9d9;
+  border-bottom: none;
+  cursor: pointer;
+  background: #f4f4f4;
+  top: -1px;
+}
+.ts-edit-add .center .items .wp-list .wp-list-top {
+  height: 100px;
+}
+.ts-edit-add .center .items .pf-list .pf-list-top {
+  height: 100px;
+}
+/* 添加我的配方*/
+.ts-edithzcf .bl {
+  border-right: 1px solid #d9d9d9;
+}
+.ts-edithzcf .wpdetailstable th,
+.ts-edithzcf .wpdetailstable td {
+  height: 32px;
+}
+.ts-edithzcf .wp-edit-body {
+  min-width: 900px;
+  width: calc(100% - 300px);
+  margin: initial;
+}
+.ts-edithzcf .plusminus {
+  height: 24px;
+  border-radius: 2px;
+  border: solid 1px #d9d9d9;
+}
+.ts-edithzcf .ts-edit-modal .top {
+  height: 50px;
+}
+.ts-edithzcf .ts-edit-modal .foot {
+  height: 55px;
+  padding: 0 20px;
+  border-top: 1px solid #eee;
+}
+.ts-edithzcf .ts-edit-modal .items .item-text {
+  height: 14px;
+  line-height: 14px;
+}
+.ts-edithzcf .ts-edit-modal .items .textcode {
+  width: 280px;
+  height: 94px;
+  border-radius: 1px;
+  background-color: #f5f5f5;
+}
+/*采购订单*/
+.ts-procure .bl {
+  border-right: 1px solid #d9d9d9;
+}
+.ts-procure .wpdetailstable th,
+.ts-procure .wpdetailstable td {
+  height: 32px;
+}
+.ts-procure .wp-edit-body {
+  min-width: 900px;
+  width: calc(100% - 300px);
+  margin: initial;
+}
+.ts-procure .plusminus {
+  height: 24px;
+  border-radius: 2px;
+  border: solid 1px #d9d9d9;
+}
+.ts-procure .hint {
+  height: 26px;
+  width: 800px;
+}
+.ts-procure .ts-edit-modal .top {
+  height: 50px;
+}
+.ts-procure .ts-edit-modal .foot {
+  height: 55px;
+  padding: 0 20px;
+  border-top: 1px solid #eee;
+}
+.ts-procure .ts-edit-modal .items .item-text {
+  height: 14px;
+  line-height: 14px;
+}
+.ts-procure .ts-edit-modal .items .textcode {
+  width: 280px;
+  height: 94px;
+  border-radius: 1px;
+  background-color: #f5f5f5;
+}
+.ts-procure .pay {
+  border-radius: 2px;
+  border: solid 1px #d9d9d9;
+  width: 160px;
+  height: 68px;
+}
+.ts-procure .pay img {
+  height: 32px;
+}
+.ts-procure .payactiva {
+  border: solid 2px #b2d9e4;
+}
+/*# sourceMappingURL=ts-view.css.map */

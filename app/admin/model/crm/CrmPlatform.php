@@ -1,0 +1,445 @@
+<?php
+/**
+ * @author:tom
+ * @day: 2020/07/15
+ */
+
+namespace app\admin\model\crm;
+use yesai\services\PHPExcelService;
+use think\facade\Db;
+use yesai\traits\ModelTrait;
+use yesai\basic\BaseModel;
+// use app\admin\model\crm\CrmCategory as CategoryModel;
+use app\admin\model\order\CrmOrder;
+use app\admin\model\system\SystemConfig;
+
+/**
+ * 平台管理 model
+ * Class CrmPlatform
+ * @package app\admin\model\crm
+ */
+class CrmPlatform extends BaseModel
+{
+
+    /**
+     * 数据表主键
+     * @var string
+     */
+    protected $pk = 'id';
+
+    /**
+     * 模型名称
+     * @var string
+     */
+    protected $name = 'crm_platform';
+
+    use ModelTrait;
+
+    /**
+     * 获取连表查询条件
+     * @param $type
+     * @return array
+     */
+    public static function setData($type){
+        switch ((int)$type){
+            case 1:
+                $data = ['p.is_show'=>1,'p.is_del'=>0];
+                break;
+            case 2:
+                $data = ['p.is_show'=>0,'p.is_del'=>0];
+                break;
+            case 3:
+                $data = ['p.is_del'=>0];
+                break;
+            case 4:
+                $data = ['p.is_show'=>1,'p.is_del'=>0,'pav.stock|p.stock'=>0];
+                break;
+            case 5:
+                $data = ['p.is_show'=>1,'p.is_del'=>0];
+                break;
+            case 6:
+                $data = ['p.is_del'=>1];
+                break;
+        };
+        return isset($data) ? $data: [];
+    }
+    /**
+     * 获取连表MOdel
+     * @param $model
+     * @return object
+     */
+    public static function getModelObject($where=[]){
+        $model=new self();
+        $model=$model->alias('p')->join('CrmUsers u','u.user_id=p.user_id','LEFT')->Field('p.createtime,p.id,p.p_name,p.currency,p.total_price,p.total_order,p.referrer,p.refer_mobile,p.now_money as money,u.account,p.refer_email,p.ecp,p.ecm,p.ece,p.default_discount,p.single_dose,p.barrel_price,p.out_pack,p.first_weight,p.first_payment,p.re_weight,p.re_payment,p.platform_leader,p.total_doctor,p.total_patient,p.institu_leader,p.total_ts,p.ca,p.business_license');
+        if(!empty($where)){
+            $model=$model->group('p.id');
+            $model = $model->where(['p.status'=>1]);
+            if(isset($where['id']) && $where['id'] !=''){
+                $model = $model->where('p.id',$where['id']);
+            }
+            if(isset($where['currency']) && $where['currency']!=''){//结算货币
+                $model = $model->where('p.currency',$where['currency']);
+            }
+            if(isset($where['category']) && $where['category'] !=''){//类型
+                $model = $model->where('p.category',$where['category']);
+            }
+            if(isset($where['time']) && !empty($where['time'])){//时间
+                list($startTime,$endTime)=explode(' - ',$where['time']);
+                $model=$model->whereBetween('p.createtime',[strtotime($startTime),strtotime($endTime)]);
+            }
+            if(isset($where['min_price']) && is_numeric($where['min_price']) && is_numeric($where['max_price']) && isset($where['max_price'])){
+                $model=$model->whereBetween('p.now_money',[$where['min_price'],$where['max_price']]);
+            }
+            if(isset($where['p_name']) && $where['p_name']!=''){//名称
+                $model = $model->where('p.p_name','LIKE',"%{$where['p_name']}%");
+            }
+            if(isset($where['platform']) && (int)$where['platform']){//平台
+                $model = $model->where('p.platform_leader',$where['platform']);
+            }
+            if(isset($where['institu']) && (int)$where['institu']){//机构
+                $model = $model->join("CrmPlatform cp",'cp.id=p.institu_leader','LEFT')->where('cp.p_name','like',"%{$where['institu']}%")->where('cp.category',"3");
+            }
+            if(isset($where['order']) && $where['order']!=''){
+                $model = $model->order(self::setOrder($where['order']));
+            }else{
+                $model = $model->order('p.id desc');
+            }
+        }
+        return $model;
+    }
+
+    /**根据cateid查询产品 拼sql语句
+     * @param $cateid
+     * @return string
+     */
+    protected static function getCateSql($cateid){
+        $lcateid = $cateid.',%';//匹配最前面的cateid
+        $ccatid = '%,'.$cateid.',%';//匹配中间的cateid
+        $ratidid = '%,'.$cateid;//匹配后面的cateid
+        return  " `cate_id` LIKE '$lcateid' OR `cate_id` LIKE '$ccatid' OR `cate_id` LIKE '$ratidid' OR `cate_id`=$cateid";
+    }
+
+    /** 如果有子分类查询子分类获取拼接查询sql
+     * @param $cateid
+     * @return string
+     */
+    protected static function getPidSql($cateid){
+
+        $sql = self::getCateSql($cateid);
+        $ids = CategoryModel::where('pid', $cateid)->column('id','id');
+        //查询如果有子分类获取子分类查询sql语句
+        if($ids) foreach ($ids as $v) $sql .= " OR ".self::getcatesql($v);
+        return $sql;
+    }
+    /*
+     * 获取平台列表
+     * @param $where array
+     * @return array
+     *
+     */
+    public static function PlatformList($where,$fieldout=[]){
+        $model=self::getModelObject($where);//->field(['p.*','sum(pav.stock) as vstock'])
+        if(is_array($fieldout)){
+            $model=$model->field($fieldout,true);
+        }
+        if(isset($where['excel']) && $where['excel']==0) $model=$model->page((int)$where['page'],(int)$where['limit']);
+        $data=($data=$model->select()) && count($data) ? $data->toArray():[];
+        foreach ($data as &$item){
+             $item['createtime']=date("Y-m-d H:i",$item['createtime']);
+             $item['plat_name'] =self::where(['id'=>$item['platform_leader'],'category'=>4])->value('p_name');
+             $item['institu_name'] =self::where(['id'=>$item['institu_leader'],'category'=>3])->value('p_name');
+        }
+        unset($item);
+        if(isset($where['excel']) && $where['excel']==1){
+            $export = [];
+            foreach ($data as $index=>$item){
+                $export[] = [
+                    $item['crm_name'],
+                    $item['crm_info'],
+                    $item['cate_name'],
+                    '￥'.$item['price'],
+                    $item['stock'],
+                    $item['sales'],
+                    $item['like'],
+                    $item['collect']
+                ];
+            }
+            PHPExcelService::setExcelHeader(['产品名称','产品简介','产品分类','价格','库存','销量','点赞人数','收藏人数'])
+                ->setExcelTile('产品导出','产品信息'.time(),' 生成时间：'.date('Y-m-d H:i:s',time()))
+                ->setExcelContent($export)
+                ->ExcelSave();
+        }
+        $count=self::getModelObject($where)->count();
+        return compact('count','data');
+    }
+
+
+
+    /*
+     * 获取活动产品总和
+     * @param array $where 查询条件
+     * */
+    public static function getActivityProductSum($where=false)
+    {
+        if($where){
+            $bargain=self::getModelTime($where,new CrmBargain())->sum('stock');
+            $pink=self::getModelTime($where,new CrmCombination())->sum('stock');
+            $seckill=self::getModelTime($where,new CrmSeckill())->sum('stock');
+        }else{
+            $bargain=CrmBargain::sum('stock');
+            $pink=CrmCombination::sum('stock');
+            $seckill=CrmSeckill::sum('stock');
+        }
+        return bcadd(bcadd($bargain,$pink,0),$seckill,0);
+    }
+
+    public static function setWhereType($model,$type){
+        switch ($type){
+            case 1:
+                $data = ['category'=>1,'status'=>1];
+                break;
+            case 2:
+                $data = ['category'=>2,'status'=>1];
+                break;
+            case 3:
+                $data = ['category'=>3,'status'=>1];
+                break;
+            case 4:
+                $data = ['category'=>4,'status'=>1];
+                break;
+            case 5:
+                $data = ['category'=>5,'status'=>1];
+                break;
+            case 6:
+                $data = ['category'=>6,'status'=>1];
+                break;
+        }
+        if(isset($data)) $model = $model->where($data);
+        return $model;
+    }
+    /*
+     * layui-bg-red 红 layui-bg-orange 黄 layui-bg-green 绿 layui-bg-blue 蓝 layui-bg-cyan 黑
+     * 销量排行 top 10
+     */
+    public static function getMaxList($where){
+        $classs=['layui-bg-red','layui-bg-orange','layui-bg-green','layui-bg-blue','layui-bg-cyan'];
+        $model=CrmOrder::alias('a')->join('CrmOrderCartInfo c','a.id=c.oid')->join('crm_product b','b.id=c.product_id');
+        $list=self::getModelTime($where,$model,'a.add_time')->group('c.product_id')->order('p_count desc')->limit(10)
+            ->field(['count(c.product_id) as p_count','b.crm_name','sum(b.price) as sum_price'])->select();
+        if(count($list)) $list=$list->toArray();
+        $maxList=[];
+        $sum_count=0;
+        $sum_price=0;
+        foreach ($list as $item){
+            $sum_count+=$item['p_count'];
+            $sum_price=bcadd($sum_price,$item['sum_price'],2);
+        }
+        unset($item);
+        foreach ($list as $key=>&$item){
+            $item['w']=bcdiv($item['p_count'],$sum_count,2)*100;
+            $item['class']=isset($classs[$key]) ?$classs[$key]:( isset($classs[$key-count($classs)]) ? $classs[$key-count($classs)]:'');
+            $item['crm_name']=self::getSubstrUTf8($item['crm_name']);
+        }
+        $maxList['sum_count']=$sum_count;
+        $maxList['sum_price']=$sum_price;
+        $maxList['list']=$list;
+        return $maxList;
+    }
+    //获取利润
+    public static function ProfityTop10($where){
+        $classs=['layui-bg-red','layui-bg-orange','layui-bg-green','layui-bg-blue','layui-bg-cyan'];
+        $model=CrmOrder::alias('a')
+            ->join('CrmOrderCartInfo c','a.id=c.oid')
+            ->join('crm_product b','b.id=c.product_id')
+            ->where('b.is_show',1)
+            ->where('b.is_del',0);
+        $list=self::getModelTime($where,$model,'a.add_time')->group('c.product_id')->order('profity desc')->limit(10)
+            ->field(['count(c.product_id) as p_count','b.crm_name','sum(b.price) as sum_price','(b.price-b.cost) as profity'])
+            ->select();
+        if(count($list)) $list=$list->toArray();
+        $maxList=[];
+        $sum_count=0;
+        $sum_price=0;
+        foreach ($list as $item){
+            $sum_count+=$item['p_count'];
+            $sum_price=bcadd($sum_price,$item['sum_price'],2);
+        }
+        foreach ($list as $key=>&$item){
+            $item['w']=bcdiv($item['sum_price'],$sum_price,2)*100;
+            $item['class']=isset($classs[$key]) ?$classs[$key]:( isset($classs[$key-count($classs)]) ? $classs[$key-count($classs)]:'');
+            $item['crm_name']=self::getSubstrUTf8($item['crm_name'],30);
+        }
+        $maxList['sum_count']=$sum_count;
+        $maxList['sum_price']=$sum_price;
+        $maxList['list']=$list;
+        return $maxList;
+    }
+
+
+    public static function TuiProductList(){
+        $perd=CrmOrder::alias('s')->join('CrmOrderCartInfo c','s.id=c.oid')
+            ->field('count(c.product_id) as count,c.product_id as id')
+            ->group('c.product_id')
+            ->where('s.status',-1)
+            ->order('count desc')
+            ->limit(10)
+            ->select();
+        if(count($perd)) $perd=$perd->toArray();
+        foreach ($perd as &$item){
+            $item['crm_name']=self::where(['id'=>$item['id']])->value('crm_name');
+            $item['price']=self::where(['id'=>$item['id']])->value('price');
+        }
+        return $perd;
+    }
+    //获取总销量
+    public static function getSales($productId)
+    {
+        return CrmProductAttrValue::where(['product_id'=>$productId])->sum('sales');
+    }
+
+    public static function getTierList($model = null)
+    {
+        if($model === null) $model = new self();
+        return $model->field('id,crm_name')->where('is_del',0)->select()->toArray();
+    }
+    /**
+     * 设置查询条件
+     * @param array $where
+     * @return array
+     */
+    public static function setWhere($where){
+        $time['data']='';
+        if(isset($where['start_time']) && $where['start_time']!='' && isset($where['end_time']) && $where['end_time']!=''){
+            $time['data']=$where['start_time'].' - '.$where['end_time'];
+        }else{
+            $time['data']=isset($where['data'])? $where['data']:'';
+        }
+        $model=self::getModelTime($time, Db::name('crm_cart')->alias('a')->join('crm_product b','a.product_id=b.id'),'a.add_time');
+        if(isset($where['title']) && $where['title']!=''){
+            $model=$model->where('b.crm_name|b.id','like',"%$where[title]%");
+        }
+        return $model;
+    }
+
+    /*
+     * 处理二维数组排序
+     * $arrays 需要处理的数组
+     * $sort_key 需要处理的key名
+     * $sort_order 排序方式
+     * $sort_type 类型 可不填写
+     */
+    public static function my_sort($arrays,$sort_key,$sort_order=SORT_ASC,$sort_type=SORT_NUMERIC ){
+        if(is_array($arrays)){
+            foreach ($arrays as $array){
+                if(is_array($array)){
+                    $key_arrays[] = $array[$sort_key];
+                }else{
+                    return false;
+                }
+            }
+        }
+        if(isset($key_arrays)){
+            array_multisort($key_arrays,$sort_order,$sort_type,$arrays);
+            return $arrays;
+        }
+        return false;
+    }
+    /*
+     * 查询单个商品的销量曲线图
+     *
+     */
+    public static function getProductCurve($where){
+        $list=self::setWhere($where)
+            ->where('a.product_id',$where['id'])
+            ->where('a.is_pay',1)
+            ->field(['FROM_UNIXTIME(a.add_time,"%Y-%m-%d") as _add_time','sum(a.cart_num) as num'])
+            ->group('_add_time')
+            ->order('_add_time asc')
+            ->select();
+        $seriesdata=[];
+        $date=[];
+        $zoom='';
+        foreach ($list as $item){
+            $date[]=$item['_add_time'];
+            $seriesdata[]=$item['num'];
+        }
+        if(count($date)>$where['limit']) $zoom=$date[$where['limit']-5];
+        return compact('seriesdata','date','zoom');
+    }
+    /*
+     * 查询单个商品的销售列表
+     *
+     */
+    public static function getSalelList($where){
+        return self::setWhere($where)
+            ->where('a.product_id', $where['id'])
+            ->where('a.is_pay', 1)
+            ->join('user c','c.uid=a.uid')
+            ->field(['FROM_UNIXTIME(a.add_time,"%Y-%m-%d") as _add_time','c.nickname','b.price','a.id','a.cart_num as num'])
+            ->page((int)$where['page'],(int)$where['limit'])
+            ->select();
+    }
+
+    /**
+     * TODO 获取某个字段值
+     * @param $id
+     * @param string $field
+     * @return mixed
+     */
+    public static function getProductField($id,$field = 'crm_name'){
+        return self::where('id',$id)->value($field);
+    }
+    /**
+     * 添加平台
+     * @param [type] $data [description]
+     */
+    public static function addPlatform($data){
+        if(count($data['ca']) > 0 && isset($data['ca'])) $data['ca']=serialize($data['ca']);
+        $data['createtime'] = time();
+        $data['add_ip']=app('request')->ip();
+        $data['plat_type'] = 'system';
+        $data['category']= 4;
+        $data['referral_code']=self::getReferral($data['user_id']);
+        $data['platform_appid']=self::getAppid($data['user_id']);
+        $data['platform_app_secret']=self::getSecret($data['user_id']);
+        $res = self::field('p_name,user_id,referrer,refer_mobile,refer_email,ecp,ecm,ece,now_money,currency,createtime,add_ip,plat_type,ca,business_license,place,adminid,default_discount,single_dose,barrel_price,out_pack,category,referral_code,platform_appid,platform_app_secret')->insertGetId($data);
+        return $res;
+    }
+    /**
+     * 获取单个平台信息
+     * @param  [type] $where [description]
+     * @return [type]        [description]
+     */
+    public static function getPlatformInfo($where){
+        $model=self::getModelObject($where);
+        $data=($data=$model->find()) && count($data) ? $data->toArray():[];
+        $data ? $data['createtime']=date("Y-m-d H:i",$data['createtime']):'';
+        return $data;
+    }
+    /**
+     * 生成推荐码
+     * @param  [type] $code [description]
+     * @return [type]       [description]
+     */
+    public static function getReferral($code =''){
+        $num=md5(mt_rand(1000,9999).time().$code);
+        $code='PT'.substr($num,6,10);
+        return $code;
+    }
+    /**
+     * 生成appid
+     * @param  string $code [description]
+     * @return [type]       [description]
+     */
+    public static function getAppid($code =''){
+        return date('Ymd').mt_rand(10,99).$code.mt_rand(10,99);
+    }
+    /**
+     * 生成secret
+     * @param  string $code [description]
+     * @return [type]       [description]
+     */
+    public static function getSecret($code =''){
+        return md5(mt_rand(1000,9999).date('Ymd').$code.time());
+    }
+}

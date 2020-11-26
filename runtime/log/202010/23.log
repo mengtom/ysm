@@ -1,0 +1,656 @@
+[2020-10-23T10:14:28+08:00][info] [ VIEW ] F:\WWW\yeshai\app\admin\view/ysm\login\index.php [ array (
+) ]
+[2020-10-23T10:22:25+08:00][info] [ VIEW ] F:\WWW\yeshai\app\admin\view/ysm\login\index.php [ array (
+) ]
+[2020-10-23T10:22:28+08:00][sql] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-10-23T10:22:28+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_admin` [ RunTime:0.009000s ]
+[2020-10-23T10:22:28+08:00][sql] SELECT * FROM `tp_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:22:28+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.015001s ]
+[2020-10-23T10:22:28+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-10-23T10:22:28+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.011000s ]
+[2020-10-23T10:22:28+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.001001s ]
+[2020-10-23T10:22:28+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'admin'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[2020-10-23T10:22:28+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.001001s ]
+[2020-10-23T10:22:28+08:00][sql] SELECT `menu_name`,`value` FROM `tp_system_config` [ RunTime:0.000000s ]
+[2020-10-23T10:22:28+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.010000s ]
+[2020-10-23T10:22:28+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:22:28+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:22:28+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_order` [ RunTime:0.014000s ]
+[2020-10-23T10:22:28+08:00][sql] SELECT SUM(`pay_price`) AS think_sum FROM `tp_crm_order` WHERE  `paid` = 1  AND `order_type` IN (0,2)  AND `pay_time` BETWEEN 1601481600 AND 1604159999 [ RunTime:0.001001s ]
+[2020-10-23T10:22:28+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_crm_order` WHERE  `order_type` IN (0,2)  AND `add_time` > 1601481600 [ RunTime:0.000000s ]
+[2020-10-23T10:22:28+08:00][sql] SHOW FULL COLUMNS FROM `tp_crm_users` [ RunTime:0.013000s ]
+[2020-10-23T10:22:28+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_crm_users` WHERE  `type` = 1 [ RunTime:0.001000s ]
+[2020-10-23T10:22:28+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_crm_users` WHERE  `type` = 1  AND `createtime` > 1601481600 [ RunTime:0.000000s ]
+[2020-10-23T10:22:28+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_crm_users` WHERE  `type` = 0 [ RunTime:0.001000s ]
+[2020-10-23T10:22:28+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_crm_users` WHERE  `type` = 0  AND `createtime` > 1601481600 [ RunTime:0.000000s ]
+[2020-10-23T10:22:28+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_crm_users` WHERE  `type` IN (2,3) [ RunTime:0.001000s ]
+[2020-10-23T10:22:28+08:00][sql] SELECT COUNT(*) AS think_count FROM `tp_crm_users` WHERE  `type` IN (2,3)  AND `createtime` > 1601481600 [ RunTime:0.000000s ]
+[2020-10-23T10:22:28+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'admin'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.002001s ]
+[2020-10-23T10:22:28+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:22:28+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:22:28+08:00][info] [ VIEW ] F:\WWW\yeshai\app\admin\view/ysm\index\index.php [ array (
+  0 => '_admin',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'topData',
+) ]
+[2020-10-23T10:22:31+08:00][sql] CONNECT:[ UseTime:0.011000s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-10-23T10:22:31+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_admin` [ RunTime:0.009001s ]
+[2020-10-23T10:22:31+08:00][sql] SELECT * FROM `tp_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:22:31+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.008000s ]
+[2020-10-23T10:22:31+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-10-23T10:22:31+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.007000s ]
+[2020-10-23T10:22:31+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:22:31+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'admin'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001001s ]
+[2020-10-23T10:22:31+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:22:31+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.007001s ]
+[2020-10-23T10:22:31+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:22:31+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'index'  AND `controller` = 'ts.Ts'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:22:31+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_log` [ RunTime:0.018001s ]
+[2020-10-23T10:22:31+08:00][sql] INSERT INTO `tp_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1603419751 , `admin_name` = 'admin' , `path` = 'admin/ts.ts/index/' , `page` = 'TS配方' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.000000s ]
+[2020-10-23T10:22:31+08:00][sql] SHOW FULL COLUMNS FROM `tp_label` [ RunTime:0.010001s ]
+[2020-10-23T10:22:31+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 2  AND `is_del` = 0  AND `pid` = 0  AND `status` = 1 ORDER BY `id` DESC [ RunTime:0.000000s ]
+[2020-10-23T10:22:31+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 94  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-10-23T10:22:31+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 85  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-10-23T10:22:31+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 78  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-10-23T10:22:31+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 72  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-10-23T10:22:31+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 65  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-10-23T10:22:31+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 60  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-10-23T10:22:31+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 54  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-10-23T10:22:31+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 47  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-10-23T10:22:31+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 44  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-10-23T10:22:31+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 33  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-10-23T10:22:31+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 27  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-10-23T10:22:31+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 12  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-10-23T10:22:31+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 9  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-10-23T10:22:31+08:00][info] [ VIEW ] F:\WWW\yeshai\app\admin\view/ysm\ts\ts\index.php [ array (
+  0 => '_admin',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'cate2',
+) ]
+[2020-10-23T10:34:57+08:00][sql] CONNECT:[ UseTime:0.005000s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-10-23T10:34:57+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_admin` [ RunTime:0.007001s ]
+[2020-10-23T10:34:57+08:00][sql] SELECT * FROM `tp_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:34:57+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.008000s ]
+[2020-10-23T10:34:57+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-10-23T10:34:57+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.008000s ]
+[2020-10-23T10:34:57+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:34:57+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'admin'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[2020-10-23T10:34:57+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:34:57+08:00][sql] SELECT `menu_name`,`value` FROM `tp_system_config` [ RunTime:0.001000s ]
+[2020-10-23T10:34:57+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.007000s ]
+[2020-10-23T10:34:57+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:34:57+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'index'  AND `controller` = 'ts.Ts'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:34:57+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_log` [ RunTime:0.008000s ]
+[2020-10-23T10:34:57+08:00][sql] INSERT INTO `tp_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1603420497 , `admin_name` = 'admin' , `path` = 'admin/ts.ts/index/' , `page` = 'TS配方' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.001000s ]
+[2020-10-23T10:34:57+08:00][sql] SHOW FULL COLUMNS FROM `tp_label` [ RunTime:0.008001s ]
+[2020-10-23T10:34:57+08:00][sql] SELECT * FROM `tp_label` WHERE  `cid` = 2  AND `is_del` = 0  AND `pid` = 0  AND `status` = 1 ORDER BY `id` DESC [ RunTime:0.000000s ]
+[2020-10-23T10:34:57+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 94  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-10-23T10:34:57+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 85  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-10-23T10:34:57+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 78  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-10-23T10:34:57+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 72  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-10-23T10:34:57+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 65  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-10-23T10:34:57+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 60  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-10-23T10:34:57+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 54  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-10-23T10:34:57+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 47  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-10-23T10:34:57+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 44  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-10-23T10:34:57+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 33  AND `status` = 1 [ RunTime:0.001001s ]
+[2020-10-23T10:34:57+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 27  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-10-23T10:34:57+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 12  AND `status` = 1 [ RunTime:0.000000s ]
+[2020-10-23T10:34:57+08:00][sql] SELECT * FROM `tp_label` WHERE  `is_del` = 0  AND `pid` = 9  AND `status` = 1 [ RunTime:0.001000s ]
+[2020-10-23T10:34:57+08:00][info] [ VIEW ] F:\WWW\yeshai\app\admin\view/ysm\ts\ts\index.php [ array (
+  0 => '_admin',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'cate2',
+) ]
+[2020-10-23T10:35:00+08:00][sql] CONNECT:[ UseTime:0.003000s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-10-23T10:35:00+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_admin` [ RunTime:0.009000s ]
+[2020-10-23T10:35:00+08:00][sql] SELECT * FROM `tp_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001001s ]
+[2020-10-23T10:35:00+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.008000s ]
+[2020-10-23T10:35:00+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-10-23T10:35:00+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.007000s ]
+[2020-10-23T10:35:00+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:35:00+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'admin'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[2020-10-23T10:35:00+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.001001s ]
+[2020-10-23T10:35:00+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.008000s ]
+[2020-10-23T10:35:00+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:35:00+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'cost'  AND `controller` = 'ts.Ts'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:35:00+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_log` [ RunTime:0.008001s ]
+[2020-10-23T10:35:00+08:00][sql] INSERT INTO `tp_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1603420500 , `admin_name` = 'admin' , `path` = 'admin/ts.ts/cost/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.001000s ]
+[2020-10-23T10:35:00+08:00][sql] SHOW FULL COLUMNS FROM `tp_ts` [ RunTime:0.009001s ]
+[2020-10-23T10:35:00+08:00][sql] SELECT * FROM `tp_ts` WHERE  `id` = 22 LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:35:00+08:00][sql] SHOW FULL COLUMNS FROM `tp_ts_microchip` [ RunTime:0.009000s ]
+[2020-10-23T10:35:00+08:00][sql] SELECT tm.*,m.zn_name,m.id,m.dose_min,m.dose_max,m.unit,m.price,m.usd,m.is_show as is_status FROM `tp_ts_microchip` `tm` RIGHT JOIN `tp_microchip_product` `m` ON `m`.`id`=`tm`.`micro_id` WHERE  `tm`.`ts_id` = 22 [ RunTime:0.006001s ]
+[2020-10-23T10:35:00+08:00][sql] SHOW FULL COLUMNS FROM `tp_microchip_product` [ RunTime:0.008001s ]
+[2020-10-23T10:35:00+08:00][sql] SELECT `pricing_rmb`,`pricing_usd`,`cost_rmb`,`cost_usd`,`weight` FROM `tp_microchip_product` WHERE  `id` = 28 LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:35:00+08:00][sql] SELECT `menu_name`,`value` FROM `tp_system_config` WHERE  `menu_name` IN ('microchip_processing_rmb','microchip_processing_usd','packing_labor_rmb','packing_labor_usd','tariff','single_dose_weight','barrel_weight','out_pack_weight','packing_shipping_weight','brochure_weight','single_dose_ymb','single_dose_usd','barrel_price_ymb','barrel_price_usd','out_pack_ymb','out_pack_usd','packing_shipping_rmb','packing_shipping_usd','brochure_rmb','brochure_usd') [ RunTime:0.000000s ]
+[2020-10-23T10:35:00+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config_logistics` [ RunTime:0.012001s ]
+[2020-10-23T10:35:00+08:00][sql] SELECT * FROM `tp_system_config_logistics` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `weight` ASC,`id` ASC [ RunTime:0.000000s ]
+[2020-10-23T10:35:00+08:00][info] [ VIEW ] F:\WWW\yeshai\app\admin\view/ysm\ts\ts\cost.php [ array (
+  0 => '_admin',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'info',
+  8 => 'config_logistics',
+  9 => 'config',
+  10 => 'microchip',
+) ]
+[2020-10-23T10:35:06+08:00][sql] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-10-23T10:35:06+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_admin` [ RunTime:0.008000s ]
+[2020-10-23T10:35:06+08:00][sql] SELECT * FROM `tp_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:35:06+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.008001s ]
+[2020-10-23T10:35:06+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-10-23T10:35:06+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.007001s ]
+[2020-10-23T10:35:06+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:35:06+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'admin'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[2020-10-23T10:35:06+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:35:06+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.007001s ]
+[2020-10-23T10:35:06+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:35:06+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'cost'  AND `controller` = 'ts.Ts'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:35:06+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_log` [ RunTime:0.007000s ]
+[2020-10-23T10:35:06+08:00][sql] INSERT INTO `tp_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1603420505 , `admin_name` = 'admin' , `path` = 'admin/ts.ts/cost/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.001000s ]
+[2020-10-23T10:35:06+08:00][sql] SHOW FULL COLUMNS FROM `tp_ts` [ RunTime:0.007000s ]
+[2020-10-23T10:35:06+08:00][sql] SELECT * FROM `tp_ts` WHERE  `id` = 22 LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:35:06+08:00][sql] SHOW FULL COLUMNS FROM `tp_ts_microchip` [ RunTime:0.007001s ]
+[2020-10-23T10:35:06+08:00][sql] SELECT tm.*,m.zn_name,m.id,m.dose_min,m.dose_max,m.unit,m.price,m.usd,m.is_show as is_status FROM `tp_ts_microchip` `tm` RIGHT JOIN `tp_microchip_product` `m` ON `m`.`id`=`tm`.`micro_id` WHERE  `tm`.`ts_id` = 22 [ RunTime:0.001000s ]
+[2020-10-23T10:35:06+08:00][sql] SHOW FULL COLUMNS FROM `tp_microchip_product` [ RunTime:0.007000s ]
+[2020-10-23T10:35:06+08:00][sql] SELECT `pricing_rmb`,`pricing_usd`,`cost_rmb`,`cost_usd`,`weight` FROM `tp_microchip_product` WHERE  `id` = 28 LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:35:06+08:00][sql] SELECT `menu_name`,`value` FROM `tp_system_config` WHERE  `menu_name` IN ('microchip_processing_rmb','microchip_processing_usd','packing_labor_rmb','packing_labor_usd','tariff','single_dose_weight','barrel_weight','out_pack_weight','packing_shipping_weight','brochure_weight','single_dose_ymb','single_dose_usd','barrel_price_ymb','barrel_price_usd','out_pack_ymb','out_pack_usd','packing_shipping_rmb','packing_shipping_usd','brochure_rmb','brochure_usd') [ RunTime:0.001000s ]
+[2020-10-23T10:35:06+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config_logistics` [ RunTime:0.007001s ]
+[2020-10-23T10:35:06+08:00][sql] SELECT * FROM `tp_system_config_logistics` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `weight` ASC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:35:06+08:00][info] [ VIEW ] F:\WWW\yeshai\app\admin\view/ysm\ts\ts\cost.php [ array (
+  0 => '_admin',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'info',
+  8 => 'config_logistics',
+  9 => 'config',
+  10 => 'microchip',
+) ]
+[2020-10-23T10:35:22+08:00][sql] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-10-23T10:35:22+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_admin` [ RunTime:0.008000s ]
+[2020-10-23T10:35:22+08:00][sql] SELECT * FROM `tp_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:35:22+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.008001s ]
+[2020-10-23T10:35:22+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-10-23T10:35:22+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.008000s ]
+[2020-10-23T10:35:22+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:35:22+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'admin'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[2020-10-23T10:35:22+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:35:22+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.008000s ]
+[2020-10-23T10:35:22+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:35:22+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'index'  AND `controller` = 'setting.SystemConfig'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:35:22+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_log` [ RunTime:0.007001s ]
+[2020-10-23T10:35:22+08:00][sql] INSERT INTO `tp_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1603420522 , `admin_name` = 'admin' , `path` = 'admin/setting.systemconfig/index/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.000000s ]
+[2020-10-23T10:35:22+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 1  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:35:22+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config_tab` [ RunTime:0.009000s ]
+[2020-10-23T10:35:22+08:00][sql] SELECT * FROM `tp_system_config_tab` WHERE  `status` = 1  AND `type` = 0 [ RunTime:0.001000s ]
+[2020-10-23T10:35:22+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 1  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000000s ]
+[2020-10-23T10:35:22+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:35:22+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 23  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000000s ]
+[2020-10-23T10:35:22+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 24  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000000s ]
+[2020-10-23T10:35:22+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config_logistics` [ RunTime:0.007000s ]
+[2020-10-23T10:35:22+08:00][sql] SELECT * FROM `tp_system_config_logistics` WHERE  `config_tab_id` = 1  AND `status` = 1 ORDER BY `weight` ASC,`id` ASC [ RunTime:0.000000s ]
+[2020-10-23T10:35:22+08:00][info] [ VIEW ] F:\WWW\yeshai\app\admin\view/ysm\setting\system_config\index.php [ array (
+  0 => '_admin',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'tab_id',
+  8 => 'form',
+  9 => 'logisgics',
+  10 => 'config_tab',
+  11 => 'list',
+) ]
+[2020-10-23T10:35:23+08:00][sql] CONNECT:[ UseTime:0.002001s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-10-23T10:35:23+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_admin` [ RunTime:0.008000s ]
+[2020-10-23T10:35:23+08:00][sql] SELECT * FROM `tp_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:35:23+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.009001s ]
+[2020-10-23T10:35:23+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-10-23T10:35:23+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.008001s ]
+[2020-10-23T10:35:23+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:35:23+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'admin'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[2020-10-23T10:35:23+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:35:23+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.008000s ]
+[2020-10-23T10:35:23+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:35:23+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'index'  AND `controller` = 'setting.SystemConfig'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.002000s ]
+[2020-10-23T10:35:23+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_log` [ RunTime:0.008001s ]
+[2020-10-23T10:35:23+08:00][sql] INSERT INTO `tp_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1603420523 , `admin_name` = 'admin' , `path` = 'admin/setting.systemconfig/index/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.001000s ]
+[2020-10-23T10:35:23+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:35:23+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config_tab` [ RunTime:0.007001s ]
+[2020-10-23T10:35:23+08:00][sql] SELECT * FROM `tp_system_config_tab` WHERE  `status` = 1  AND `type` = 0 [ RunTime:0.001000s ]
+[2020-10-23T10:35:23+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 1  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:35:23+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:35:23+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 23  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:35:23+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 24  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:35:23+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config_logistics` [ RunTime:0.008000s ]
+[2020-10-23T10:35:23+08:00][sql] SELECT * FROM `tp_system_config_logistics` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `weight` ASC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:35:23+08:00][info] [ VIEW ] F:\WWW\yeshai\app\admin\view/ysm\setting\system_config\index.php [ array (
+  0 => '_admin',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'tab_id',
+  8 => 'form',
+  9 => 'logisgics',
+  10 => 'config_tab',
+  11 => 'list',
+) ]
+[2020-10-23T10:35:39+08:00][sql] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-10-23T10:35:39+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_admin` [ RunTime:0.007000s ]
+[2020-10-23T10:35:39+08:00][sql] SELECT * FROM `tp_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:35:39+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.008001s ]
+[2020-10-23T10:35:39+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-10-23T10:35:39+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.007001s ]
+[2020-10-23T10:35:39+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:35:39+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'admin'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[2020-10-23T10:35:39+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:35:39+08:00][sql] SELECT `menu_name`,`value` FROM `tp_system_config` [ RunTime:0.000000s ]
+[2020-10-23T10:35:39+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.007001s ]
+[2020-10-23T10:35:39+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:35:39+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'index'  AND `controller` = 'setting.SystemConfig'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:35:39+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_log` [ RunTime:0.009001s ]
+[2020-10-23T10:35:39+08:00][sql] INSERT INTO `tp_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1603420539 , `admin_name` = 'admin' , `path` = 'admin/setting.systemconfig/index/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.001000s ]
+[2020-10-23T10:35:39+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:35:39+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config_tab` [ RunTime:0.008000s ]
+[2020-10-23T10:35:39+08:00][sql] SELECT * FROM `tp_system_config_tab` WHERE  `status` = 1  AND `type` = 0 [ RunTime:0.001000s ]
+[2020-10-23T10:35:39+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 1  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:35:39+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001001s ]
+[2020-10-23T10:35:39+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 23  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000000s ]
+[2020-10-23T10:35:39+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 24  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000000s ]
+[2020-10-23T10:35:39+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config_logistics` [ RunTime:0.009000s ]
+[2020-10-23T10:35:39+08:00][sql] SELECT * FROM `tp_system_config_logistics` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `weight` ASC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:35:39+08:00][info] [ VIEW ] F:\WWW\yeshai\app\admin\view/ysm\setting\system_config\index.php [ array (
+  0 => '_admin',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'tab_id',
+  8 => 'form',
+  9 => 'logisgics',
+  10 => 'config_tab',
+  11 => 'list',
+) ]
+[2020-10-23T10:36:53+08:00][sql] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-10-23T10:36:53+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_admin` [ RunTime:0.007001s ]
+[2020-10-23T10:36:53+08:00][sql] SELECT * FROM `tp_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:36:53+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.007000s ]
+[2020-10-23T10:36:53+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.002001s ]
+[2020-10-23T10:36:53+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.007000s ]
+[2020-10-23T10:36:53+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:36:53+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'admin'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[2020-10-23T10:36:53+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:36:53+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.008001s ]
+[2020-10-23T10:36:53+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:36:53+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'index'  AND `controller` = 'setting.SystemConfig'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:36:53+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_log` [ RunTime:0.008000s ]
+[2020-10-23T10:36:53+08:00][sql] INSERT INTO `tp_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1603420613 , `admin_name` = 'admin' , `path` = 'admin/setting.systemconfig/index/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.001000s ]
+[2020-10-23T10:36:53+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:36:53+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config_tab` [ RunTime:0.008000s ]
+[2020-10-23T10:36:53+08:00][sql] SELECT * FROM `tp_system_config_tab` WHERE  `status` = 1  AND `type` = 0 [ RunTime:0.000000s ]
+[2020-10-23T10:36:53+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 1  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000000s ]
+[2020-10-23T10:36:53+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000000s ]
+[2020-10-23T10:36:53+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 23  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000000s ]
+[2020-10-23T10:36:53+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 24  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000000s ]
+[2020-10-23T10:36:53+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config_logistics` [ RunTime:0.008000s ]
+[2020-10-23T10:36:53+08:00][sql] SELECT * FROM `tp_system_config_logistics` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `weight` ASC,`id` ASC [ RunTime:0.000000s ]
+[2020-10-23T10:36:53+08:00][info] [ VIEW ] F:\WWW\yeshai\app\admin\view/ysm\setting\system_config\index.php [ array (
+  0 => '_admin',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'tab_id',
+  8 => 'form',
+  9 => 'logisgics',
+  10 => 'config_tab',
+  11 => 'list',
+) ]
+[2020-10-23T10:40:05+08:00][sql] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-10-23T10:40:05+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_admin` [ RunTime:0.007001s ]
+[2020-10-23T10:40:05+08:00][sql] SELECT * FROM `tp_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:40:05+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.008000s ]
+[2020-10-23T10:40:05+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-10-23T10:40:05+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.007000s ]
+[2020-10-23T10:40:05+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:40:05+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'admin'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[2020-10-23T10:40:05+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:40:05+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.007000s ]
+[2020-10-23T10:40:05+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:40:05+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'save_basics'  AND `controller` = 'setting.SystemConfig'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:40:05+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_log` [ RunTime:0.007001s ]
+[2020-10-23T10:40:05+08:00][sql] INSERT INTO `tp_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1603420805 , `admin_name` = 'admin' , `path` = 'admin/setting.systemconfig/save_basics/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.000000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"2\"'  WHERE  `menu_name` = 'microchip_discount' [ RunTime:0.001000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"3\"'  WHERE  `menu_name` = 'microchip_processing_rmb' [ RunTime:0.001000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"3\"'  WHERE  `menu_name` = 'microchip_processing_usd' [ RunTime:0.000000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"3\"'  WHERE  `menu_name` = 'packing_labor_rmb' [ RunTime:0.001000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"3\"'  WHERE  `menu_name` = 'packing_labor_usd' [ RunTime:0.000000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"4\"'  WHERE  `menu_name` = 'tariff' [ RunTime:0.001000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"2\"'  WHERE  `menu_name` = 'single_dose_ymb' [ RunTime:0.000000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"2\"'  WHERE  `menu_name` = 'single_dose_usd' [ RunTime:0.001000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"2\"'  WHERE  `menu_name` = 'single_initial_ymb' [ RunTime:0.000000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"2\"'  WHERE  `menu_name` = 'single_initial_usd' [ RunTime:0.001000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"2\"'  WHERE  `menu_name` = 'barrel_price_ymb' [ RunTime:0.000000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"2\"'  WHERE  `menu_name` = 'barrel_price_usd' [ RunTime:0.000000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"2\"'  WHERE  `menu_name` = 'barrel_initial_ymb' [ RunTime:0.001000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"2\"'  WHERE  `menu_name` = 'barrel_initial_usd' [ RunTime:0.000000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"2\"'  WHERE  `menu_name` = 'out_pack_ymb' [ RunTime:0.001000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"2\"'  WHERE  `menu_name` = 'out_pack_usd' [ RunTime:0.001001s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"2\"'  WHERE  `menu_name` = 'out_initial_ymb' [ RunTime:0.000000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"2\"'  WHERE  `menu_name` = 'out_initial_usd' [ RunTime:0.001000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"1\"'  WHERE  `menu_name` = 'packing_shipping_rmb' [ RunTime:0.001000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"2\"'  WHERE  `menu_name` = 'packing_shipping_usd' [ RunTime:0.000000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"3\"'  WHERE  `menu_name` = 'packing_shipping_initial_rmb' [ RunTime:0.000000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"4\"'  WHERE  `menu_name` = 'packing_shipping_initial_usd' [ RunTime:0.001000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"1\"'  WHERE  `menu_name` = 'brochure_rmb' [ RunTime:0.000000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"2\"'  WHERE  `menu_name` = 'brochure_usd' [ RunTime:0.001000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"3\"'  WHERE  `menu_name` = 'brochure_initial_rmb' [ RunTime:0.001000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"4\"'  WHERE  `menu_name` = 'brochure_initial_usd' [ RunTime:0.000000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"2\"'  WHERE  `menu_name` = 'first_weight' [ RunTime:0.000000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"2\"'  WHERE  `menu_name` = 'first_fee_rmb' [ RunTime:0.001000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"2\"'  WHERE  `menu_name` = 'first_fee_usd' [ RunTime:0.001000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"2\"'  WHERE  `menu_name` = 'first_weight_price_rmb' [ RunTime:0.001000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"2\"'  WHERE  `menu_name` = 'first_weight_price_usd' [ RunTime:0.000000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"2\"'  WHERE  `menu_name` = 'continue_weight' [ RunTime:0.000000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"2\"'  WHERE  `menu_name` = 'additionnal_cost_rmb' [ RunTime:0.001000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"2\"'  WHERE  `menu_name` = 'additionnal_cost_usd' [ RunTime:0.000000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"3\"'  WHERE  `menu_name` = 'renew_settlement_price_rmb' [ RunTime:0.001000s ]
+[2020-10-23T10:40:05+08:00][sql] UPDATE `tp_system_config`  SET `value` = '\"3\"'  WHERE  `menu_name` = 'renew_settlement_price_usd' [ RunTime:0.001001s ]
+[2020-10-23T10:40:05+08:00][error] [10500]method not exist:think\db\Query->edit[F:\WWW\yeshai\vendor\topthink\think-orm\src\db\BaseQuery.php:117]
+[2020-10-23T10:40:11+08:00][sql] CONNECT:[ UseTime:0.011000s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-10-23T10:40:11+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_admin` [ RunTime:0.007001s ]
+[2020-10-23T10:40:11+08:00][sql] SELECT * FROM `tp_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:40:11+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.008000s ]
+[2020-10-23T10:40:11+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001001s ]
+[2020-10-23T10:40:11+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.008000s ]
+[2020-10-23T10:40:11+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.001001s ]
+[2020-10-23T10:40:11+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'admin'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[2020-10-23T10:40:11+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:40:11+08:00][sql] SELECT `menu_name`,`value` FROM `tp_system_config` [ RunTime:0.001000s ]
+[2020-10-23T10:40:11+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.007001s ]
+[2020-10-23T10:40:11+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:40:11+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'index'  AND `controller` = 'setting.SystemConfig'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:40:11+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_log` [ RunTime:0.007000s ]
+[2020-10-23T10:40:11+08:00][sql] INSERT INTO `tp_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1603420811 , `admin_name` = 'admin' , `path` = 'admin/setting.systemconfig/index/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.000000s ]
+[2020-10-23T10:40:11+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:40:11+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config_tab` [ RunTime:0.007000s ]
+[2020-10-23T10:40:11+08:00][sql] SELECT * FROM `tp_system_config_tab` WHERE  `status` = 1  AND `type` = 0 [ RunTime:0.001000s ]
+[2020-10-23T10:40:11+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 1  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:40:11+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:40:11+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 23  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001001s ]
+[2020-10-23T10:40:11+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 24  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:40:11+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config_logistics` [ RunTime:0.008000s ]
+[2020-10-23T10:40:11+08:00][sql] SELECT * FROM `tp_system_config_logistics` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `weight` ASC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:40:11+08:00][info] [ VIEW ] F:\WWW\yeshai\app\admin\view/ysm\setting\system_config\index.php [ array (
+  0 => '_admin',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'tab_id',
+  8 => 'form',
+  9 => 'logisgics',
+  10 => 'config_tab',
+  11 => 'list',
+) ]
+[2020-10-23T10:40:25+08:00][sql] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-10-23T10:40:25+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_admin` [ RunTime:0.007001s ]
+[2020-10-23T10:40:25+08:00][sql] SELECT * FROM `tp_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:40:25+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.007000s ]
+[2020-10-23T10:40:25+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.002000s ]
+[2020-10-23T10:40:25+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.008000s ]
+[2020-10-23T10:40:25+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:40:25+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'admin'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001001s ]
+[2020-10-23T10:40:25+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:40:25+08:00][sql] SELECT `menu_name`,`value` FROM `tp_system_config` [ RunTime:0.001000s ]
+[2020-10-23T10:40:25+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.008001s ]
+[2020-10-23T10:40:25+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:40:25+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'index'  AND `controller` = 'setting.SystemConfig'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:40:25+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_log` [ RunTime:0.008000s ]
+[2020-10-23T10:40:25+08:00][sql] INSERT INTO `tp_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1603420825 , `admin_name` = 'admin' , `path` = 'admin/setting.systemconfig/index/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.001000s ]
+[2020-10-23T10:40:25+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:40:25+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config_tab` [ RunTime:0.008000s ]
+[2020-10-23T10:40:25+08:00][sql] SELECT * FROM `tp_system_config_tab` WHERE  `status` = 1  AND `type` = 0 [ RunTime:0.001000s ]
+[2020-10-23T10:40:25+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 1  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000000s ]
+[2020-10-23T10:40:25+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:40:25+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 23  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001001s ]
+[2020-10-23T10:40:25+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 24  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000000s ]
+[2020-10-23T10:40:25+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config_logistics` [ RunTime:0.008000s ]
+[2020-10-23T10:40:25+08:00][sql] SELECT * FROM `tp_system_config_logistics` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `weight` ASC,`id` ASC [ RunTime:0.000000s ]
+[2020-10-23T10:40:25+08:00][info] [ VIEW ] F:\WWW\yeshai\app\admin\view/ysm\setting\system_config\index.php [ array (
+  0 => '_admin',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'tab_id',
+  8 => 'form',
+  9 => 'logisgics',
+  10 => 'config_tab',
+  11 => 'list',
+) ]
+[2020-10-23T10:41:12+08:00][sql] CONNECT:[ UseTime:0.002001s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-10-23T10:41:12+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_admin` [ RunTime:0.008000s ]
+[2020-10-23T10:41:12+08:00][sql] SELECT * FROM `tp_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:41:12+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.007001s ]
+[2020-10-23T10:41:12+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-10-23T10:41:12+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.009001s ]
+[2020-10-23T10:41:12+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:41:12+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'admin'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.002000s ]
+[2020-10-23T10:41:12+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:41:12+08:00][sql] SELECT `menu_name`,`value` FROM `tp_system_config` [ RunTime:0.001000s ]
+[2020-10-23T10:41:12+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.007000s ]
+[2020-10-23T10:41:12+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:41:12+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'index'  AND `controller` = 'setting.SystemConfig'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:41:12+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_log` [ RunTime:0.008001s ]
+[2020-10-23T10:41:12+08:00][sql] INSERT INTO `tp_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1603420872 , `admin_name` = 'admin' , `path` = 'admin/setting.systemconfig/index/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.001000s ]
+[2020-10-23T10:41:12+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000000s ]
+[2020-10-23T10:41:12+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config_tab` [ RunTime:0.008001s ]
+[2020-10-23T10:41:12+08:00][sql] SELECT * FROM `tp_system_config_tab` WHERE  `status` = 1  AND `type` = 0 [ RunTime:0.000000s ]
+[2020-10-23T10:41:12+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 1  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:41:12+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:41:12+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 23  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000000s ]
+[2020-10-23T10:41:12+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 24  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:41:12+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config_logistics` [ RunTime:0.008000s ]
+[2020-10-23T10:41:12+08:00][sql] SELECT * FROM `tp_system_config_logistics` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `weight` ASC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:41:12+08:00][info] [ VIEW ] F:\WWW\yeshai\app\admin\view/ysm\setting\system_config\index.php [ array (
+  0 => '_admin',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'tab_id',
+  8 => 'form',
+  9 => 'logisgics',
+  10 => 'config_tab',
+  11 => 'list',
+) ]
+[2020-10-23T10:41:24+08:00][sql] CONNECT:[ UseTime:0.002000s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-10-23T10:41:24+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_admin` [ RunTime:0.007000s ]
+[2020-10-23T10:41:24+08:00][sql] SELECT * FROM `tp_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:41:24+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.007000s ]
+[2020-10-23T10:41:24+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-10-23T10:41:24+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.012000s ]
+[2020-10-23T10:41:24+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:41:24+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'admin'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[2020-10-23T10:41:24+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:41:24+08:00][sql] SELECT `menu_name`,`value` FROM `tp_system_config` [ RunTime:0.001000s ]
+[2020-10-23T10:41:24+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.009000s ]
+[2020-10-23T10:41:24+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:41:24+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'index'  AND `controller` = 'setting.SystemConfig'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:41:24+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_log` [ RunTime:0.007001s ]
+[2020-10-23T10:41:24+08:00][sql] INSERT INTO `tp_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1603420884 , `admin_name` = 'admin' , `path` = 'admin/setting.systemconfig/index/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.000000s ]
+[2020-10-23T10:41:24+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001001s ]
+[2020-10-23T10:41:24+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config_tab` [ RunTime:0.009000s ]
+[2020-10-23T10:41:24+08:00][sql] SELECT * FROM `tp_system_config_tab` WHERE  `status` = 1  AND `type` = 0 [ RunTime:0.001000s ]
+[2020-10-23T10:41:24+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 1  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:41:24+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:41:24+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 23  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:41:24+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 24  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:41:24+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config_logistics` [ RunTime:0.008000s ]
+[2020-10-23T10:41:24+08:00][sql] SELECT * FROM `tp_system_config_logistics` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `weight` ASC,`id` ASC [ RunTime:0.000000s ]
+[2020-10-23T10:41:24+08:00][info] [ VIEW ] F:\WWW\yeshai\app\admin\view/ysm\setting\system_config\index.php [ array (
+  0 => '_admin',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'tab_id',
+  8 => 'form',
+  9 => 'logisgics',
+  10 => 'config_tab',
+  11 => 'list',
+) ]
+[2020-10-23T10:47:44+08:00][error] [0]语法错误: unexpected 'public' (T_PUBLIC)[F:\WWW\yeshai\app\admin\controller\setting\SystemConfig.php:417]
+[2020-10-23T10:48:00+08:00][sql] CONNECT:[ UseTime:0.001000s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-10-23T10:48:00+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_admin` [ RunTime:0.007000s ]
+[2020-10-23T10:48:00+08:00][sql] SELECT * FROM `tp_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:48:00+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.007000s ]
+[2020-10-23T10:48:00+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001001s ]
+[2020-10-23T10:48:00+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.007001s ]
+[2020-10-23T10:48:00+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:48:00+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'admin'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[2020-10-23T10:48:00+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:48:00+08:00][sql] SELECT `menu_name`,`value` FROM `tp_system_config` [ RunTime:0.000000s ]
+[2020-10-23T10:48:00+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.008001s ]
+[2020-10-23T10:48:00+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:48:00+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'index'  AND `controller` = 'setting.SystemConfig'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:48:00+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_log` [ RunTime:0.007000s ]
+[2020-10-23T10:48:00+08:00][sql] INSERT INTO `tp_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1603421280 , `admin_name` = 'admin' , `path` = 'admin/setting.systemconfig/index/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.000000s ]
+[2020-10-23T10:48:00+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:48:00+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config_tab` [ RunTime:0.007000s ]
+[2020-10-23T10:48:00+08:00][sql] SELECT * FROM `tp_system_config_tab` WHERE  `status` = 1  AND `type` = 0 [ RunTime:0.001000s ]
+[2020-10-23T10:48:00+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 1  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000000s ]
+[2020-10-23T10:48:00+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:48:00+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 23  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000000s ]
+[2020-10-23T10:48:00+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 24  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000000s ]
+[2020-10-23T10:48:00+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config_logistics` [ RunTime:0.007000s ]
+[2020-10-23T10:48:00+08:00][sql] SELECT * FROM `tp_system_config_logistics` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `weight` ASC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:48:00+08:00][info] [ VIEW ] F:\WWW\yeshai\app\admin\view/ysm\setting\system_config\index.php [ array (
+  0 => '_admin',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'tab_id',
+  8 => 'form',
+  9 => 'logisgics',
+  10 => 'config_tab',
+  11 => 'list',
+) ]
+[2020-10-23T10:49:04+08:00][sql] CONNECT:[ UseTime:0.011001s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-10-23T10:49:04+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_admin` [ RunTime:0.007000s ]
+[2020-10-23T10:49:04+08:00][sql] SELECT * FROM `tp_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:49:04+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.007001s ]
+[2020-10-23T10:49:04+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-10-23T10:49:04+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.007001s ]
+[2020-10-23T10:49:04+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:49:04+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'admin'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001000s ]
+[2020-10-23T10:49:04+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:49:04+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.007001s ]
+[2020-10-23T10:49:04+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:49:04+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'index'  AND `controller` = 'setting.SystemConfig'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:49:04+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_log` [ RunTime:0.007000s ]
+[2020-10-23T10:49:04+08:00][sql] INSERT INTO `tp_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1603421344 , `admin_name` = 'admin' , `path` = 'admin/setting.systemconfig/index/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.000000s ]
+[2020-10-23T10:49:04+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:49:04+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config_tab` [ RunTime:0.007000s ]
+[2020-10-23T10:49:04+08:00][sql] SELECT * FROM `tp_system_config_tab` WHERE  `status` = 1  AND `type` = 0 [ RunTime:0.001000s ]
+[2020-10-23T10:49:04+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 1  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:49:04+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:49:04+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 23  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:49:04+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 24  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:49:04+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config_logistics` [ RunTime:0.007000s ]
+[2020-10-23T10:49:04+08:00][sql] SELECT * FROM `tp_system_config_logistics` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `weight` ASC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:49:04+08:00][info] [ VIEW ] F:\WWW\yeshai\app\admin\view/ysm\setting\system_config\index.php [ array (
+  0 => '_admin',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'tab_id',
+  8 => 'form',
+  9 => 'logisgics',
+  10 => 'config_tab',
+  11 => 'list',
+) ]
+[2020-10-23T10:49:15+08:00][sql] CONNECT:[ UseTime:0.011000s ] mysql:host=localhost;port=3306;dbname=whs_tp;charset=utf8
+[2020-10-23T10:49:15+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_admin` [ RunTime:0.008001s ]
+[2020-10-23T10:49:15+08:00][sql] SELECT * FROM `tp_system_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:49:15+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_menus` [ RunTime:0.007000s ]
+[2020-10-23T10:49:15+08:00][sql] SELECT `module`,`controller`,`action`,`params` FROM `tp_system_menus` WHERE  ( `controller` <> '' OR `action` <> '' ) [ RunTime:0.001000s ]
+[2020-10-23T10:49:15+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config` [ RunTime:0.007000s ]
+[2020-10-23T10:49:15+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'site_logo' LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:49:15+08:00][sql] SELECT * FROM `tp_system_menus` WHERE  `is_show` = 1  AND `module` = 'admin'  AND `access` = 1 ORDER BY `sort` DESC [ RunTime:0.001001s ]
+[2020-10-23T10:49:15+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `menu_name` = 'cache_config' LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:49:15+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_role` [ RunTime:0.008001s ]
+[2020-10-23T10:49:15+08:00][sql] SELECT `role_name` FROM `tp_system_role` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[2020-10-23T10:49:15+08:00][sql] SELECT `menu_name` FROM `tp_system_menus` WHERE  `action` = 'index'  AND `controller` = 'setting.SystemConfig'  AND `module` = 'admin'  AND `params` = '[]'  AND ( params = '[]' OR params = '[]' ) ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001000s ]
+[2020-10-23T10:49:15+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_log` [ RunTime:0.007000s ]
+[2020-10-23T10:49:15+08:00][sql] INSERT INTO `tp_system_log` SET `method` = 'admin' , `admin_id` = 1 , `add_time` = 1603421355 , `admin_name` = 'admin' , `path` = 'admin/setting.systemconfig/index/' , `page` = '未知' , `ip` = '127.0.0.1' , `type` = 'system' [ RunTime:0.000000s ]
+[2020-10-23T10:49:15+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:49:15+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config_tab` [ RunTime:0.007001s ]
+[2020-10-23T10:49:15+08:00][sql] SELECT * FROM `tp_system_config_tab` WHERE  `status` = 1  AND `type` = 0 [ RunTime:0.000000s ]
+[2020-10-23T10:49:15+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 1  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:49:15+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000000s ]
+[2020-10-23T10:49:15+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 23  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.000000s ]
+[2020-10-23T10:49:15+08:00][sql] SELECT * FROM `tp_system_config` WHERE  `config_tab_id` = 24  AND `status` = 1 ORDER BY `sort` DESC,`id` ASC [ RunTime:0.001000s ]
+[2020-10-23T10:49:15+08:00][sql] SHOW FULL COLUMNS FROM `tp_system_config_logistics` [ RunTime:0.007001s ]
+[2020-10-23T10:49:15+08:00][sql] SELECT * FROM `tp_system_config_logistics` WHERE  `config_tab_id` = 22  AND `status` = 1 ORDER BY `weight` ASC,`id` ASC [ RunTime:0.000000s ]
+[2020-10-23T10:49:15+08:00][info] [ VIEW ] F:\WWW\yeshai\app\admin\view/ysm\setting\system_config\index.php [ array (
+  0 => '_admin',
+  1 => 'menuList',
+  2 => 'site_logo',
+  3 => 'new_order_audio_link',
+  4 => 'role_name',
+  5 => 'workermanPort',
+  6 => 'controller',
+  7 => 'tab_id',
+  8 => 'form',
+  9 => 'logisgics',
+  10 => 'config_tab',
+  11 => 'list',
+) ]

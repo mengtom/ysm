@@ -1,0 +1,375 @@
+/*
+*登录页面的样式
+*/
+.loginbody .content {
+  width: 1200px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.loginbody .content .c_left {
+  left: 50px;
+  top: 0;
+  width: 400px;
+  height: 350px;
+  background-color: white;
+  border: solid 4px #c01f5e;
+  z-index: 99;
+}
+.loginbody .content .c_left .c_l_form {
+  width: 216px;
+  margin: auto;
+}
+.loginbody .content .c_left .c_l_form .logo {
+  height: 52px;
+  margin: 38px auto;
+}
+.loginbody .content .c_left .c_l_form .logo span {
+  height: 100%;
+  position: relative;
+  font-weight: bold;
+  float: left;
+  line-height: 1.7;
+  margin-left: 10px;
+}
+.loginbody .content .c_left .c_l_form .logo img {
+  margin: auto;
+  float: left;
+  width: 142px;
+}
+.loginbody .content .c_left .c_l_form .form-item {
+  width: 200px;
+  height: 32px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  margin: 10px auto;
+}
+.loginbody .content .c_left .c_l_form .btn {
+  width: 216px;
+  height: 32px;
+  border-radius: 2px;
+  background-color: #c01f5e;
+  border: none;
+  margin-top: 50px;
+  color: #ffffff;
+}
+.loginbody .content .c_right {
+  width: 800px;
+  height: 500px;
+  background-color: #f2f3f5;
+}
+.loginbody .content .c_right img {
+  width: 800px;
+  height: 500px;
+  overflow: hidden;
+}
+.fixed {
+  position: fixed;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.d-flex {
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+.align-items-center {
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+.justify-content-center {
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+.w-100 {
+  width: 100% !important;
+}
+.h-100 {
+  height: 100% !important;
+}
+.ivu-btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  line-height: 1.5;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 32px;
+  padding: 0 15px;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: color 0.2s linear, background-color 0.2s linear, border 0.2s linear, box-shadow 0.2s linear;
+  color: #272727;
+  background-color: #fff;
+  border-color: #dcdee2;
+}
+.ivu-btn > .ivu-icon {
+  line-height: 1.5;
+}
+.ivu-btn-icon-only.ivu-btn-circle > .ivu-icon {
+  vertical-align: baseline;
+}
+.ivu-btn > i,
+.ivu-btn > span {
+  display: inline-block;
+}
+.ivu-btn,
+.ivu-btn:active,
+.ivu-btn:focus {
+  outline: 0;
+}
+.ivu-btn:not([disabled]):hover {
+  text-decoration: none;
+}
+.ivu-btn:not([disabled]):active {
+  outline: 0;
+}
+.ivu-btn.disabled,
+.ivu-btn[disabled] {
+  cursor: not-allowed;
+}
+.ivu-btn.disabled > *,
+.ivu-btn[disabled] > * {
+  pointer-events: none;
+}
+.ivu-btn-large {
+  height: 40px;
+  padding: 0 15px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+.ivu-btn-small {
+  height: 24px;
+  padding: 0 7px;
+  font-size: 14px;
+  border-radius: 3px;
+}
+.ivu-btn-icon-only {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  font-size: 16px;
+  border-radius: 4px;
+}
+.ivu-btn-icon-only.ivu-btn-large {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  font-size: 18px;
+  border-radius: 4px;
+}
+.ivu-btn-icon-only.ivu-btn-small {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.ivu-btn > a:only-child {
+  color: currentColor;
+}
+.ivu-btn > a:only-child:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: 0 0;
+}
+.ivu-btn:hover {
+  color: #525252;
+  background-color: #fff;
+  border-color: #e3e5e8;
+}
+.ivu-btn:hover > a:only-child {
+  color: currentColor;
+}
+.ivu-btn:hover > a:only-child:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: 0 0;
+}
+.ivu-btn.active,
+.ivu-btn:active {
+  color: #252525;
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
+}
+.ivu-btn.active > a:only-child,
+.ivu-btn:active > a:only-child {
+  color: currentColor;
+}
+.ivu-btn.active > a:only-child:after,
+.ivu-btn:active > a:only-child:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: 0 0;
+}
+.ivu-btn.disabled,
+.ivu-btn.disabled.active,
+.ivu-btn.disabled:active,
+.ivu-btn.disabled:focus,
+.ivu-btn.disabled:hover,
+.ivu-btn[disabled],
+.ivu-btn[disabled].active,
+.ivu-btn[disabled]:active,
+.ivu-btn[disabled]:focus,
+.ivu-btn[disabled]:hover,
+fieldset[disabled] .ivu-btn,
+fieldset[disabled] .ivu-btn.active,
+fieldset[disabled] .ivu-btn:active,
+fieldset[disabled] .ivu-btn:focus,
+fieldset[disabled] .ivu-btn:hover {
+  color: #c5c8ce;
+  background-color: #f7f7f7;
+  border-color: #dcdee2;
+}
+.ivu-btn.disabled.active > a:only-child,
+.ivu-btn.disabled:active > a:only-child,
+.ivu-btn.disabled:focus > a:only-child,
+.ivu-btn.disabled:hover > a:only-child,
+.ivu-btn.disabled > a:only-child,
+.ivu-btn[disabled].active > a:only-child,
+.ivu-btn[disabled]:active > a:only-child,
+.ivu-btn[disabled]:focus > a:only-child,
+.ivu-btn[disabled]:hover > a:only-child,
+.ivu-btn[disabled] > a:only-child,
+fieldset[disabled] .ivu-btn.active > a:only-child,
+fieldset[disabled] .ivu-btn:active > a:only-child,
+fieldset[disabled] .ivu-btn:focus > a:only-child,
+fieldset[disabled] .ivu-btn:hover > a:only-child,
+fieldset[disabled] .ivu-btn > a:only-child {
+  color: currentColor;
+}
+.ivu-btn.disabled.active > a:only-child:after,
+.ivu-btn.disabled:active > a:only-child:after,
+.ivu-btn.disabled:focus > a:only-child:after,
+.ivu-btn.disabled:hover > a:only-child:after,
+.ivu-btn.disabled > a:only-child:after,
+.ivu-btn[disabled].active > a:only-child:after,
+.ivu-btn[disabled]:active > a:only-child:after,
+.ivu-btn[disabled]:focus > a:only-child:after,
+.ivu-btn[disabled]:hover > a:only-child:after,
+.ivu-btn[disabled] > a:only-child:after,
+fieldset[disabled] .ivu-btn.active > a:only-child:after,
+fieldset[disabled] .ivu-btn:active > a:only-child:after,
+fieldset[disabled] .ivu-btn:focus > a:only-child:after,
+fieldset[disabled] .ivu-btn:hover > a:only-child:after,
+fieldset[disabled] .ivu-btn > a:only-child:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: 0 0;
+}
+.ivu-btn:hover {
+  color: #cd4c7e;
+  background-color: #fff;
+  border-color: #cd4c7e;
+}
+.ivu-btn:hover > a:only-child {
+  color: currentColor;
+}
+.ivu-btn:hover > a:only-child:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: 0 0;
+}
+.ivu-btn.active,
+.ivu-btn:active {
+  color: #b61d59;
+  background-color: #fff;
+  border-color: #b61d59;
+}
+.ivu-btn.active > a:only-child,
+.ivu-btn:active > a:only-child {
+  color: currentColor;
+}
+.ivu-btn.active > a:only-child:after,
+.ivu-btn:active > a:only-child:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: 0 0;
+}
+.ivu-btn:focus {
+  box-shadow: 0 0 0 2px rgba(192, 31, 94, 0.2);
+}
+.ivu-input {
+  display: inline-block;
+  width: 100%;
+  height: 24px;
+  line-height: 1.5;
+  padding: 4px 7px;
+  font-size: 14px;
+  border: 1px solid #dcdee2;
+  border-radius: 4px;
+  color: #272727;
+  background-color: #fff;
+  background-image: none;
+  position: relative;
+  cursor: text;
+  transition: border 0.2s ease-in-out, background 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.ivu-input::-moz-placeholder {
+  color: #c5c8ce;
+  opacity: 1;
+}
+.ivu-input:-ms-input-placeholder {
+  color: #c5c8ce;
+}
+.ivu-input::-webkit-input-placeholder {
+  color: #c5c8ce;
+}
+.ivu-input:hover {
+  border-color: #cd4c7e;
+}
+.ivu-input:focus {
+  border-color: #cd4c7e;
+  outline: 0;
+  box-shadow: 0 0 0 2px rgba(192, 31, 94, 0.2);
+}
+.ivu-input[disabled],
+fieldset[disabled] .ivu-input {
+  background-color: #f3f3f3;
+  opacity: 1;
+  cursor: not-allowed;
+  color: #ccc;
+}
+.ivu-input[disabled]:hover,
+fieldset[disabled] .ivu-input:hover {
+  border-color: #e3e5e8;
+}
+/*# sourceMappingURL=login.css.map */
